@@ -1,29 +1,29 @@
 /*----------------------------------------------
 ---------Create By: Diego Gonzalez--------------
 ---------Creation Date: 2017-07-05--------------
----------Description: Insert new user-----------
+---------Description: Insert new User-----------
 */----------------------------------------------
 
-DELIMITER $$
+
 
 USE `RMDVCore`;
 
 DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertUser`;
 
+DELIMITER $$
+
 CREATE PROCEDURE `RMDVCore`.`SYSInsertUser`
 
 (
-	IN CompanyId        int(10),
-	IN TypeId           int(10),
-	IN UserName         varchar(150),
-	IN UserMiddleName   varchar(150),
-	IN UserLastName     varchar(150),
-	IN UserMotherName   varchar(150),
-	IN Email            varchar(255),
-	IN PassWord         varchar(12),
-	IN CreationDate     datetime,
-	IN ModificationDate datetime,
-	IN Active           bit(1) 
+	IN CompanyId        INT(10),
+	IN TypeId           INT(10),
+	IN UserName         VARCHAR(150),
+	IN UserMiddleName   VARCHAR(150),
+	IN UserLastName     VARCHAR(150),
+	IN UserMotherName   VARCHAR(150),
+	IN Email            VARCHAR(255),
+	IN PassWord         VARCHAR(12),
+	IN Active           BIT 
 )
 
 BEGIN
@@ -55,10 +55,11 @@ BEGIN
 		UserMotherName,
 		Email,
 		PassWord,
-		CreationDate,
-		ModificationDate,
+		NOW(),
+		NOW(),
 		Active
 	);
+	
 END
 
 $$
