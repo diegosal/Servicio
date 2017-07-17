@@ -21,7 +21,7 @@ CREATE PROCEDURE `RMDVCore`.`SYSInsertCatRecreationalArea`
 
 BEGIN
 
-	INSERT INTO `rmdvcore`.`catrecreationalarea`
+	INSERT INTO `RMDVCore`.`CatrecReationalArea`
 	(
 		`AreaName`,
 		`CreationDate`,

@@ -21,7 +21,7 @@ CREATE PROCEDURE `RMDVCore`.`SYSInsertCatStatus`
 
 BEGIN
 
-	INSERT INTO `rmdvcore`.`catstatus`
+	INSERT INTO `RMDVCore`.`CatStatus`
 	(
 		`StatusName`,
 		`CreationDate`,

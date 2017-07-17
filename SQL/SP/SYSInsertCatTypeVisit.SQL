@@ -1,29 +1,29 @@
 /*----------------------------------------------
 ---------Create By: Diego Gonzalez--------------
 ---------Creation Date: 2017-07-05--------------
----------Description: Insert new Eventuality----
+---------Description: Insert new Type Visit-----
 */----------------------------------------------
 
 
 
 USE `RMDVCore`;
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCatEventuality`;
+DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCatTypeVisit`;
 
 DELIMITER $$
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertCatEventuality`
+CREATE PROCEDURE `RMDVCore`.`SYSInsertCatTypeVisit`
 
 (
-	IN EventualityName		VARCHAR(255),
+	IN TypeVisit			VARCHAR(255),
 	IN Active				BIT
 )
 
 BEGIN
 
-	INSERT INTO `RMDVCore`.`CatEventuality`
+	INSERT INTO `RMDVCore`.`CatTypeVisit`
 	(
-		`EventualityName`,
+		`TypeVisit`,
 		`CreationDate`,
 		`ModificationDate`,
 		`Active`
@@ -31,7 +31,7 @@ BEGIN
 
 	VALUES
 	(
-		EventualityName,
+		TypeVisit,
 		NOW(),
 		NOW(),
 		Active

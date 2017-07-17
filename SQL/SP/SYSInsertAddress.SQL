@@ -15,7 +15,7 @@ DELIMITER $$
 CREATE PROCEDURE `RMDVCore`.`SYSInsertAddress`
 
 (
-	IN UserId 			INT(10),
+	IN UserId 			INT(10) UNSIGNED,
 	IN StreetName 		VARCHAR(255),
 	IN Number 			VARCHAR(10),
 	IN PostalCode 		VARCHAR(10),
@@ -24,7 +24,7 @@ CREATE PROCEDURE `RMDVCore`.`SYSInsertAddress`
 
 BEGIN
 
-	INSERT INTO `rmdvcore`.`address`
+	INSERT INTO `RMDVCore`.`Address`
 	(
 		`Id`,
 		`UserId`,

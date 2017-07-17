@@ -15,8 +15,8 @@ DELIMITER $$
 CREATE PROCEDURE `RMDVCore`.`SYSInsertUser`
 
 (
-	IN CompanyId        INT(10),
-	IN TypeId           INT(10),
+	IN CompanyId        INT(10) UNSIGNED,
+	IN TypeId           INT(10) UNSIGNED,
 	IN UserName         VARCHAR(150),
 	IN UserMiddleName   VARCHAR(150),
 	IN UserLastName     VARCHAR(150),
@@ -28,7 +28,7 @@ CREATE PROCEDURE `RMDVCore`.`SYSInsertUser`
 
 BEGIN
 
-	INSERT INTO `rmdvcore`.`user`
+	INSERT INTO `RMDVCore`.`User`
 	
 	(
 		`CompanyId`,

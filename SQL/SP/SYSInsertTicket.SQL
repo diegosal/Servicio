@@ -15,14 +15,14 @@ DELIMITER $$
 CREATE PROCEDURE `RMDVCore`.`SYSInsertTicket`
 
 (
-	IN UserId 			 INT(10),
-	IN EventualityId	 INT(10),
-	IN StatusId			 INT(10)
+	IN UserId 			 INT(10) UNSIGNED,
+	IN EventualityId	 INT(10) UNSIGNED,
+	IN StatusId			 INT(10) UNSIGNED
 )
 
 BEGIN
 
-	INSERT INTO `rmdvcore`.`ticket`
+	INSERT INTO `RMDVCore`.`Ticket`
 	(
 		`UserId`,
 		`EventualityId`,

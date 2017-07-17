@@ -248,9 +248,7 @@ UserId 					INT(10) UNSIGNED NOT NULL,
 RecreationalAreaId 		INT(10) UNSIGNED NOT NULL,
 StartDate 				DATETIME NOT NULL,
 EndDate 				DATETIME NOT NULL,
-Status 					BIT NOT NULL,
-CreationDate 			DATETIME NOT NULL,
-ModificationDate 		DATETIME NOT NULL
+Status 					BIT NOT NULL
 
 );
 
@@ -306,8 +304,7 @@ CheckIn				DATETIME NOT NULL,
 CheckOut 			DATETIME NOT NULL,
 VisitName 			VARCHAR(150) NOT NULL,
 Carnet				VARCHAR(250) NOT NULL,
-Plates				VARCHAR(50) NOT NULL,
-CreationDate 		DATETIME NOT NULL
+Plates				VARCHAR(50) NOT NULL
 
 );
 

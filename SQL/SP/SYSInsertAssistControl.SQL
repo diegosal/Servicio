@@ -15,12 +15,12 @@ DELIMITER $$
 CREATE PROCEDURE `RMDVCore`.`SYSInsertAssistControl`
 
 (
-	IN UserId	 INT(10)
+	IN UserId	 INT(10) UNSIGNED
 )
 
 BEGIN
 
-	INSERT INTO `rmdvcore`.`assistcontrol`
+	INSERT INTO `RMDVCore`.`AssistControl`
 	(
 		`UserId`,
 		`CheckIn`,

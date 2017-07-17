@@ -1,29 +1,29 @@
 /*----------------------------------------------
 ---------Create By: Diego Gonzalez--------------
 ---------Creation Date: 2017-07-05--------------
----------Description: Insert new Eventuality----
+---------Description: Insert new Type User------
 */----------------------------------------------
 
 
 
 USE `RMDVCore`;
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCatEventuality`;
+DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCatTypeUser`;
 
 DELIMITER $$
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertCatEventuality`
+CREATE PROCEDURE `RMDVCore`.`SYSInsertCatTypeUser`
 
 (
-	IN EventualityName		VARCHAR(255),
+	IN TypeUser				VARCHAR(100),
 	IN Active				BIT
 )
 
 BEGIN
 
-	INSERT INTO `RMDVCore`.`CatEventuality`
+	INSERT INTO `RMDVCore`.`CatTypeUser`
 	(
-		`EventualityName`,
+		`TypeUser`,
 		`CreationDate`,
 		`ModificationDate`,
 		`Active`
@@ -31,7 +31,7 @@ BEGIN
 
 	VALUES
 	(
-		EventualityName,
+		TypeUser,
 		NOW(),
 		NOW(),
 		Active

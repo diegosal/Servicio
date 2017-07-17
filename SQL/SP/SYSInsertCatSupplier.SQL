@@ -22,7 +22,7 @@ CREATE PROCEDURE `RMDVCore`.`SYSInsertCatSupplier`
 
 BEGIN
 
-	INSERT INTO `rmdvcore`.`catsupplier`
+	INSERT INTO `RMDVCore`.`CatSupplier`
 	(
 		`SupplierName`,
 		`ContactNumer`,

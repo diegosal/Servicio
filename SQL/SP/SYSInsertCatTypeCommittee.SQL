@@ -21,7 +21,7 @@ CREATE PROCEDURE `RMDVCore`.`SYSInsertCatTypeCommittee`
 
 BEGIN
 
-	INSERT INTO `rmdvcore`.`cattypecommittee`
+	INSERT INTO `RMDVCore`.`CatTypeCommittee`
 	(
 		`TypeCommittee`,
 		`CreationDate`,
