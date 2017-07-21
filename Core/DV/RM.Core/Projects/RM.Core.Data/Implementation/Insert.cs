@@ -191,8 +191,8 @@ namespace RM.Core.Data.Implementation
                 new Action(() =>
                 {
                     result = dbContext.SYSInsertCatTicketStatus(
-                            bizStatus.StatusName,
-                            bizStatus.Active
+                            bizTicketStatus.StatusName,
+                            bizTicketStatus.Active
                         );
                 }
                 )
