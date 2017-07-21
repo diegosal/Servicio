@@ -6,38 +6,33 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCatStatus`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertCatStatus]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertCatStatus]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertCatStatus`
+	@StatusName		NVARCHAR(255),
+	@Active			BIT
 
-(
-	IN StatusName		VARCHAR(255),
-	IN Active			BIT
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`CatStatus`
+	INSERT INTO [dbo].[CatStatus]
 	(
-		`StatusName`,
-		`CreationDate`,
-		`ModificationDate`,
-		`Active`
+		StatusName,
+		CreationDate,
+		ModificationDate,
+		Active
 	)
 	VALUES
 	(
-		StatusName,
-		NOW(),
-		NOW(),
-		Active
-	);
+		@StatusName,
+		GETDATE(),
+		GETDATE(),
+		@Active
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

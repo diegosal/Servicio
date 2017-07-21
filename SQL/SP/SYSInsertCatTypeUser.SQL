@@ -6,39 +6,34 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCatTypeUser`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertCatTypeUser]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertCatTypeUser]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertCatTypeUser`
+	@TypeUser				NVARCHAR(100),
+	@Active					BIT
 
-(
-	IN TypeUser				VARCHAR(100),
-	IN Active				BIT
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`CatTypeUser`
+	INSERT INTO [dbo].[CatTypeUser]
 	(
-		`TypeUser`,
-		`CreationDate`,
-		`ModificationDate`,
-		`Active`
+		TypeUser,
+		CreationDate,
+		ModificationDate,
+		Active
 	)
 
 	VALUES
 	(
-		TypeUser,
-		NOW(),
-		NOW(),
-		Active
-	);
+		@TypeUser,
+		GETDATE(),
+		GETDATE(),
+		@Active
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

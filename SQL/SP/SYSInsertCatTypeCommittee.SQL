@@ -6,39 +6,34 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCatTypeCommittee`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertCatTypeCommittee]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertCatTypeCommittee]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertCatTypeCommittee`
+	@TypeCommittee		NVARCHAR(255),
+	@Active				BIT
 
-(
-	IN TypeCommittee		VARCHAR(255),
-	IN Active				BIT
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`CatTypeCommittee`
+	INSERT INTO [dbo].[CatTypeCommittee]
 	(
-		`TypeCommittee`,
-		`CreationDate`,
-		`ModificationDate`,
-		`Active`
+		TypeCommittee,
+		CreationDate,
+		ModificationDate,
+		Active
     )
 
 	VALUES
 	(
-		TypeCommittee,
-		NOW(),
-		NOW(),
-		Active
-	);
+		@TypeCommittee,
+		GETDATE(),
+		GETDATE(),
+		@Active
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

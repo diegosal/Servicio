@@ -6,42 +6,37 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertTicket`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertTicket]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertTicket]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertTicket`
+	@UserId 			INT,
+	@EventualityId	 	INT,
+	@StatusId			INT
 
-(
-	IN UserId 			 INT(10) UNSIGNED,
-	IN EventualityId	 INT(10) UNSIGNED,
-	IN StatusId			 INT(10) UNSIGNED
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`Ticket`
-	(
-		`UserId`,
-		`EventualityId`,
-		`StatusId`,
-		`CreationDate`,
-		`ModificationDate`
-	)
-
-	VALUES
+	INSERT INTO [dbo].[Ticket]
 	(
 		UserId,
 		EventualityId,
 		StatusId,
-		NOW(),
-		NOW()
-	);
+		CreationDate,
+		ModificationDate
+	)
+
+	VALUES
+	(
+		@UserId,
+		@EventualityId,
+		@StatusId,
+		GETDATE(),
+		GETDATE()
+	)
 	
-END
+GO
 
-$$
-
-DELIMITER ;

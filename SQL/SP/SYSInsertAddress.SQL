@@ -6,47 +6,43 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertAddress`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertAddress]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertAddress]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertAddress`
+	@UserId 			INT,
+	@StreetName 		NVARCHAR(255),
+	@Number 			NVARCHAR(10),
+	@PostalCode 		NVARCHAR(10),
+	@Active 			BIT
 
-(
-	IN UserId 			INT(10) UNSIGNED,
-	IN StreetName 		VARCHAR(255),
-	IN Number 			VARCHAR(10),
-	IN PostalCode 		VARCHAR(10),
-	IN Active 			BIT
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`Address`
+	INSERT INTO [dbo].[Address]
 	(
-		`Id`,
-		`UserId`,
-		`StreetName`,
-		`Number`,
-		`PostalCode`,
-		`Active`
+		 UserId
+        ,StreetName
+        ,Number
+        ,PostalCode
+        ,CreationDate
+        ,ModificationDate
+        ,Active
     )
     
 	VALUES
 	(
-		UserId,
-		StreetName,
-		Number,
-		PostalCode,
-		NOW(),
-		NOW(),
-		Active
-    );
+		@UserId,
+		@StreetName,
+		@Number,
+		@PostalCode,
+		GETDATE(),
+		GETDATE(),
+		@Active
+    )
 
-END
+GO
 
-$$
-
-DELIMITER ;

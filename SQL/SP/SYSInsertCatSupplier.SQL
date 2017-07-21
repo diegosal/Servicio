@@ -6,42 +6,37 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCatSupplier`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertCatSupplier]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertCatSupplier]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertCatSupplier`
+	@SupplierName 		NVARCHAR(255),
+	@ContactNumer		NVARCHAR(255),
+	@Active				BIT
 
-(
-	IN SupplierName 		VARCHAR(255),
-	IN ContactNumer			VARCHAR(255),
-	IN Active				BIT
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`CatSupplier`
+	INSERT INTO [dbo].[CatSupplier]
 	(
-		`SupplierName`,
-		`ContactNumer`,
-		`CreationDate`,
-		`ModificationDate`,
-		`Active`
+		SupplierName,
+		ContactNumer,
+		CreationDate,
+		ModificationDate,
+		Active
 	)
 
 	VALUES
 	(
-		SupplierName,
-		ContactNumer,
-		NOW(),
-		NOW(),
-		Active
-	);
+		@SupplierName,
+		@ContactNumer,
+		GETDATE(),
+		GETDATE(),
+		@Active
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

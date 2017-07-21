@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RM.DV.CoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="SYSInsertAddress" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="StreetName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Number" Type="nvarchar" Mode="In" />
+          <Parameter Name="PostalCode" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertAssistControl" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertCatEventuality" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="EventualityName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertCatRecreationalArea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="AreaName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertCatStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StatusName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertCatSupplier" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SupplierName" Type="nvarchar" Mode="In" />
+          <Parameter Name="ContactNumer" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertCatTypeCommittee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TypeCommittee" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertCatTypeUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TypeUser" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertCatTypeVisit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TypeVisit" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertCommitteeMember" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="CommitteeTypeId" Type="int" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertEvent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="RecreationalAreaId" Type="int" Mode="In" />
+          <Parameter Name="StartDate" Type="datetime" Mode="In" />
+          <Parameter Name="EndDate" Type="datetime" Mode="In" />
+          <Parameter Name="Status" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertInternalBox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Amount" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertInternalExpense" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="Amount" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="Amount" Type="numeric" Mode="In" />
+          <Parameter Name="PaymentStatus" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertTicket" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="EventualityId" Type="int" Mode="In" />
+          <Parameter Name="StatusId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CompanyId" Type="int" Mode="In" />
+          <Parameter Name="TypeId" Type="int" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserMiddleName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserLastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserMotherName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="PassWord" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertVehiclee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="Plates" Type="nvarchar" Mode="In" />
+          <Parameter Name="Model" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsertVisit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="VisitId" Type="int" Mode="In" />
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="VisitName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Carnet" Type="nvarchar" Mode="In" />
+          <Parameter Name="Plates" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="RMDVCoreModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RM.DV.CoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="SYSInsertAddress">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="StreetName" Mode="In" Type="String" />
+            <Parameter Name="Number" Mode="In" Type="String" />
+            <Parameter Name="PostalCode" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertAssistControl">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertCatEventuality">
+            <Parameter Name="EventualityName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertCatRecreationalArea">
+            <Parameter Name="AreaName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertCatStatus">
+            <Parameter Name="StatusName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertCatSupplier">
+            <Parameter Name="SupplierName" Mode="In" Type="String" />
+            <Parameter Name="ContactNumer" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertCatTypeCommittee">
+            <Parameter Name="TypeCommittee" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertCatTypeUser">
+            <Parameter Name="TypeUser" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertCatTypeVisit">
+            <Parameter Name="TypeVisit" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertCommitteeMember">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="CommitteeTypeId" Mode="In" Type="Int32" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertCompany">
+            <Parameter Name="CompanyName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertEvent">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="RecreationalAreaId" Mode="In" Type="Int32" />
+            <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+            <Parameter Name="Status" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertInternalBox">
+            <Parameter Name="Amount" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertInternalExpense">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="Amount" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertPayment">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="Amount" Mode="In" Type="Decimal" />
+            <Parameter Name="PaymentStatus" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertTicket">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="EventualityId" Mode="In" Type="Int32" />
+            <Parameter Name="StatusId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertUser">
+            <Parameter Name="CompanyId" Mode="In" Type="Int32" />
+            <Parameter Name="TypeId" Mode="In" Type="Int32" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="UserMiddleName" Mode="In" Type="String" />
+            <Parameter Name="UserLastName" Mode="In" Type="String" />
+            <Parameter Name="UserMotherName" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="PassWord" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertVehiclee">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="Plates" Mode="In" Type="String" />
+            <Parameter Name="Model" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsertVisit">
+            <Parameter Name="VisitId" Mode="In" Type="Int32" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="VisitName" Mode="In" Type="String" />
+            <Parameter Name="Carnet" Mode="In" Type="String" />
+            <Parameter Name="Plates" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RMDVCoreModelStoreContainer" CdmEntityContainer="Entities" >
+          <FunctionImportMapping FunctionImportName="SYSInsertAddress" FunctionName="RM.DV.CoreModel.Store.SYSInsertAddress" />
+          <FunctionImportMapping FunctionImportName="SYSInsertAssistControl" FunctionName="RM.DV.CoreModel.Store.SYSInsertAssistControl" />
+          <FunctionImportMapping FunctionImportName="SYSInsertCatEventuality" FunctionName="RM.DV.CoreModel.Store.SYSInsertCatEventuality" />
+          <FunctionImportMapping FunctionImportName="SYSInsertCatRecreationalArea" FunctionName="RM.DV.CoreModel.Store.SYSInsertCatRecreationalArea" />
+          <FunctionImportMapping FunctionImportName="SYSInsertCatStatus" FunctionName="RM.DV.CoreModel.Store.SYSInsertCatStatus" />
+          <FunctionImportMapping FunctionImportName="SYSInsertCatSupplier" FunctionName="RM.DV.CoreModel.Store.SYSInsertCatSupplier" />
+          <FunctionImportMapping FunctionImportName="SYSInsertCatTypeCommittee" FunctionName="RM.DV.CoreModel.Store.SYSInsertCatTypeCommittee" />
+          <FunctionImportMapping FunctionImportName="SYSInsertCatTypeUser" FunctionName="RM.DV.CoreModel.Store.SYSInsertCatTypeUser" />
+          <FunctionImportMapping FunctionImportName="SYSInsertCatTypeVisit" FunctionName="RM.DV.CoreModel.Store.SYSInsertCatTypeVisit" />
+          <FunctionImportMapping FunctionImportName="SYSInsertCommitteeMember" FunctionName="RM.DV.CoreModel.Store.SYSInsertCommitteeMember" />
+          <FunctionImportMapping FunctionImportName="SYSInsertCompany" FunctionName="RM.DV.CoreModel.Store.SYSInsertCompany" />
+          <FunctionImportMapping FunctionImportName="SYSInsertEvent" FunctionName="RM.DV.CoreModel.Store.SYSInsertEvent" />
+          <FunctionImportMapping FunctionImportName="SYSInsertInternalBox" FunctionName="RM.DV.CoreModel.Store.SYSInsertInternalBox" />
+          <FunctionImportMapping FunctionImportName="SYSInsertInternalExpense" FunctionName="RM.DV.CoreModel.Store.SYSInsertInternalExpense" />
+          <FunctionImportMapping FunctionImportName="SYSInsertPayment" FunctionName="RM.DV.CoreModel.Store.SYSInsertPayment" />
+          <FunctionImportMapping FunctionImportName="SYSInsertTicket" FunctionName="RM.DV.CoreModel.Store.SYSInsertTicket" />
+          <FunctionImportMapping FunctionImportName="SYSInsertUser" FunctionName="RM.DV.CoreModel.Store.SYSInsertUser" />
+          <FunctionImportMapping FunctionImportName="SYSInsertVehiclee" FunctionName="RM.DV.CoreModel.Store.SYSInsertVehiclee" />
+          <FunctionImportMapping FunctionImportName="SYSInsertVisit" FunctionName="RM.DV.CoreModel.Store.SYSInsertVisit" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

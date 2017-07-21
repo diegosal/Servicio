@@ -6,39 +6,34 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCatEventuality`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertCatEventuality]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertCatEventuality]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertCatEventuality`
+	@EventualityName		NVARCHAR(255),
+	@Active					BIT
 
-(
-	IN EventualityName		VARCHAR(255),
-	IN Active				BIT
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`CatEventuality`
+	INSERT INTO [dbo].[CatEventuality]
 	(
-		`EventualityName`,
-		`CreationDate`,
-		`ModificationDate`,
-		`Active`
+		EventualityName,
+		CreationDate,
+		ModificationDate,
+		Active
 	)
 
 	VALUES
 	(
-		EventualityName,
-		NOW(),
-		NOW(),
-		Active
-	);
+		@EventualityName,
+		GETDATE(),
+		GETDATE(),
+		@Active
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

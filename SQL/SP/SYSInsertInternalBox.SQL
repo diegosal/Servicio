@@ -6,33 +6,28 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertInternalBox`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertInternalBox]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertInternalBox]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertInternalBox`
+	@Amount		NUMERIC(18,0)
 
-(
-	IN Amount 				DECIMAL(18,0)
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`InternalBox`
+	INSERT INTO [dbo].[InternalBox]
 	(
-		`Amount`,
-		`CreationDate`
+		Amount,
+		CreationDate
     )
 	VALUES
 	(
-		Amount,
-		NOW()
-    );
+		@Amount,
+		GETDATE()
+    )
 
-END
+GO
 
-$$
-
-DELIMITER ;

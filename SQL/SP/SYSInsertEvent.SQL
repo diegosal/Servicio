@@ -6,43 +6,38 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertEvent`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertEvent]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertEvent]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertEvent`
+	@UserId 				INT,
+	@RecreationalAreaId 	INT,
+	@StartDate 				DATETIME,
+	@EndDate 				DATETIME,
+	@Status 				BIT
 
-(
-	IN UserId 				INT (10),
-	IN RecreationalAreaId 	INT (10),
-	IN StartDate 			DATETIME,
-	IN EndDate 				DATETIME,
-	IN Status 				BIT
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`Event`
-	(
-		`UserId`,
-		`RecreationalAreaId`,
-		`StartDate`,
-		`EndDate`,
-		`Status`
-	)
-	VALUES
+	INSERT INTO [dbo].[Event]
 	(
 		UserId,
 		RecreationalAreaId,
 		StartDate,
 		EndDate,
 		Status
-    );
+	)
+	VALUES
+	(
+		@UserId,
+		@RecreationalAreaId,
+		@StartDate,
+		@EndDate,
+		@Status
+    )
 
-END
+GO
 
-$$
-
-DELIMITER ;

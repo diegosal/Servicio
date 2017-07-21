@@ -6,39 +6,34 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCompany`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertCompany]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertCompany]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertCompany`
+	@CompanyName 		NVARCHAR(255),
+	@Active				BIT
 
-(
-	IN CompanyName 			VARCHAR(255),
-	IN Active				BIT
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`Company`
+	INSERT INTO [dbo].[Company]
 	(
-        `CompanyName`,
-		`CreationDate`,
-		`ModificationDate`,
-		`Active`
+        CompanyName,
+		CreationDate,
+		ModificationDate,
+		Active
 	)
 
 	VALUES
 	(
-		CompanyName,
-		NOW(),
-		NOW(),
-		Active
-	);
+		@CompanyName,
+		GETDATE(),
+		GETDATE(),
+		@Active
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

@@ -6,36 +6,31 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertInternalExpense`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertInternalExpense]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertInternalExpense]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertInternalExpense`
+	@UserId 			INT,
+	@Amount 			NUMERIC(18,0)
 
-(
-	IN UserId 			INT(10) UNSIGNED,
-	IN Amount 			DECIMAL(18,0)
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`InternalExpense`
-	(
-		`UserId`,
-		`Amount`,
-		`CreationDate`
-	)
-	VALUES
+	INSERT INTO [dbo].[InternalExpense]
 	(
 		UserId,
 		Amount,
-		NOW()
-	);
+		CreationDate
+	)
+	VALUES
+	(
+		@UserId,
+		@Amount,
+		GETDATE()
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

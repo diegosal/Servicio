@@ -6,42 +6,37 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCommitteeMember`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertCommitteeMember]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertCommitteeMember]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertCommitteeMember`
+	@UserId 			 	INT,
+	@CommitteeTypeId	 	INT,
+	@Active					BIT
 
-(
-	IN UserId 			 	INT(10) UNSIGNED,
-	IN CommitteeTypeId	 	INT(10) UNSIGNED,
-	IN Active				BIT
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`CommitteeMember`
+	INSERT INTO [dbo].[CommitteeMember]
 	(
-		`UserId`,
-        `CommitteeTypeId`,
-		`CreationDate`,
-		`ModificationDate`,
-		`Active`
+		UserId,
+        CommitteeTypeId,
+		CreationDate,
+		ModificationDate,
+		Active
 	)
 
 	VALUES
 	(
-		UserId,
-        CommitteeTypeId,
-		NOW(),
-		NOW(),
-		Active
-	);
+		@UserId,
+        @CommitteeTypeId,
+		GETDATE(),
+		GETDATE(),
+		@Active
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

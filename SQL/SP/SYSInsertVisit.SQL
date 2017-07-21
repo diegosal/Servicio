@@ -6,47 +6,41 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertVisite`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertVisite]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertVisit]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertVisit`
+	@VisitId 	INT,
+	@UserId		INT,
+	@VisitName	NVARCHAR(150),
+	@Carnet		NVARCHAR(250),
+	@Plates		NVARCHAR(50)
 
-(
-	IN VisitId 		INT(10) UNSIGNED,
-	IN UserId		INT(10) UNSIGNED,
-	IN VisitName	VARCHAR(150),
-	IN Carnet		VARCHAR(250),
-	IN Plates		VARCHAR(50)
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`Visit`
-	(
-		`VisitId`,
-		`UserId`,
-		`CheckIn`,
-		`CheckOut`,
-		`VisitName`,
-		`Carnet`,
-		`Plates`
-	)
-	VALUES
+	INSERT INTO [dbo].[Visit]
 	(
 		VisitId,
 		UserId,
-		NOW(),
-		NOW(),
+		CheckIn,
+		CheckOut,
 		VisitName,
 		Carnet,
 		Plates
-	);
+	)
+	VALUES
+	(
+		@VisitId,
+		@UserId,
+		GETDATE(),
+		GETDATE(),
+		@VisitName,
+		@Carnet,
+		@Plates
+	)
 
-END
-
-$$
-
-DELIMITER ;
+GO

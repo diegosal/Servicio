@@ -6,45 +6,27 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertUser`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertUser]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertUser]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertUser`
+	@CompanyId        INT,
+	@TypeId           INT,
+	@UserName         NVARCHAR(150),
+	@UserMiddleName   NVARCHAR(150),
+	@UserLastName     NVARCHAR(150),
+	@UserMotherName   NVARCHAR(150),
+	@Email            NVARCHAR(255),
+	@PassWord         NVARCHAR(12),
+	@Active           BIT 
 
-(
-	IN CompanyId        INT(10) UNSIGNED,
-	IN TypeId           INT(10) UNSIGNED,
-	IN UserName         VARCHAR(150),
-	IN UserMiddleName   VARCHAR(150),
-	IN UserLastName     VARCHAR(150),
-	IN UserMotherName   VARCHAR(150),
-	IN Email            VARCHAR(255),
-	IN PassWord         VARCHAR(12),
-	IN Active           BIT 
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`User`
-	
-	(
-		`CompanyId`,
-		`TypeId`,
-		`UserName`,
-		`UserMiddleName`,
-		`UserLastName`,
-		`UserMotherName`,
-		`Email`,
-		`PassWord`,
-		`CreationDate`,
-		`ModificationDate`,
-		`Active`
-	)
-
-	VALUES
+	INSERT INTO [dbo].[User]
 	
 	(
 		CompanyId,
@@ -55,13 +37,26 @@ BEGIN
 		UserMotherName,
 		Email,
 		PassWord,
-		NOW(),
-		NOW(),
+		CreationDate,
+		ModificationDate,
 		Active
-	);
+	)
+
+	VALUES
 	
-END
+	(
+		@CompanyId,
+		@TypeId,
+		@UserName,
+		@UserMiddleName,
+		@UserLastName,
+		@UserMotherName,
+		@Email,
+		@PassWord,
+		GETDATE(),
+		GETDATE(),
+		@Active
+	)
+	
+GO
 
-$$
-
-DELIMITER ;

@@ -4,41 +4,35 @@
 ---------Description: Insert new Payment--------------
 */----------------------------------------------------
 
-UNSIGNED
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertPayment`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertPayment]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertPayment]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertPayment`
+	@UserId 			INT,
+	@Amount 			NUMERIC(18,0),
+	@PaymentStatus 		BIT 
 
-(
-	IN UserId 			INT(10) UNSIGNED,
-	IN Amount 			DECIMAL(18,0),
-	IN PaymentStatus 	BIT 
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`Payment`
-	(
-		`UserId`,
-		`Amount`,
-		`PaymentStatus`,
-		`PaymentDate`
-	)
-	VALUES
+	INSERT INTO [dbo].[Payment]
 	(
 		UserId,
 		Amount,
 		PaymentStatus,
-		NOW()
-	);
+		PaymentDate
+	)
+	VALUES
+	(
+		@UserId,
+		@Amount,
+		@PaymentStatus,
+		GETDATE()
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

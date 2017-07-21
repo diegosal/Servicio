@@ -6,44 +6,39 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertVehicle`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertVehicle]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertVehiclee]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertVehiclee`
+	@UserId 	INT,
+	@Plates 	NVARCHAR(50),
+	@Model		NVARCHAR(255),
+	@Active		BIT	 
 
-(
-	IN UserId 	INT(10) UNSIGNED,
-	IN Plates 	VARCHAR(50),
-	IN Model	VARCHAR(255),
-	IN Active	BIT	 
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`Vehicle`
-	(
-		`UserId`,
-		`Plates`,
-		`Model`,
-		`CreationDate`,
-		`ModificationDate`,
-		`Active`
-	)
-	VALUES
+	INSERT INTO [dbo].[Vehicle]
 	(
 		UserId,
 		Plates,
 		Model,
-		NOW(),
-		NOW(),
+		CreationDate,
+		ModificationDate,
 		Active
-	);
+	)
+	VALUES
+	(
+		@UserId,
+		@Plates,
+		@Model,
+		GETDATE(),
+		GETDATE(),
+		@Active
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

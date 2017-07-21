@@ -6,36 +6,31 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertAssistControl`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertAssistControl]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertAssistControl]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertAssistControl`
+	@UserId	 INT
 
-(
-	IN UserId	 INT(10) UNSIGNED
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`AssistControl`
+	INSERT INTO [dbo].[AssistControl]
 	(
-		`UserId`,
-		`CheckIn`,
-		`CheckOut`
+		UserId,
+		CheckIn,
+		CheckOut
 	)
 
 	VALUES
 	(
-		UserId,
-		NOW(),
-		NOW()
-	);
+		@UserId,
+		GETDATE(),
+		GETDATE()
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;

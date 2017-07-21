@@ -6,38 +6,33 @@
 
 
 
-USE `RMDVCore`;
+USE [RM.DV.Core]
+GO
 
-DROP PROCEDURE IF EXISTS `RMDVCore`.`SYSInsertCatRecreationalArea`;
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertCatRecreationalArea]
+GO
 
-DELIMITER $$
+CREATE PROCEDURE [dbo].[SYSInsertCatRecreationalArea]
 
-CREATE PROCEDURE `RMDVCore`.`SYSInsertCatRecreationalArea`
+	@AreaName		NVARCHAR(255),
+	@Active 		BIT
 
-(
-	IN AreaName		VARCHAR(255),
-	IN Active 		BIT
-)
+AS
 
-BEGIN
-
-	INSERT INTO `RMDVCore`.`CatrecReationalArea`
+	INSERT INTO [dbo].[CatrecReationalArea]
 	(
-		`AreaName`,
-		`CreationDate`,
-		`ModificationDate`,
-		`Active`
+		AreaName,
+		CreationDate,
+		ModificationDate,
+		Active
 	)
 	VALUES
 	(
-		AreaName,
-		NOW(),
-		NOW(),
-		Active
-	);
+		@AreaName,
+		GETDATE(),
+		GETDATE(),
+		@Active
+	)
 
-END
+GO
 
-$$
-
-DELIMITER ;
