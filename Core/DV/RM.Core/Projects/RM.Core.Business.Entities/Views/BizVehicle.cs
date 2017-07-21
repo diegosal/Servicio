@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public int UserId { get; set; }
-        public int Plates { get; set; }
+        public string Plates { get; set; }
         public string Model { get; set; }
         public bool Active { get; set; }
     }

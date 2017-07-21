@@ -15,7 +15,7 @@ CREATE PROCEDURE [dbo].[SYSInsertPayment]
 
 	@UserId 			INT,
 	@Amount 			NUMERIC(18,0),
-	@PaymentStatus 		BIT 
+	@PaymentStatus 		INT 
 
 AS
 

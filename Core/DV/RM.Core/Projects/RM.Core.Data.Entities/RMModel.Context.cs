@@ -62,6 +62,19 @@ namespace RM.Core.Data.Entities
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertAssistControl", userIdParameter);
         }
     
+        public virtual int SYSInsertCatEventStatus(string statusName, Nullable<bool> active)
+        {
+            var statusNameParameter = statusName != null ?
+                new ObjectParameter("StatusName", statusName) :
+                new ObjectParameter("StatusName", typeof(string));
+    
+            var activeParameter = active.HasValue ?
+                new ObjectParameter("Active", active) :
+                new ObjectParameter("Active", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatEventStatus", statusNameParameter, activeParameter);
+        }
+    
         public virtual int SYSInsertCatEventuality(string eventualityName, Nullable<bool> active)
         {
             var eventualityNameParameter = eventualityName != null ?
@@ -75,6 +88,19 @@ namespace RM.Core.Data.Entities
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatEventuality", eventualityNameParameter, activeParameter);
         }
     
+        public virtual int SYSInsertCatPaymentStatus(string statusName, Nullable<bool> active)
+        {
+            var statusNameParameter = statusName != null ?
+                new ObjectParameter("StatusName", statusName) :
+                new ObjectParameter("StatusName", typeof(string));
+    
+            var activeParameter = active.HasValue ?
+                new ObjectParameter("Active", active) :
+                new ObjectParameter("Active", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatPaymentStatus", statusNameParameter, activeParameter);
+        }
+    
         public virtual int SYSInsertCatRecreationalArea(string areaName, Nullable<bool> active)
         {
             var areaNameParameter = areaName != null ?
@@ -86,19 +112,6 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", typeof(bool));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatRecreationalArea", areaNameParameter, activeParameter);
-        }
-    
-        public virtual int SYSInsertCatStatus(string statusName, Nullable<bool> active)
-        {
-            var statusNameParameter = statusName != null ?
-                new ObjectParameter("StatusName", statusName) :
-                new ObjectParameter("StatusName", typeof(string));
-    
-            var activeParameter = active.HasValue ?
-                new ObjectParameter("Active", active) :
-                new ObjectParameter("Active", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatStatus", statusNameParameter, activeParameter);
         }
     
         public virtual int SYSInsertCatSupplier(string supplierName, string contactNumer, Nullable<bool> active)
@@ -116,6 +129,19 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", typeof(bool));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatSupplier", supplierNameParameter, contactNumerParameter, activeParameter);
+        }
+    
+        public virtual int SYSInsertCatTicketStatus(string statusName, Nullable<bool> active)
+        {
+            var statusNameParameter = statusName != null ?
+                new ObjectParameter("StatusName", statusName) :
+                new ObjectParameter("StatusName", typeof(string));
+    
+            var activeParameter = active.HasValue ?
+                new ObjectParameter("Active", active) :
+                new ObjectParameter("Active", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatTicketStatus", statusNameParameter, activeParameter);
         }
     
         public virtual int SYSInsertCatTypeCommittee(string typeCommittee, Nullable<bool> active)
@@ -187,7 +213,7 @@ namespace RM.Core.Data.Entities
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCompany", companyNameParameter, activeParameter);
         }
     
-        public virtual int SYSInsertEvent(Nullable<int> userId, Nullable<int> recreationalAreaId, Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate, Nullable<bool> status)
+        public virtual int SYSInsertEvent(Nullable<int> userId, Nullable<int> recreationalAreaId, Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate, Nullable<int> status)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -207,7 +233,7 @@ namespace RM.Core.Data.Entities
     
             var statusParameter = status.HasValue ?
                 new ObjectParameter("Status", status) :
-                new ObjectParameter("Status", typeof(bool));
+                new ObjectParameter("Status", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertEvent", userIdParameter, recreationalAreaIdParameter, startDateParameter, endDateParameter, statusParameter);
         }
@@ -234,7 +260,7 @@ namespace RM.Core.Data.Entities
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertInternalExpense", userIdParameter, amountParameter);
         }
     
-        public virtual int SYSInsertPayment(Nullable<int> userId, Nullable<decimal> amount, Nullable<bool> paymentStatus)
+        public virtual int SYSInsertPayment(Nullable<int> userId, Nullable<decimal> amount, Nullable<int> paymentStatus)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -246,7 +272,7 @@ namespace RM.Core.Data.Entities
     
             var paymentStatusParameter = paymentStatus.HasValue ?
                 new ObjectParameter("PaymentStatus", paymentStatus) :
-                new ObjectParameter("PaymentStatus", typeof(bool));
+                new ObjectParameter("PaymentStatus", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertPayment", userIdParameter, amountParameter, paymentStatusParameter);
         }

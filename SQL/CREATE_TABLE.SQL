@@ -73,7 +73,7 @@ ALTER TABLE [dbo].[CatEventuality]
 ADD CONSTRAINT PK_Eventuality PRIMARY KEY CLUSTERED (Id) 
 GO
 
-CREATE TABLE [dbo].[CatStatus] (
+CREATE TABLE [dbo].[CatTicketStatus] (
 
 Id 					INT IDENTITY(1,10) NOT NULL,
 StatusName 			NVARCHAR(255) NOT NULL,
@@ -84,8 +84,38 @@ Active 				BIT NOT NULL
 )
 GO
 
-ALTER TABLE [dbo].[CatStatus]
-ADD CONSTRAINT PK_Status PRIMARY KEY CLUSTERED (Id) 
+ALTER TABLE [dbo].[CatTicketStatus]
+ADD CONSTRAINT PK_TicketStatus PRIMARY KEY CLUSTERED (Id) 
+GO
+
+CREATE TABLE [dbo].[CatPaymentStatus] (
+
+Id 					INT IDENTITY(1,10) NOT NULL,
+StatusName 			NVARCHAR(255) NOT NULL,
+CreationDate 		DATETIME NOT NULL,
+ModificationDate 	DATETIME NOT NULL,
+Active 				BIT NOT NULL
+
+)
+GO
+
+ALTER TABLE [dbo].[CatPaymentStatus]
+ADD CONSTRAINT PK_PaymentStatus PRIMARY KEY CLUSTERED (Id) 
+GO
+
+CREATE TABLE [dbo].[CatEventStatus] (
+
+Id 					INT IDENTITY(1,10) NOT NULL,
+StatusName 			NVARCHAR(255) NOT NULL,
+CreationDate 		DATETIME NOT NULL,
+ModificationDate 	DATETIME NOT NULL,
+Active 				BIT NOT NULL
+
+)
+GO
+
+ALTER TABLE [dbo].[CatEventStatus]
+ADD CONSTRAINT PK_EventStatus PRIMARY KEY CLUSTERED (Id) 
 GO
 
 CREATE TABLE [dbo].[CatSupplier] (
@@ -226,10 +256,10 @@ CREATE TABLE [dbo].[Event] (
 
 Id 						INT IDENTITY(1,10) NOT NULL,
 UserId 					INT NOT NULL,
+EventStatus 			INT NOT NULL,
 RecreationalAreaId 		INT NOT NULL,
 StartDate 				DATETIME NOT NULL,
-EndDate 				DATETIME NOT NULL,
-Status 					BIT NOT NULL
+EndDate 				DATETIME NOT NULL
 
 )
 GO
@@ -246,6 +276,11 @@ GO
 ALTER TABLE [dbo].[Event]
 ADD CONSTRAINT FK_RecreationalArea
 FOREIGN KEY (RecreationalAreaId) REFERENCES [dbo].[CatRecreationalArea](Id) 
+GO
+
+ALTER TABLE [dbo].[Event]
+ADD CONSTRAINT FK_EventStatus
+FOREIGN KEY (EventStatus) REFERENCES [dbo].[CatEventStatus](Id)    
 GO
 
 CREATE TABLE [dbo].[Ticket] (
@@ -275,8 +310,8 @@ FOREIGN KEY (EventualityId) REFERENCES [dbo].[CatEventuality](Id)
 GO
 
 ALTER TABLE [dbo].[Ticket]
-ADD CONSTRAINT FK_Status
-FOREIGN KEY (StatusId) REFERENCES [dbo].[CatStatus](Id)    
+ADD CONSTRAINT FK_TicketStatus
+FOREIGN KEY (StatusId) REFERENCES [dbo].[CatTicketStatus](Id)    
 GO
 
 CREATE TABLE [dbo].[Visit] (
@@ -330,8 +365,8 @@ CREATE TABLE [dbo].[Payment] (
 
 Id 						INT IDENTITY(1,10) NOT NULL,
 UserId 					INT NOT NULL,
+PaymentStatus			INT NOT NULL,
 Amount                  NUMERIC(18,0) NOT NULL,
-PaymentStatus			BIT NOT NULL,
 PaymentDate				DATETIME NOT NULL
 
 )
@@ -344,6 +379,11 @@ GO
 ALTER TABLE [dbo].[Payment]
 ADD CONSTRAINT FK_Payment_User
 FOREIGN KEY (UserId) REFERENCES [dbo].[User](Id) 
+GO
+
+ALTER TABLE [dbo].[Payment]
+ADD CONSTRAINT FK_PaymentStatus
+FOREIGN KEY (PaymentStatus) REFERENCES [dbo].[CatPaymentStatus](Id)    
 GO
 
 CREATE TABLE [dbo].[InternalBox] (

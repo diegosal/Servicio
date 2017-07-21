@@ -9,6 +9,6 @@ namespace RM.Core.Business.Entities.Views
         public int RecreationalAreaId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public bool Status { get; set; }
+        public int Status { get; set; }
     }
 }

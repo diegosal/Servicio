@@ -1,27 +1,24 @@
 ﻿using RM.Core.Business.Entities.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RM.Core.Data.Interface
 {
-    interface InsertInterface
+    interface IInsert
     {
         string InsertTypeUser(BizTypeUser bizTypeUser);
         string InsertTypeCommittee(BizTypeCommittee bizTypeCommittee);
         string InsertTypeVisit(BizTypeVisit bizTypeVisit);
         string InsertRecreationalArea(BizRecreationalArea bizRecreationalArea);
         string InsertEventuality(BizEventuality bizEventuality);
-        string InsertStatus(BizStatus bizStatus);
+        string InsertTicketStatus(BizTicketStatus bizTicketStatus);
+        string InsertPaymentStatus(BizPaymentStatus bizPaymentStatus);
+        string InsertEventStatus(BizEventStatus bizEventStatus);
         string InsertSupplier(BizSupplier bizSupplier);
         string InsertCompany(BizCompany bizCompany);
         string InsertUser(BizUser bizUser);
         string InsertVehicle(BizVehicle bizVehicle);
         string InsertAddress(BizAddress bizAddress);
         string InsertCommitteeMember(BizCommitteeMember bizCommitteeMember);
-        string InsertEventr(BizEvent bizEvent);
+        string InsertEvent(BizEvent bizEvent);
         string InsertTicket(BizTicket bizTicket);
         string InsertVisit(BizVisit bizVisit);
         string InsertAssistControl(BizAssistControl bizAssistControl);

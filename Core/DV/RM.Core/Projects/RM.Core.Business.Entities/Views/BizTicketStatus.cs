@@ -1,6 +1,6 @@
 ﻿namespace RM.Core.Business.Entities.Views
 {
-    public class BizStatus
+    public class BizTicketStatus
     {
         public int Id { get; set; }
         public string StatusName { get; set; }

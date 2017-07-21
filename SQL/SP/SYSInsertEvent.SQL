@@ -18,7 +18,7 @@ CREATE PROCEDURE [dbo].[SYSInsertEvent]
 	@RecreationalAreaId 	INT,
 	@StartDate 				DATETIME,
 	@EndDate 				DATETIME,
-	@Status 				BIT
+	@Status 				INT
 
 AS
 
@@ -28,7 +28,7 @@ AS
 		RecreationalAreaId,
 		StartDate,
 		EndDate,
-		Status
+		EventStatus
 	)
 	VALUES
 	(

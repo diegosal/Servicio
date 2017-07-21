@@ -1,7 +1,7 @@
 /*--------------------------------------------------
 ---------Create By: Diego Gonzalez------------------
 ---------Creation Date: 2017-07-05------------------
----------Description: Insert Status-----------------
+---------Description: Insert EventStatus------------
 */--------------------------------------------------
 
 
@@ -9,17 +9,17 @@
 USE [RM.DV.Core]
 GO
 
-DROP PROCEDURE IF EXISTS [dbo].[SYSInsertCatStatus]
+DROP PROCEDURE IF EXISTS [dbo].[SYSInsertCatEventStatus]
 GO
 
-CREATE PROCEDURE [dbo].[SYSInsertCatStatus]
+CREATE PROCEDURE [dbo].[SYSInsertCatEventStatus]
 
 	@StatusName		NVARCHAR(255),
 	@Active			BIT
 
 AS
 
-	INSERT INTO [dbo].[CatStatus]
+	INSERT INTO [dbo].[CatEventStatus]
 	(
 		StatusName,
 		CreationDate,
