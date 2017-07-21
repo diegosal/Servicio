@@ -18,7 +18,7 @@ namespace RM.Core.Data.Implementation
             Result = BizCall(
                 new Action(() =>
                     {
-                        result = dbContext.SYSInsertAddress(
+                        result = dbContext.SYSInsertAddress (
                                 bizAddress.UserId, 
                                 bizAddress.StreetName, 
                                 bizAddress.Number, 
