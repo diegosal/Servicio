@@ -44,7 +44,9 @@
     <Compile Include="Views\BizInternalBox.cs" />
     <Compile Include="Views\BizInternalExpense.cs" />
     <Compile Include="Views\BizPayment.cs" />
+    <Compile Include="Views\BizEventStatus.cs" />
     <Compile Include="Views\BizTicket.cs" />
+    <Compile Include="Views\BizPaymentStatus.cs" />
     <Compile Include="Views\BizVehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\BizAddress.cs" />
@@ -53,7 +55,7 @@
     <Compile Include="Views\BizEvent.cs" />
     <Compile Include="Views\BizEventuality.cs" />
     <Compile Include="Views\BizRecreationalArea.cs" />
-    <Compile Include="Views\BizStatus.cs" />
+    <Compile Include="Views\BizTicketStatus.cs" />
     <Compile Include="Views\BizSupplier.cs" />
     <Compile Include="Views\BizTypeCommittee.cs" />
     <Compile Include="Views\BizTypeUser.cs" />
