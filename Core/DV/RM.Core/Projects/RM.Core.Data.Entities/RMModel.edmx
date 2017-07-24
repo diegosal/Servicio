@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="RM.DV.CoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="RM.DV.CoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <Function Name="SYSInsertAddress" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
           <Parameter Name="StreetName" Type="nvarchar" Mode="In" />
@@ -93,7 +93,8 @@
           <Parameter Name="UserLastName" Type="nvarchar" Mode="In" />
           <Parameter Name="UserMotherName" Type="nvarchar" Mode="In" />
           <Parameter Name="Email" Type="nvarchar" Mode="In" />
-          <Parameter Name="PassWord" Type="nvarchar" Mode="In" />
+          <Parameter Name="PassWord" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="PassWordSalt" Type="nvarchar" Mode="In" />
           <Parameter Name="Active" Type="bit" Mode="In" />
         </Function>
         <Function Name="SYSInsertVehiclee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -110,8 +111,7 @@
           <Parameter Name="Plates" Type="nvarchar" Mode="In" />
         </Function>
         <EntityContainer Name="RMDVCoreModelStoreContainer" />
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="RM.DV.CoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -124,7 +124,7 @@
             <Parameter Name="Active" Mode="In" Type="Boolean" />
           </FunctionImport>
           <FunctionImport Name="SYSInsertAssistControl">
-            <Parameter Name="UserId" Mode="In" Type="Int32" />
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SYSInsertCatEventStatus">
             <Parameter Name="StatusName" Mode="In" Type="String" />
@@ -180,7 +180,7 @@
             <Parameter Name="Status" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SYSInsertInternalBox">
-            <Parameter Name="Amount" Mode="In" Type="Decimal" />
+          <Parameter Name="Amount" Mode="In" Type="Decimal" />
           </FunctionImport>
           <FunctionImport Name="SYSInsertInternalExpense">
             <Parameter Name="UserId" Mode="In" Type="Int32" />
@@ -205,6 +205,7 @@
             <Parameter Name="UserMotherName" Mode="In" Type="String" />
             <Parameter Name="Email" Mode="In" Type="String" />
             <Parameter Name="PassWord" Mode="In" Type="String" />
+            <Parameter Name="PassWordSalt" Mode="In" Type="String" />
             <Parameter Name="Active" Mode="In" Type="Boolean" />
           </FunctionImport>
           <FunctionImport Name="SYSInsertVehiclee">

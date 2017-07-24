@@ -1,16 +1,13 @@
 ﻿using System;
-using RM.Core.Data.Entities;
-namespace RM.Core.Data.Biz
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RM.Core.Business.Biz
 {
     public class BizLogic
     {
-        public RMModel dbContext;
-
-        public BizLogic()
-        {
-            dbContext = new RMModel();
-        }
-
         public string BizCall(Action action)
         {
             try

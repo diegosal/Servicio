@@ -21,7 +21,8 @@ CREATE PROCEDURE [dbo].[SYSInsertUser]
 	@UserLastName     NVARCHAR(150),
 	@UserMotherName   NVARCHAR(150),
 	@Email            NVARCHAR(255),
-	@PassWord         NVARCHAR(12),
+	@PassWord         NVARCHAR(MAX),
+	@PassWordSalt	  NVARCHAR(32)
 	@Active           BIT 
 
 AS
@@ -37,6 +38,7 @@ AS
 		UserMotherName,
 		Email,
 		PassWord,
+		PassWordSalt,
 		CreationDate,
 		ModificationDate,
 		Active
@@ -53,6 +55,7 @@ AS
 		@UserMotherName,
 		@Email,
 		@PassWord,
+		@PassWordSalt,
 		GETDATE(),
 		GETDATE(),
 		@Active

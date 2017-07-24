@@ -303,6 +303,7 @@ namespace RM.Core.Data.Implementation
                            bizUser.UserMotherName,
                            bizUser.Email,
                            bizUser.PassWord,
+                           bizUser.PassWordSalt,
                            bizUser.Active
                         );
                 }

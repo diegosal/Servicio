@@ -294,7 +294,7 @@ namespace RM.Core.Data.Entities
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertTicket", userIdParameter, eventualityIdParameter, statusIdParameter);
         }
     
-        public virtual int SYSInsertUser(Nullable<int> companyId, Nullable<int> typeId, string userName, string userMiddleName, string userLastName, string userMotherName, string email, string passWord, Nullable<bool> active)
+        public virtual int SYSInsertUser(Nullable<int> companyId, Nullable<int> typeId, string userName, string userMiddleName, string userLastName, string userMotherName, string email, string passWord, string passWordSalt, Nullable<bool> active)
         {
             var companyIdParameter = companyId.HasValue ?
                 new ObjectParameter("CompanyId", companyId) :
@@ -328,11 +328,15 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("PassWord", passWord) :
                 new ObjectParameter("PassWord", typeof(string));
     
+            var passWordSaltParameter = passWordSalt != null ?
+                new ObjectParameter("PassWordSalt", passWordSalt) :
+                new ObjectParameter("PassWordSalt", typeof(string));
+    
             var activeParameter = active.HasValue ?
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertUser", companyIdParameter, typeIdParameter, userNameParameter, userMiddleNameParameter, userLastNameParameter, userMotherNameParameter, emailParameter, passWordParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertUser", companyIdParameter, typeIdParameter, userNameParameter, userMiddleNameParameter, userLastNameParameter, userMotherNameParameter, emailParameter, passWordParameter, passWordSaltParameter, activeParameter);
         }
     
         public virtual int SYSInsertVehiclee(Nullable<int> userId, string plates, string model, Nullable<bool> active)

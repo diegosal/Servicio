@@ -1,4 +1,4 @@
-﻿namespace RM.Core.Business.Entities.Views
+﻿namespace RM.Core.Web.Entities.Views
 {
     public class BizUser
     {
