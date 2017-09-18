@@ -28,6 +28,15 @@ namespace RM.Core.Data.Entities
         }
     
     
+        public virtual ObjectResult<SYSFuncLoginUser_Result> SYSFuncLoginUser(string email)
+        {
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSFuncLoginUser_Result>("SYSFuncLoginUser", emailParameter);
+        }
+    
         public virtual int SYSInsertAddress(Nullable<int> userId, string streetName, string number, string postalCode, Nullable<bool> active)
         {
             var userIdParameter = userId.HasValue ?

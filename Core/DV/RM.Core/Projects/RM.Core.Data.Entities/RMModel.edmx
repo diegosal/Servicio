@@ -4,7 +4,10 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="RM.DV.CoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="RM.DV.CoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="SYSFuncLoginUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+        </Function>
         <Function Name="SYSInsertAddress" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
           <Parameter Name="StreetName" Type="nvarchar" Mode="In" />
@@ -111,11 +114,15 @@
           <Parameter Name="Plates" Type="nvarchar" Mode="In" />
         </Function>
         <EntityContainer Name="RMDVCoreModelStoreContainer" />
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="RM.DV.CoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="RMModel" annotation:LazyLoadingEnabled="true" >
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="SYSFuncLoginUser" ReturnType="Collection(RM.DV.CoreModel.SYSFuncLoginUser_Result)">
+            <Parameter Name="Email" Mode="In" Type="String" />
+          </FunctionImport>
           <FunctionImport Name="SYSInsertAddress">
             <Parameter Name="UserId" Mode="In" Type="Int32" />
             <Parameter Name="StreetName" Mode="In" Type="String" />
@@ -124,7 +131,7 @@
             <Parameter Name="Active" Mode="In" Type="Boolean" />
           </FunctionImport>
           <FunctionImport Name="SYSInsertAssistControl">
-          <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SYSInsertCatEventStatus">
             <Parameter Name="StatusName" Mode="In" Type="String" />
@@ -180,7 +187,7 @@
             <Parameter Name="Status" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SYSInsertInternalBox">
-          <Parameter Name="Amount" Mode="In" Type="Decimal" />
+            <Parameter Name="Amount" Mode="In" Type="Decimal" />
           </FunctionImport>
           <FunctionImport Name="SYSInsertInternalExpense">
             <Parameter Name="UserId" Mode="In" Type="Int32" />
@@ -222,12 +229,40 @@
             <Parameter Name="Plates" Mode="In" Type="String" />
           </FunctionImport>
         </EntityContainer>
+        <ComplexType Name="SYSFuncLoginUser_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="TypeId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="UserMiddleName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="UserLastName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="UserMotherName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="PassWord" Nullable="false" MaxLength="12" />
+          <Property Type="String" Name="PassWordSalt" Nullable="false" MaxLength="32" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="RMDVCoreModelStoreContainer" CdmEntityContainer="RMModel" >
+        <EntityContainerMapping StorageEntityContainer="RMDVCoreModelStoreContainer" CdmEntityContainer="Entities" >
+          <FunctionImportMapping FunctionImportName="SYSFuncLoginUser" FunctionName="RM.DV.CoreModel.Store.SYSFuncLoginUser">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSFuncLoginUser_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserMiddleName" ColumnName="UserMiddleName" />
+                <ScalarProperty Name="UserLastName" ColumnName="UserLastName" />
+                <ScalarProperty Name="UserMotherName" ColumnName="UserMotherName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+                <ScalarProperty Name="PassWordSalt" ColumnName="PassWordSalt" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="SYSInsertAddress" FunctionName="RM.DV.CoreModel.Store.SYSInsertAddress" />
           <FunctionImportMapping FunctionImportName="SYSInsertAssistControl" FunctionName="RM.DV.CoreModel.Store.SYSInsertAssistControl" />
           <FunctionImportMapping FunctionImportName="SYSInsertCatEventStatus" FunctionName="RM.DV.CoreModel.Store.SYSInsertCatEventStatus" />

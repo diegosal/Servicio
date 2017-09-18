@@ -65,34 +65,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RMModel.edmx</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="RMModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>RMModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
+    <Compile Include="SYSFuncLoginUser_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
+    <EntityDeploy Include="RMModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RMModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="RMModel.edmx.diagram">
       <DependentUpon>RMModel.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="RMModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>RMModel.Context.cs</LastGenOutput>
       <DependentUpon>RMModel.edmx</DependentUpon>
+      <LastGenOutput>RMModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="RMModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>RMModel.edmx</DependentUpon>
       <LastGenOutput>RMModel.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

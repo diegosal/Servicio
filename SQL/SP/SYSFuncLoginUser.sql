@@ -13,16 +13,18 @@ GO
 
 CREATE PROCEDURE [dbo].[SYSFuncLoginUser]
 
-	@Email		NVARCHAR(255),
+	@Email		NVARCHAR(255)
 
 AS
 
 	SELECT
 		Id,
+		TypeId,
 		CONCAT(UserName, ' ', UserMiddleName, ' ', UserLastName, ' ',UserMotherName) Nombre,
 		Email,
 		PassWord,
-		PassWordSalt
+		PassWordSalt,
+		Active
 	FROM [dbo].[User]
 	WHERE Email = @Email;
 

@@ -1,4 +1,5 @@
-﻿using RM.Core.Business.Biz;
+﻿using PasswordSecurity;
+using RM.Core.Business.Biz;
 using RM.Core.Business.Entities.Views;
 using RM.Core.Data.Implementation;
 using System;
@@ -121,6 +122,7 @@ namespace RM.Core.Business
 
         public string BizInsertUser(BizUser bizUser)
         {
+            bizUser.PassWord = PasswordStorage.CreateHash(bizUser.PassWord);
             return BizCall(
                 new Action(() =>
                 {
