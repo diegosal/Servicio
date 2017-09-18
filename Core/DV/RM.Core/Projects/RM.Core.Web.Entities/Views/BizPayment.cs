@@ -2,7 +2,7 @@
 
 namespace RM.Core.Web.Entities.Views
 {
-    public class BizPayment
+    public class WebPayment
     {
         public int Id { get; set; }
         public int UserId { get; set; }

@@ -2,7 +2,7 @@
 
 namespace RM.Core.Web.Entities.Views
 {
-    public class BizVisit
+    public class WebVisit
     {
         public int Id { get; set; }
         public int VisitId { get; set; }

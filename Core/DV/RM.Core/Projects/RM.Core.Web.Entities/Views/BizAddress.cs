@@ -1,6 +1,6 @@
 ﻿namespace RM.Core.Web.Entities.Views
 {
-    public class BizAddress
+    public class WebAddress
     {
         public int Id { get; set; }
         public int UserId { get; set; }

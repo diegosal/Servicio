@@ -2,7 +2,7 @@
 
 namespace RM.Core.Web.Entities.Views
 {
-    public class BizEvent
+    public class WebEvent
     {
         public int Id { get; set; }
         public int UserId { get; set; }

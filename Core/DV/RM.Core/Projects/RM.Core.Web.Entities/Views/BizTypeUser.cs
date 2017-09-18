@@ -1,6 +1,6 @@
 ﻿namespace RM.Core.Web.Entities.Views
 {
-    public class BizTypeUser
+    public class WebTypeUser
     {
         public int Id { get; set; }
         public string TypeUser { get; set; }

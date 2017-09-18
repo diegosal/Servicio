@@ -1,6 +1,6 @@
 ﻿namespace RM.Core.Web.Entities.Views
 {
-    public class BizCommitteeMember
+    public class WebCommitteeMember
     {
         public int Id { get; set; }
         public int UserId { get; set; }

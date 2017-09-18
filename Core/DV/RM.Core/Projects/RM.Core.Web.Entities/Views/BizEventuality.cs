@@ -1,6 +1,6 @@
 ﻿namespace RM.Core.Web.Entities.Views
 {
-    public class BizEventuality
+    public class WebEventuality
     {
         public int Id { get; set; }
         public string EventualityName { get; set; }

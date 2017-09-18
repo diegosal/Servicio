@@ -1,6 +1,6 @@
 ﻿namespace RM.Core.Web.Entities.Views
 {
-    public class BizVehicle
+    public class WebVehicle
     {
         public int Id { get; set; }
         public int UserId { get; set; }

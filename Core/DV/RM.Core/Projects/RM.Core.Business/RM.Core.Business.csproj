@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Biz\BizLogic.cs" />
     <Compile Include="BizInsert.cs" />
+    <Compile Include="Biz\PasswordStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

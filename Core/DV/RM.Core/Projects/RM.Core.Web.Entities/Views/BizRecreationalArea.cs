@@ -1,6 +1,6 @@
 ﻿namespace RM.Core.Web.Entities.Views
 {
-    public class BizRecreationalArea
+    public class WebRecreationalArea
     {
         public int Id { get; set; }
         public string AreaName { get; set; }
