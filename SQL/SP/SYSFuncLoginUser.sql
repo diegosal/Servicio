@@ -20,13 +20,16 @@ AS
 	SELECT
 		Id,
 		TypeId,
-		CONCAT(UserName, ' ', UserMiddleName, ' ', UserLastName, ' ',UserMotherName) Nombre,
+		UserName,
+		UserMiddleName,
+		UserLastName,
+		UserMotherName,
 		Email,
 		PassWord,
 		PassWordSalt,
 		Active
 	FROM [dbo].[User]
-	WHERE Email = @Email;
+	WHERE Email = @Email AND Active = 1;
 
 GO
 
