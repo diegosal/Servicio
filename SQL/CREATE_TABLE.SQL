@@ -182,6 +182,9 @@ ADD CONSTRAINT FK_TypeUser
 FOREIGN KEY (TypeId) REFERENCES [dbo].[CatTypeUser](Id)  
 GO
 
+ALTER  TABLE  [dbo].[User]
+ADD CONSTRAINT UQ_EmailUser UNIQUE (Email);
+
 CREATE TABLE [dbo].[Vehicle] (
 
 Id 						INT IDENTITY(1,10) NOT NULL,

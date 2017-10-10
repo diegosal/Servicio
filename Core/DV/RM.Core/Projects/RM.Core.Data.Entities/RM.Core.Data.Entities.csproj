@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D4BF727F-72F8-46B5-898A-4FE785C5B1C8}</ProjectGuid>
+    <ProjectGuid>{2090A8D0-46E2-4312-A5FC-1484436AED89}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RM.Core.Data.Entities</RootNamespace>
     <AssemblyName>RM.Core.Data.Entities</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -70,30 +70,32 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.Config" />
-    <None Include="packages.config" />
     <EntityDeploy Include="RMModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>RMModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
     <None Include="RMModel.edmx.diagram">
       <DependentUpon>RMModel.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="RMModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>RMModel.edmx</DependentUpon>
       <LastGenOutput>RMModel.Context.cs</LastGenOutput>
+      <DependentUpon>RMModel.edmx</DependentUpon>
     </Content>
     <Content Include="RMModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>RMModel.edmx</DependentUpon>
       <LastGenOutput>RMModel.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

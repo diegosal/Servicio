@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RM.Core.Data</RootNamespace>
     <AssemblyName>RM.Core.Data</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -56,12 +57,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\RM.Common\RM.Common.csproj">
+      <Project>{bad6b6be-729c-4590-af9a-6cdf62e636d3}</Project>
+      <Name>RM.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RM.Core.Business.Entities\RM.Core.Business.Entities.csproj">
       <Project>{31ca5e82-2db7-4844-87b6-7336950ad803}</Project>
       <Name>RM.Core.Business.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\RM.Core.Data.Entities\RM.Core.Data.Entities.csproj">
-      <Project>{d4bf727f-72f8-46b5-898a-4fe785c5b1c8}</Project>
+      <Project>{2090a8d0-46e2-4312-a5fc-1484436aed89}</Project>
       <Name>RM.Core.Data.Entities</Name>
     </ProjectReference>
   </ItemGroup>

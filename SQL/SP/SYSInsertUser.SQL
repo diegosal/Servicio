@@ -22,7 +22,7 @@ CREATE PROCEDURE [dbo].[SYSInsertUser]
 	@UserMotherName   NVARCHAR(150),
 	@Email            NVARCHAR(255),
 	@PassWord         NVARCHAR(MAX),
-	@PassWordSalt	  NVARCHAR(32)
+	@PassWordSalt	  NVARCHAR(32),
 	@Active           BIT 
 
 AS

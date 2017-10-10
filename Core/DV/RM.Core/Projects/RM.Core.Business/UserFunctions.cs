@@ -9,7 +9,6 @@ namespace RM.Core.Business
     public class UserFunctions : BizLogic
     {
         private BaseFunction baseFuntion = new BaseFunction();
-       
 
         public BizUser BizFuncLogin(string Email, string PassWord)
         {
@@ -22,8 +21,6 @@ namespace RM.Core.Business
               }
               )
             );
-
-
 
             if (Result.Equals("EXITO"))
             {

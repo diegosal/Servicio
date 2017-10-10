@@ -1,10 +1,13 @@
 ﻿using System;
 using RM.Core.Data.Entities;
+using RM.Common.CustomException;
+
 namespace RM.Core.Data.Biz
 {
     public class BizLogic
     {
         public RMModel dbContext;
+
 
         public BizLogic()
         {
@@ -20,8 +23,9 @@ namespace RM.Core.Data.Biz
             }
             catch (Exception ex)
             {
-                return ex.ToString();
+                throw new CustomException();
             }
         }
+
     }
 }

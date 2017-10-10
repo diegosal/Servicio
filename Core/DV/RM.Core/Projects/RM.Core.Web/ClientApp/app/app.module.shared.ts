@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthGuard } from './shared';
+import { AuthenticationService } from './shared';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: Http) {
@@ -53,7 +54,7 @@ export function HttpLoaderFactory(http: Http) {
             }
         })
     ],
-    providers: [AuthGuard],
+    providers: [AuthGuard, AuthenticationService],
     bootstrap: [AppComponent]
 })
 export class AppModuleShared {

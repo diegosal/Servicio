@@ -119,7 +119,7 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="RM.DV.CoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true" >
+        <EntityContainer Name="RMModel" annotation:LazyLoadingEnabled="true" >
           <FunctionImport Name="SYSFuncLoginUser" ReturnType="Collection(RM.DV.CoreModel.SYSFuncLoginUser_Result)">
             <Parameter Name="Email" Mode="In" Type="String" />
           </FunctionImport>
@@ -246,7 +246,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="RMDVCoreModelStoreContainer" CdmEntityContainer="Entities" >
+        <EntityContainerMapping StorageEntityContainer="RMDVCoreModelStoreContainer" CdmEntityContainer="RMModel" >
           <FunctionImportMapping FunctionImportName="SYSFuncLoginUser" FunctionName="RM.DV.CoreModel.Store.SYSFuncLoginUser">
             <ResultMapping>
               <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSFuncLoginUser_Result">

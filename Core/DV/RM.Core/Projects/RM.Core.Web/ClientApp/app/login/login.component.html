@@ -3,17 +3,17 @@
         <div class="col-md-4 push-md-4">
             <img src="http://localhost:5032/assets/images/logo.png" width="150px" class="user-avatar" />
             <h1>SB Admin BS4 Angular4</h1>
-            <form role="form">
+            <form name="form" #f="ngForm" novalidate>
                 <div class="form-content">
                     <div class="form-group">
-                        <input type="text" ng-model="name" class="form-control input-underline input-lg" id="" placeholder="Email">
+                        <input type="text" [(ngModel)]="user.Email" class="form-control input-underline input-lg" id="LoginEmail"  name="LogEmail" placeholder="Email">
                     </div>
 
                     <div class="form-group">
-                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
+                        <input type="password"  [(ngModel)]="user.PassWord" class="form-control input-underline input-lg" id="LoginPassWord"  name="LogPassWord" placeholder="Password">
                     </div>
                 </div>
-                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Log in </a>
+                <a class="btn rounded-btn"  (click)="onLoggedin()"> Log in </a>
                 &nbsp;
                 <a class="btn rounded-btn" [routerLink]="['/signup']">Register</a>
             </form>

@@ -1,4 +1,6 @@
-﻿namespace RM.Core.Web.Entities.Views
+﻿using System;
+
+namespace RM.Core.Web.Entities.Views
 {
     public class WebUser
     {
