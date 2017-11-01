@@ -11,7 +11,7 @@ namespace RM.Core.Service.Controllers
     public class UserController : ApiController
     {
         private UserFunctions userFunctions = new UserFunctions();
-        private BizInsert bizInsert = new BizInsert();
+        private BizCrudFuntion bizInsert = new BizCrudFuntion();
 
         [Conditional("DEBUG_SERVICE")]
         private static void DebugMode()
@@ -20,39 +20,51 @@ namespace RM.Core.Service.Controllers
         }
 
         [HttpPost]
-        public IHttpActionResult Register(WebUser user)
+        public IHttpActionResult Post(WebUser user)
         {
-            string result =  bizInsert.BizInsertUser(user.WebUserToBizUser());
+            return BadRequest();
+            //string result =  bizInsert.BizInsertUser(user.WebUserToBizUser());
 
-            if (result.Equals("EXITO"))
-                return Ok(result);
-            else
-                return BadRequest(result);
+            //if (result.Equals("EXITO"))
+            //    return Ok(result);
+            //else
+            //    return BadRequest(result);
         }
 
-        
-
-        [HttpPost]
-        public IHttpActionResult LogIn(WebUser user)
+        [HttpGet]
+        public IHttpActionResult Get(int id)
         {
-            var configuration = new HttpConfiguration();
-            var request = new System.Net.Http.HttpRequestMessage();
-            request.Properties[System.Web.Http.Hosting.HttpPropertyKeys.HttpConfigurationKey] = configuration;
-            try
-            {
-                BizUser bizUser = user.WebUserToBizUser();
-                WebUser userResponse = userFunctions.BizFuncLogin(bizUser.Email, bizUser.PassWord).BizUserToWebUser();
+            return BadRequest();
+            //var configuration = new HttpConfiguration();
+            //var request = new System.Net.Http.HttpRequestMessage();
+            //request.Properties[System.Web.Http.Hosting.HttpPropertyKeys.HttpConfigurationKey] = configuration;
+            //try
+            //{
+            //    BizUser bizUser = user.WebUserToBizUser();
+            //    WebUser userResponse = userFunctions.BizFuncLogin(bizUser.Email, bizUser.PassWord).BizUserToWebUser();
 
-                if (userResponse == null)
-                    return Unauthorized();
-                else
-                    return Ok(userResponse);
+            //    if (userResponse == null)
+            //        return Unauthorized();
+            //    else
+            //        return Ok(userResponse);
 
-            }
-            catch (Exception ex)
-            {
-                return BadRequest();
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    return BadRequest();
+            //}
+        }
+
+        [HttpPut]
+        public IHttpActionResult Put(int id)
+        {
+            return BadRequest();
+        }
+
+        [HttpDelete]
+        public IHttpActionResult Delete(int id)
+        {
+            return BadRequest();
         }
     }
 }

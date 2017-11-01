@@ -260,7 +260,7 @@ CREATE TABLE [dbo].[Event] (
 
 Id 						INT IDENTITY(1,10) NOT NULL,
 UserId 					INT NOT NULL,
-EventStatus 			INT NOT NULL,
+EventStatusId			INT NOT NULL,
 RecreationalAreaId 		INT NOT NULL,
 StartDate 				DATETIME NOT NULL,
 EndDate 				DATETIME NOT NULL
@@ -284,7 +284,7 @@ GO
 
 ALTER TABLE [dbo].[Event]
 ADD CONSTRAINT FK_EventStatus
-FOREIGN KEY (EventStatus) REFERENCES [dbo].[CatEventStatus](Id)    
+FOREIGN KEY (EventStatusId) REFERENCES [dbo].[CatEventStatus](Id)    
 GO
 
 CREATE TABLE [dbo].[Ticket] (
@@ -369,7 +369,7 @@ CREATE TABLE [dbo].[Payment] (
 
 Id 						INT IDENTITY(1,10) NOT NULL,
 UserId 					INT NOT NULL,
-PaymentStatus			INT NOT NULL,
+PaymentStatusId			INT NOT NULL,
 Amount                  NUMERIC(18,0) NOT NULL,
 PaymentDate				DATETIME NOT NULL
 
@@ -387,7 +387,7 @@ GO
 
 ALTER TABLE [dbo].[Payment]
 ADD CONSTRAINT FK_PaymentStatus
-FOREIGN KEY (PaymentStatus) REFERENCES [dbo].[CatPaymentStatus](Id)    
+FOREIGN KEY (PaymentStatusId) REFERENCES [dbo].[CatPaymentStatus](Id)    
 GO
 
 CREATE TABLE [dbo].[InternalBox] (

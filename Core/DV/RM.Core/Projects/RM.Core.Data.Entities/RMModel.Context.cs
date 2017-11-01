@@ -28,6 +28,109 @@ namespace RM.Core.Data.Entities
         }
     
     
+        public virtual int SYSDelAddress(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelAddress", idParameter);
+        }
+    
+        public virtual int SYSDelCatEventStatus(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatEventStatus", idParameter);
+        }
+    
+        public virtual int SYSDelCatEventuality(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatEventuality", idParameter);
+        }
+    
+        public virtual int SYSDelCatPaymentStatus(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatPaymentStatus", idParameter);
+        }
+    
+        public virtual int SYSDelCatTicketStatus(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTicketStatus", idParameter);
+        }
+    
+        public virtual int SYSDelCatTypeCommittee(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTypeCommittee", idParameter);
+        }
+    
+        public virtual int SYSDelCatTypeUser(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTypeUser", idParameter);
+        }
+    
+        public virtual int SYSDelCatTypeVisit(Nullable<int> id, string typeVisit)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var typeVisitParameter = typeVisit != null ?
+                new ObjectParameter("TypeVisit", typeVisit) :
+                new ObjectParameter("TypeVisit", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTypeVisit", idParameter, typeVisitParameter);
+        }
+    
+        public virtual int SYSDelCommitteeMember(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCommitteeMember", idParameter);
+        }
+    
+        public virtual int SYSDelCompany(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCompany", idParameter);
+        }
+    
+        public virtual int SYSDelUser(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelUser", idParameter);
+        }
+    
         public virtual ObjectResult<SYSFuncLoginUser_Result> SYSFuncLoginUser(string email)
         {
             var emailParameter = email != null ?
@@ -37,7 +140,208 @@ namespace RM.Core.Data.Entities
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSFuncLoginUser_Result>("SYSFuncLoginUser", emailParameter);
         }
     
-        public virtual int SYSInsertAddress(Nullable<int> userId, string streetName, string number, string postalCode, Nullable<bool> active)
+        public virtual ObjectResult<SYSGetAddress_Result> SYSGetAddress(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetAddress_Result>("SYSGetAddress", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetAssistControl_Result> SYSGetAssistControl(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetAssistControl_Result>("SYSGetAssistControl", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCatEventStatus_Result> SYSGetCatEventStatus(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatEventStatus_Result>("SYSGetCatEventStatus", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCatEventuality_Result> SYSGetCatEventuality(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatEventuality_Result>("SYSGetCatEventuality", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCatPaymentStatus_Result> SYSGetCatPaymentStatus(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatPaymentStatus_Result>("SYSGetCatPaymentStatus", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCatRecreationalArea_Result> SYSGetCatRecreationalArea(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatRecreationalArea_Result>("SYSGetCatRecreationalArea", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCatSupplier_Result> SYSGetCatSupplier(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatSupplier_Result>("SYSGetCatSupplier", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCatTicketStatus_Result> SYSGetCatTicketStatus(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatTicketStatus_Result>("SYSGetCatTicketStatus", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCatTypeCommittee_Result> SYSGetCatTypeCommittee(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatTypeCommittee_Result>("SYSGetCatTypeCommittee", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCatTypeUser_Result> SYSGetCatTypeUser(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatTypeUser_Result>("SYSGetCatTypeUser", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCatTypeVisit_Result> SYSGetCatTypeVisit(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatTypeVisit_Result>("SYSGetCatTypeVisit", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCommitteeMember_Result> SYSGetCommitteeMember(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCommitteeMember_Result>("SYSGetCommitteeMember", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetCompany_Result> SYSGetCompany(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCompany_Result>("SYSGetCompany", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetEvent_Result> SYSGetEvent(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetEvent_Result>("SYSGetEvent", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetInternalBox_Result> SYSGetInternalBox(Nullable<decimal> amount, Nullable<System.DateTime> creationDate)
+        {
+            var amountParameter = amount.HasValue ?
+                new ObjectParameter("Amount", amount) :
+                new ObjectParameter("Amount", typeof(decimal));
+    
+            var creationDateParameter = creationDate.HasValue ?
+                new ObjectParameter("CreationDate", creationDate) :
+                new ObjectParameter("CreationDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetInternalBox_Result>("SYSGetInternalBox", amountParameter, creationDateParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetInternalExpense_Result> SYSGetInternalExpense(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetInternalExpense_Result>("SYSGetInternalExpense", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetPayment_Result> SYSGetPayment(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetPayment_Result>("SYSGetPayment", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetTicket_Result> SYSGetTicket(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetTicket_Result>("SYSGetTicket", idParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetUser_Result> SYSGetUser(Nullable<int> id, Nullable<bool> active)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var activeParameter = active.HasValue ?
+                new ObjectParameter("Active", active) :
+                new ObjectParameter("Active", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetUser_Result>("SYSGetUser", idParameter, activeParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetVehicle_Result> SYSGetVehicle(Nullable<int> id, Nullable<bool> active)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var activeParameter = active.HasValue ?
+                new ObjectParameter("Active", active) :
+                new ObjectParameter("Active", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetVehicle_Result>("SYSGetVehicle", idParameter, activeParameter);
+        }
+    
+        public virtual ObjectResult<SYSGetVisit_Result> SYSGetVisit(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetVisit_Result>("SYSGetVisit", idParameter);
+        }
+    
+        public virtual int SYSInsAddress(Nullable<int> userId, string streetName, string number, string postalCode, Nullable<bool> active)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -59,19 +363,19 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertAddress", userIdParameter, streetNameParameter, numberParameter, postalCodeParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsAddress", userIdParameter, streetNameParameter, numberParameter, postalCodeParameter, activeParameter);
         }
     
-        public virtual int SYSInsertAssistControl(Nullable<int> userId)
+        public virtual int SYSInsAssistControl(Nullable<int> userId)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
                 new ObjectParameter("UserId", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertAssistControl", userIdParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsAssistControl", userIdParameter);
         }
     
-        public virtual int SYSInsertCatEventStatus(string statusName, Nullable<bool> active)
+        public virtual int SYSInsCatEventStatus(string statusName, Nullable<bool> active)
         {
             var statusNameParameter = statusName != null ?
                 new ObjectParameter("StatusName", statusName) :
@@ -81,10 +385,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatEventStatus", statusNameParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatEventStatus", statusNameParameter, activeParameter);
         }
     
-        public virtual int SYSInsertCatEventuality(string eventualityName, Nullable<bool> active)
+        public virtual int SYSInsCatEventuality(string eventualityName, Nullable<bool> active)
         {
             var eventualityNameParameter = eventualityName != null ?
                 new ObjectParameter("EventualityName", eventualityName) :
@@ -94,10 +398,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatEventuality", eventualityNameParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatEventuality", eventualityNameParameter, activeParameter);
         }
     
-        public virtual int SYSInsertCatPaymentStatus(string statusName, Nullable<bool> active)
+        public virtual int SYSInsCatPaymentStatus(string statusName, Nullable<bool> active)
         {
             var statusNameParameter = statusName != null ?
                 new ObjectParameter("StatusName", statusName) :
@@ -107,10 +411,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatPaymentStatus", statusNameParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatPaymentStatus", statusNameParameter, activeParameter);
         }
     
-        public virtual int SYSInsertCatRecreationalArea(string areaName, Nullable<bool> active)
+        public virtual int SYSInsCatRecreationalArea(string areaName, Nullable<bool> active)
         {
             var areaNameParameter = areaName != null ?
                 new ObjectParameter("AreaName", areaName) :
@@ -120,10 +424,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatRecreationalArea", areaNameParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatRecreationalArea", areaNameParameter, activeParameter);
         }
     
-        public virtual int SYSInsertCatSupplier(string supplierName, string contactNumer, Nullable<bool> active)
+        public virtual int SYSInsCatSupplier(string supplierName, string contactNumer, Nullable<bool> active)
         {
             var supplierNameParameter = supplierName != null ?
                 new ObjectParameter("SupplierName", supplierName) :
@@ -137,10 +441,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatSupplier", supplierNameParameter, contactNumerParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatSupplier", supplierNameParameter, contactNumerParameter, activeParameter);
         }
     
-        public virtual int SYSInsertCatTicketStatus(string statusName, Nullable<bool> active)
+        public virtual int SYSInsCatTicketStatus(string statusName, Nullable<bool> active)
         {
             var statusNameParameter = statusName != null ?
                 new ObjectParameter("StatusName", statusName) :
@@ -150,10 +454,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatTicketStatus", statusNameParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatTicketStatus", statusNameParameter, activeParameter);
         }
     
-        public virtual int SYSInsertCatTypeCommittee(string typeCommittee, Nullable<bool> active)
+        public virtual int SYSInsCatTypeCommittee(string typeCommittee, Nullable<bool> active)
         {
             var typeCommitteeParameter = typeCommittee != null ?
                 new ObjectParameter("TypeCommittee", typeCommittee) :
@@ -163,10 +467,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatTypeCommittee", typeCommitteeParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatTypeCommittee", typeCommitteeParameter, activeParameter);
         }
     
-        public virtual int SYSInsertCatTypeUser(string typeUser, Nullable<bool> active)
+        public virtual int SYSInsCatTypeUser(string typeUser, Nullable<bool> active)
         {
             var typeUserParameter = typeUser != null ?
                 new ObjectParameter("TypeUser", typeUser) :
@@ -176,10 +480,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatTypeUser", typeUserParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatTypeUser", typeUserParameter, activeParameter);
         }
     
-        public virtual int SYSInsertCatTypeVisit(string typeVisit, Nullable<bool> active)
+        public virtual int SYSInsCatTypeVisit(string typeVisit, Nullable<bool> active)
         {
             var typeVisitParameter = typeVisit != null ?
                 new ObjectParameter("TypeVisit", typeVisit) :
@@ -189,10 +493,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCatTypeVisit", typeVisitParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatTypeVisit", typeVisitParameter, activeParameter);
         }
     
-        public virtual int SYSInsertCommitteeMember(Nullable<int> userId, Nullable<int> committeeTypeId, Nullable<bool> active)
+        public virtual int SYSInsCommitteeMember(Nullable<int> userId, Nullable<int> committeeTypeId, Nullable<bool> active)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -206,10 +510,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCommitteeMember", userIdParameter, committeeTypeIdParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCommitteeMember", userIdParameter, committeeTypeIdParameter, activeParameter);
         }
     
-        public virtual int SYSInsertCompany(string companyName, Nullable<bool> active)
+        public virtual int SYSInsCompany(string companyName, Nullable<bool> active)
         {
             var companyNameParameter = companyName != null ?
                 new ObjectParameter("CompanyName", companyName) :
@@ -219,10 +523,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertCompany", companyNameParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCompany", companyNameParameter, activeParameter);
         }
     
-        public virtual int SYSInsertEvent(Nullable<int> userId, Nullable<int> recreationalAreaId, Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate, Nullable<int> status)
+        public virtual int SYSInsEvent(Nullable<int> userId, Nullable<int> recreationalAreaId, Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate, Nullable<int> status)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -244,19 +548,19 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Status", status) :
                 new ObjectParameter("Status", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertEvent", userIdParameter, recreationalAreaIdParameter, startDateParameter, endDateParameter, statusParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsEvent", userIdParameter, recreationalAreaIdParameter, startDateParameter, endDateParameter, statusParameter);
         }
     
-        public virtual int SYSInsertInternalBox(Nullable<decimal> amount)
+        public virtual int SYSInsInternalBox(Nullable<decimal> amount)
         {
             var amountParameter = amount.HasValue ?
                 new ObjectParameter("Amount", amount) :
                 new ObjectParameter("Amount", typeof(decimal));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertInternalBox", amountParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsInternalBox", amountParameter);
         }
     
-        public virtual int SYSInsertInternalExpense(Nullable<int> userId, Nullable<decimal> amount)
+        public virtual int SYSInsInternalExpense(Nullable<int> userId, Nullable<decimal> amount)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -266,10 +570,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Amount", amount) :
                 new ObjectParameter("Amount", typeof(decimal));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertInternalExpense", userIdParameter, amountParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsInternalExpense", userIdParameter, amountParameter);
         }
     
-        public virtual int SYSInsertPayment(Nullable<int> userId, Nullable<decimal> amount, Nullable<int> paymentStatus)
+        public virtual int SYSInsPayment(Nullable<int> userId, Nullable<decimal> amount, Nullable<int> paymentStatus)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -283,10 +587,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("PaymentStatus", paymentStatus) :
                 new ObjectParameter("PaymentStatus", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertPayment", userIdParameter, amountParameter, paymentStatusParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsPayment", userIdParameter, amountParameter, paymentStatusParameter);
         }
     
-        public virtual int SYSInsertTicket(Nullable<int> userId, Nullable<int> eventualityId, Nullable<int> statusId)
+        public virtual int SYSInsTicket(Nullable<int> userId, Nullable<int> eventualityId, Nullable<int> statusId)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -300,10 +604,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("StatusId", statusId) :
                 new ObjectParameter("StatusId", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertTicket", userIdParameter, eventualityIdParameter, statusIdParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsTicket", userIdParameter, eventualityIdParameter, statusIdParameter);
         }
     
-        public virtual int SYSInsertUser(Nullable<int> companyId, Nullable<int> typeId, string userName, string userMiddleName, string userLastName, string userMotherName, string email, string passWord, string passWordSalt, Nullable<bool> active)
+        public virtual int SYSInsUser(Nullable<int> companyId, Nullable<int> typeId, string userName, string userMiddleName, string userLastName, string userMotherName, string email, string passWord, string passWordSalt, Nullable<bool> active)
         {
             var companyIdParameter = companyId.HasValue ?
                 new ObjectParameter("CompanyId", companyId) :
@@ -345,10 +649,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertUser", companyIdParameter, typeIdParameter, userNameParameter, userMiddleNameParameter, userLastNameParameter, userMotherNameParameter, emailParameter, passWordParameter, passWordSaltParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsUser", companyIdParameter, typeIdParameter, userNameParameter, userMiddleNameParameter, userLastNameParameter, userMotherNameParameter, emailParameter, passWordParameter, passWordSaltParameter, activeParameter);
         }
     
-        public virtual int SYSInsertVehiclee(Nullable<int> userId, string plates, string model, Nullable<bool> active)
+        public virtual int SYSInsVehicle(Nullable<int> userId, string plates, string model, Nullable<bool> active)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -366,10 +670,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Active", active) :
                 new ObjectParameter("Active", typeof(bool));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertVehiclee", userIdParameter, platesParameter, modelParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsVehicle", userIdParameter, platesParameter, modelParameter, activeParameter);
         }
     
-        public virtual int SYSInsertVisit(Nullable<int> visitId, Nullable<int> userId, string visitName, string carnet, string plates)
+        public virtual int SYSInsVisit(Nullable<int> visitId, Nullable<int> userId, string visitName, string carnet, string plates)
         {
             var visitIdParameter = visitId.HasValue ?
                 new ObjectParameter("VisitId", visitId) :
@@ -391,7 +695,311 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Plates", plates) :
                 new ObjectParameter("Plates", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsertVisit", visitIdParameter, userIdParameter, visitNameParameter, carnetParameter, platesParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsVisit", visitIdParameter, userIdParameter, visitNameParameter, carnetParameter, platesParameter);
+        }
+    
+        public virtual int SYSUpdAddress(Nullable<int> id, string streetName, string number, string postalCode)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var streetNameParameter = streetName != null ?
+                new ObjectParameter("StreetName", streetName) :
+                new ObjectParameter("StreetName", typeof(string));
+    
+            var numberParameter = number != null ?
+                new ObjectParameter("Number", number) :
+                new ObjectParameter("Number", typeof(string));
+    
+            var postalCodeParameter = postalCode != null ?
+                new ObjectParameter("PostalCode", postalCode) :
+                new ObjectParameter("PostalCode", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdAddress", idParameter, streetNameParameter, numberParameter, postalCodeParameter);
+        }
+    
+        public virtual int SYSUpdAssistControl(Nullable<int> userId)
+        {
+            var userIdParameter = userId.HasValue ?
+                new ObjectParameter("UserId", userId) :
+                new ObjectParameter("UserId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdAssistControl", userIdParameter);
+        }
+    
+        public virtual int SYSUpdCatEventStatus(Nullable<int> id, string statusName)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var statusNameParameter = statusName != null ?
+                new ObjectParameter("StatusName", statusName) :
+                new ObjectParameter("StatusName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatEventStatus", idParameter, statusNameParameter);
+        }
+    
+        public virtual int SYSUpdCatEventuality(Nullable<int> id, string eventualityName)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var eventualityNameParameter = eventualityName != null ?
+                new ObjectParameter("EventualityName", eventualityName) :
+                new ObjectParameter("EventualityName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatEventuality", idParameter, eventualityNameParameter);
+        }
+    
+        public virtual int SYSUpdCatPaymentStatus(Nullable<int> id, string statusName)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var statusNameParameter = statusName != null ?
+                new ObjectParameter("StatusName", statusName) :
+                new ObjectParameter("StatusName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatPaymentStatus", idParameter, statusNameParameter);
+        }
+    
+        public virtual int SYSUpdCatRecreationalArea(Nullable<int> id, string areaName, Nullable<bool> active)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var areaNameParameter = areaName != null ?
+                new ObjectParameter("AreaName", areaName) :
+                new ObjectParameter("AreaName", typeof(string));
+    
+            var activeParameter = active.HasValue ?
+                new ObjectParameter("Active", active) :
+                new ObjectParameter("Active", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatRecreationalArea", idParameter, areaNameParameter, activeParameter);
+        }
+    
+        public virtual int SYSUpdCatSupplier(Nullable<int> id, string supplierName, string contactNumer, Nullable<bool> active)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var supplierNameParameter = supplierName != null ?
+                new ObjectParameter("SupplierName", supplierName) :
+                new ObjectParameter("SupplierName", typeof(string));
+    
+            var contactNumerParameter = contactNumer != null ?
+                new ObjectParameter("ContactNumer", contactNumer) :
+                new ObjectParameter("ContactNumer", typeof(string));
+    
+            var activeParameter = active.HasValue ?
+                new ObjectParameter("Active", active) :
+                new ObjectParameter("Active", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatSupplier", idParameter, supplierNameParameter, contactNumerParameter, activeParameter);
+        }
+    
+        public virtual int SYSUpdCatTicketStatus(Nullable<int> id, string statusName)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var statusNameParameter = statusName != null ?
+                new ObjectParameter("StatusName", statusName) :
+                new ObjectParameter("StatusName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatTicketStatus", idParameter, statusNameParameter);
+        }
+    
+        public virtual int SYSUpdCatTypeCommittee(Nullable<int> id, string typeCommittee)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var typeCommitteeParameter = typeCommittee != null ?
+                new ObjectParameter("TypeCommittee", typeCommittee) :
+                new ObjectParameter("TypeCommittee", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatTypeCommittee", idParameter, typeCommitteeParameter);
+        }
+    
+        public virtual int SYSUpdCatTypeUser(Nullable<int> id, string typeUser)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var typeUserParameter = typeUser != null ?
+                new ObjectParameter("TypeUser", typeUser) :
+                new ObjectParameter("TypeUser", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatTypeUser", idParameter, typeUserParameter);
+        }
+    
+        public virtual int SYSUpdCatTypeVisit(Nullable<int> id, string typeVisit)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var typeVisitParameter = typeVisit != null ?
+                new ObjectParameter("TypeVisit", typeVisit) :
+                new ObjectParameter("TypeVisit", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatTypeVisit", idParameter, typeVisitParameter);
+        }
+    
+        public virtual int SYSUpdCommitteeMember(Nullable<int> id, Nullable<int> committeeTypeId)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var committeeTypeIdParameter = committeeTypeId.HasValue ?
+                new ObjectParameter("CommitteeTypeId", committeeTypeId) :
+                new ObjectParameter("CommitteeTypeId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCommitteeMember", idParameter, committeeTypeIdParameter);
+        }
+    
+        public virtual int SYSUpdCompany(Nullable<int> id, string companyName)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var companyNameParameter = companyName != null ?
+                new ObjectParameter("CompanyName", companyName) :
+                new ObjectParameter("CompanyName", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCompany", idParameter, companyNameParameter);
+        }
+    
+        public virtual int SYSUpdEvent(Nullable<int> id, Nullable<int> eventStatus, Nullable<int> recreationalAreaId, Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var eventStatusParameter = eventStatus.HasValue ?
+                new ObjectParameter("EventStatus", eventStatus) :
+                new ObjectParameter("EventStatus", typeof(int));
+    
+            var recreationalAreaIdParameter = recreationalAreaId.HasValue ?
+                new ObjectParameter("RecreationalAreaId", recreationalAreaId) :
+                new ObjectParameter("RecreationalAreaId", typeof(int));
+    
+            var startDateParameter = startDate.HasValue ?
+                new ObjectParameter("StartDate", startDate) :
+                new ObjectParameter("StartDate", typeof(System.DateTime));
+    
+            var endDateParameter = endDate.HasValue ?
+                new ObjectParameter("EndDate", endDate) :
+                new ObjectParameter("EndDate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdEvent", idParameter, eventStatusParameter, recreationalAreaIdParameter, startDateParameter, endDateParameter);
+        }
+    
+        public virtual int SYSUpdPayment(Nullable<int> id, Nullable<int> paymentStatus)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var paymentStatusParameter = paymentStatus.HasValue ?
+                new ObjectParameter("PaymentStatus", paymentStatus) :
+                new ObjectParameter("PaymentStatus", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdPayment", idParameter, paymentStatusParameter);
+        }
+    
+        public virtual int SYSUpdTicket(Nullable<int> id, Nullable<int> statusId)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var statusIdParameter = statusId.HasValue ?
+                new ObjectParameter("StatusId", statusId) :
+                new ObjectParameter("StatusId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdTicket", idParameter, statusIdParameter);
+        }
+    
+        public virtual int SYSUpdUser(Nullable<int> id, Nullable<int> typeId, string userName, string userMiddleName, string userLastName, string userMotherName, string email)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var typeIdParameter = typeId.HasValue ?
+                new ObjectParameter("TypeId", typeId) :
+                new ObjectParameter("TypeId", typeof(int));
+    
+            var userNameParameter = userName != null ?
+                new ObjectParameter("UserName", userName) :
+                new ObjectParameter("UserName", typeof(string));
+    
+            var userMiddleNameParameter = userMiddleName != null ?
+                new ObjectParameter("UserMiddleName", userMiddleName) :
+                new ObjectParameter("UserMiddleName", typeof(string));
+    
+            var userLastNameParameter = userLastName != null ?
+                new ObjectParameter("UserLastName", userLastName) :
+                new ObjectParameter("UserLastName", typeof(string));
+    
+            var userMotherNameParameter = userMotherName != null ?
+                new ObjectParameter("UserMotherName", userMotherName) :
+                new ObjectParameter("UserMotherName", typeof(string));
+    
+            var emailParameter = email != null ?
+                new ObjectParameter("Email", email) :
+                new ObjectParameter("Email", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdUser", idParameter, typeIdParameter, userNameParameter, userMiddleNameParameter, userLastNameParameter, userMotherNameParameter, emailParameter);
+        }
+    
+        public virtual int SYSUpdUserPassWord(Nullable<int> id, string passWord, string passWordSalt)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var passWordParameter = passWord != null ?
+                new ObjectParameter("PassWord", passWord) :
+                new ObjectParameter("PassWord", typeof(string));
+    
+            var passWordSaltParameter = passWordSalt != null ?
+                new ObjectParameter("PassWordSalt", passWordSalt) :
+                new ObjectParameter("PassWordSalt", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdUserPassWord", idParameter, passWordParameter, passWordSaltParameter);
+        }
+    
+        public virtual int SYSUpdVehicle(string plates)
+        {
+            var platesParameter = plates != null ?
+                new ObjectParameter("Plates", plates) :
+                new ObjectParameter("Plates", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdVehicle", platesParameter);
+        }
+    
+        public virtual int SYSUpdVisit(string carnet)
+        {
+            var carnetParameter = carnet != null ?
+                new ObjectParameter("Carnet", carnet) :
+                new ObjectParameter("Carnet", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdVisit", carnetParameter);
         }
     }
 }

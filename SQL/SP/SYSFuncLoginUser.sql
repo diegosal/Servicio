@@ -4,11 +4,13 @@
 ---------Description: Login Funtion-------------
 */----------------------------------------------
 
-
 USE [RM.DV.Core]
 GO
 
-DROP PROCEDURE IF EXISTS [dbo].[SYSFuncLoginUser]
+IF OBJECT_ID('[dbo].[SYSFuncLoginUser]') IS NOT NULL
+BEGIN 
+    DROP PROC [dbo].[SYSFuncLoginUser] 
+END 
 GO
 
 CREATE PROCEDURE [dbo].[SYSFuncLoginUser]

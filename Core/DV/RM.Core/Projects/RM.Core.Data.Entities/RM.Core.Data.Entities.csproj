@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2090A8D0-46E2-4312-A5FC-1484436AED89}</ProjectGuid>
+    <ProjectGuid>{0232CFA4-B9A5-4951-874B-77CE839CB560}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RM.Core.Data.Entities</RootNamespace>
@@ -66,6 +66,69 @@
       <DependentUpon>RMModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="SYSFuncLoginUser_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetAddress_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetAssistControl_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCatEventStatus_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCatEventuality_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCatPaymentStatus_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCatRecreationalArea_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCatSupplier_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCatTicketStatus_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCatTypeCommittee_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCatTypeUser_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCatTypeVisit_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCommitteeMember_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetCompany_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetEvent_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetInternalBox_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetInternalExpense_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetPayment_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetTicket_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetUser_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetVehicle_Result.cs">
+      <DependentUpon>RMModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SYSGetVisit_Result.cs">
       <DependentUpon>RMModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>

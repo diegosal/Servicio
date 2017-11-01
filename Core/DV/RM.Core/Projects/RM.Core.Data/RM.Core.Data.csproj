@@ -51,9 +51,9 @@
     <Compile Include="Adapter\BaseAdapter.cs" />
     <Compile Include="Biz\BizLogic.cs" />
     <Compile Include="Implementation\BaseFunction.cs" />
-    <Compile Include="Implementation\Insert.cs" />
+    <Compile Include="Implementation\CrudFuntion.cs" />
     <Compile Include="Interface\IBaseFunction.cs" />
-    <Compile Include="Interface\IInsert.cs" />
+    <Compile Include="Interface\ICrudFuntion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,7 +66,7 @@
       <Name>RM.Core.Business.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\RM.Core.Data.Entities\RM.Core.Data.Entities.csproj">
-      <Project>{2090a8d0-46e2-4312-a5fc-1484436aed89}</Project>
+      <Project>{0232cfa4-b9a5-4951-874b-77ce839cb560}</Project>
       <Name>RM.Core.Data.Entities</Name>
     </ProjectReference>
   </ItemGroup>
