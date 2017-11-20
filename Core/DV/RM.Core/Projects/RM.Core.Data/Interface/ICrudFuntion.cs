@@ -34,6 +34,27 @@ namespace RM.Core.Data.Interface
         #endregion
 
         #region UPDATE
+
+        string UpdateTypeUser(BizTypeUser bizTypeUser);
+        string UpdateTypeCommittee(BizTypeCommittee bizTypeCommittee);
+        string UpdateTypeVisit(BizTypeVisit bizTypeVisit);
+        string UpdateRecreationalArea(BizRecreationalArea bizRecreationalArea);
+        string UpdateEventuality(BizEventuality bizEventuality);
+        string UpdateTicketStatus(BizTicketStatus bizTicketStatus);
+        string UpdatePaymentStatus(BizPaymentStatus bizPaymentStatus);
+        string UpdateEventStatus(BizEventStatus bizEventStatus);
+        string UpdateSupplier(BizSupplier bizSupplier);
+        string UpdateCompany(BizCompany bizCompany);
+        string UpdateUser(BizUser bizUser);
+        string UpdateVehicle(BizVehicle bizVehicle);
+        string UpdateAddress(BizAddress bizAddress);
+        string UpdateCommitteeMember(BizCommitteeMember bizCommitteeMember);
+        string UpdateEvent(BizEvent bizEvent);
+        string UpdateTicket(BizTicket bizTicket);
+        string UpdateVisit(BizVisit bizVisit);
+        string UpdateAssistControl(BizAssistControl bizAssistControl);
+        string UpdatePayment(BizPayment bizPayment);
+
         #endregion
 
         #region GET

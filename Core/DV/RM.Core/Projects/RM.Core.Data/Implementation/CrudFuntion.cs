@@ -394,6 +394,340 @@ namespace RM.Core.Data.Implementation
         #endregion
 
         #region UPDATE
+
+        public string UpdateTypeUser(BizTypeUser bizTypeUser)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCatTypeUser(
+                                     bizTypeUser.Id,
+                                     bizTypeUser.TypeUser
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateTypeCommittee(BizTypeCommittee bizTypeCommittee)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCatTypeCommittee(
+                                     bizTypeCommittee.Id,
+                                     bizTypeCommittee.TypeCommittee
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateTypeVisit(BizTypeVisit bizTypeVisit)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCatTypeVisit(
+                                     bizTypeVisit.Id,
+                                     bizTypeVisit.TypeVisit
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateRecreationalArea(BizRecreationalArea bizRecreationalArea)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCatRecreationalArea(
+                                     bizRecreationalArea.Id,
+                                     bizRecreationalArea.AreaName,
+                                     true
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateEventuality(BizEventuality bizEventuality)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCatEventuality(
+                                     bizEventuality.Id,
+                                     bizEventuality.EventualityName
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateTicketStatus(BizTicketStatus bizTicketStatus)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCatTicketStatus(
+                                     bizTicketStatus.Id,
+                                     bizTicketStatus.StatusName
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdatePaymentStatus(BizPaymentStatus bizPaymentStatus)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCatPaymentStatus(
+                                     bizPaymentStatus.Id,
+                                     bizPaymentStatus.StatusName
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateEventStatus(BizEventStatus bizEventStatus)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCatEventStatus(
+                                     bizEventStatus.Id,
+                                     bizEventStatus.StatusName
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateSupplier(BizSupplier bizSupplier)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCatSupplier(
+                                     bizSupplier.Id,
+                                     bizSupplier.SupplierName,
+                                     bizSupplier.ContactNumer,
+                                     true
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateCompany(BizCompany bizCompany)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCompany(
+                                     bizCompany.Id,
+                                     bizCompany.CompanyName
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateUser(BizUser bizUser)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdUser(
+                                     bizUser.Id,
+                                     bizUser.TypeId,
+                                     bizUser.UserName,
+                                     bizUser.UserMiddleName,
+                                     bizUser.UserLastName,
+                                     bizUser.UserMotherName,
+                                     bizUser.Email
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateVehicle(BizVehicle bizVehicle)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdVehicle(
+                                     bizVehicle.Plates
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateAddress(BizAddress bizAddress)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdAddress(
+                                     bizAddress.Id,
+                                     bizAddress.StreetName,
+                                     bizAddress.Number,
+                                     bizAddress.PostalCode
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateCommitteeMember(BizCommitteeMember bizCommitteeMember)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdCommitteeMember(
+                                     bizCommitteeMember.Id,
+                                     bizCommitteeMember.CommitteeTypeId
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateEvent(BizEvent bizEvent)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdEvent(
+                                     bizEvent.Id,
+                                     bizEvent.Status,
+                                     bizEvent.RecreationalAreaId,
+                                     bizEvent.StartDate,
+                                     bizEvent.EndDate
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateTicket(BizTicket bizTicket)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdTicket(
+                                      bizTicket.Id,
+                                      bizTicket.StatusId
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateVisit(BizVisit bizVisit)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdVisit(
+                                      bizVisit.Carnet
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateAssistControl(BizAssistControl bizAssistControl)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdAssistControl(
+                                      bizAssistControl.UserId
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdatePayment(BizPayment bizPayment)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdPayment(
+                                      bizPayment.Id,
+                                      bizPayment.PaymentStatus
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
         #endregion
 
         #region GET
