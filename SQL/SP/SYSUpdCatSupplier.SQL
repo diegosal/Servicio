@@ -17,8 +17,7 @@ CREATE PROC [dbo].[SYSUpdCatSupplier]
     
     @Id  			INT,
     @SupplierName 	NVARCHAR(255),
-    @ContactNumer 	NVARCHAR(255),
-    @Active 		BIT
+    @ContactNumer 	NVARCHAR(255)
 
 AS
 

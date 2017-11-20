@@ -7,13 +7,13 @@
 USE [RM.DV.Core];
 GO
 
-IF OBJECT_ID('[dbo].[SYSUpdCatSupplier]') IS NOT NULL
+IF OBJECT_ID('[dbo].[SYSDelCatSupplier]') IS NOT NULL
 BEGIN 
-    DROP PROC [dbo].[SYSUpdCatSupplier] 
+    DROP PROC [dbo].[SYSDelCatSupplier] 
 END 
 GO
 
-CREATE PROC [dbo].[SYSUpdCatSupplier] 
+CREATE PROC [dbo].[SYSDelCatSupplier] 
     
     @Id  			INT
 

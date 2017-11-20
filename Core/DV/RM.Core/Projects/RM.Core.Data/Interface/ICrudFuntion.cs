@@ -54,6 +54,7 @@ namespace RM.Core.Data.Interface
         string UpdateVisit(BizVisit bizVisit);
         string UpdateAssistControl(BizAssistControl bizAssistControl);
         string UpdatePayment(BizPayment bizPayment);
+        string UpdateUserPassWord(BizUser bizUser);
 
         #endregion
 
@@ -84,6 +85,22 @@ namespace RM.Core.Data.Interface
         #endregion
 
         #region DELETE
+
+        string DeleteTypeUser(BizTypeUser bizTypeUser);
+        string DeleteTypeCommittee(BizTypeCommittee bizTypeCommittee);
+        string DeleteTypeVisit(BizTypeVisit bizTypeVisit);
+        string DeleteRecreationalArea(BizRecreationalArea bizRecreationalArea);
+        string DeleteEventuality(BizEventuality bizEventuality);
+        string DeleteTicketStatus(BizTicketStatus bizTicketStatus);
+        string DeletePaymentStatus(BizPaymentStatus bizPaymentStatus);
+        string DeleteEventStatus(BizEventStatus bizEventStatus);
+        string DeleteSupplier(BizSupplier bizSupplier);
+        string DeleteCompany(BizCompany bizCompany);
+        string DeleteUser(BizUser bizUser);
+        string DeleteVehicle(BizVehicle bizVehicle);
+        string DeleteAddress(BizAddress bizAddress);
+        string DeleteCommitteeMember(BizCommitteeMember bizCommitteeMember);
+
         #endregion
 
     }

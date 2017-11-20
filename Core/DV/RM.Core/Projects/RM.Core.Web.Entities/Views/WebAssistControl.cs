@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace RM.Core.Web.Entities.Views
+namespace RM.Core.Business.Entities.Views
 {
-    public class WebAssistControl
+    public class BizAssistControl
     {
         public int Id { get; set; }
         public int UserId { get; set; }

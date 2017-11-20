@@ -1,22 +1,21 @@
 /*-------------------------------------------------
 ---------Create By: Diego Gonzalez-----------------
 ---------Creation Date: 2017-07-05-----------------
----------Description: Delete Cat Type Visit--------
+---------Description: Delete Vehicle---------------
 */-------------------------------------------------
 
 USE [RM.DV.Core];
 GO
 
-IF OBJECT_ID('[dbo].[SYSDelCatTypeVisit]') IS NOT NULL
+IF OBJECT_ID('[dbo].[SYSDelVehicle]') IS NOT NULL
 BEGIN 
-    DROP PROC [dbo].[SYSDelCatTypeVisit] 
+    DROP PROC [dbo].[SYSDelVehicle] 
 END 
 GO
 
-CREATE PROC [dbo].[SYSDelCatTypeVisit] 
+CREATE PROC [dbo].[SYSDelVehicle] 
     
     @Id			INT
-
 AS 
 
 	SET NOCOUNT ON 
@@ -24,7 +23,7 @@ AS
 	
 	BEGIN TRAN
 
-	UPDATE [dbo].[CatTypeVisit]	SET
+	UPDATE [dbo].[Vehicle]	SET
 		[Active] = 0,
 		[ModificationDate] = GETDATE()
 	WHERE  [Id] = @Id

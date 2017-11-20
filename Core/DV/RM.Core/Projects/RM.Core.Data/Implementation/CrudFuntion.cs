@@ -455,8 +455,7 @@ namespace RM.Core.Data.Implementation
                 {
                     result = dbContext.SYSUpdCatRecreationalArea(
                                      bizRecreationalArea.Id,
-                                     bizRecreationalArea.AreaName,
-                                     true
+                                     bizRecreationalArea.AreaName
                         );
                 }
                 )
@@ -542,8 +541,7 @@ namespace RM.Core.Data.Implementation
                     result = dbContext.SYSUpdCatSupplier(
                                      bizSupplier.Id,
                                      bizSupplier.SupplierName,
-                                     bizSupplier.ContactNumer,
-                                     true
+                                     bizSupplier.ContactNumer
                         );
                 }
                 )
@@ -598,7 +596,8 @@ namespace RM.Core.Data.Implementation
                 new Action(() =>
                 {
                     result = dbContext.SYSUpdVehicle(
-                                     bizVehicle.Plates
+                                      bizVehicle.Id,
+                                      bizVehicle.Plates
                         );
                 }
                 )
@@ -721,6 +720,24 @@ namespace RM.Core.Data.Implementation
                     result = dbContext.SYSUpdPayment(
                                       bizPayment.Id,
                                       bizPayment.PaymentStatus
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string UpdateUserPassWord(BizUser bizUser)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdUserPassWord(
+                                      bizUser.Id,
+                                      bizUser.PassWord,
+                                      bizUser.PassWordSalt
                         );
                 }
                 )
@@ -1094,6 +1111,198 @@ namespace RM.Core.Data.Implementation
         #endregion
 
         #region DELETE
+
+        public string DeleteTypeUser(BizTypeUser bizTypeUser)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelCatTypeUser(
+                                     bizTypeUser.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string DeleteTypeCommittee(BizTypeCommittee bizTypeCommittee)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelCatTypeCommittee(
+                                     bizTypeCommittee.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string DeleteTypeVisit(BizTypeVisit bizTypeVisit)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelCatTypeVisit(
+                                     bizTypeVisit.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string DeleteRecreationalArea(BizRecreationalArea bizRecreationalArea)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string DeleteEventuality(BizEventuality bizEventuality)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelCatEventuality(
+                                      bizEventuality.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string DeleteTicketStatus(BizTicketStatus bizTicketStatus)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelCatTicketStatus(
+                                      bizTicketStatus.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string DeletePaymentStatus(BizPaymentStatus bizPaymentStatus)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelCatPaymentStatus(
+                                      bizPaymentStatus.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string DeleteEventStatus(BizEventStatus bizEventStatus)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelCatEventStatus(
+                                      bizEventStatus.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string DeleteSupplier(BizSupplier bizSupplier)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string DeleteCompany(BizCompany bizCompany)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelCompany(
+                                      bizCompany.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string DeleteUser(BizUser bizUser)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelUser(
+                                      bizUser.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string DeleteVehicle(BizVehicle bizVehicle)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string DeleteAddress(BizAddress bizAddress)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelAddress(
+                                      bizAddress.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
+        public string DeleteCommitteeMember(BizCommitteeMember bizCommitteeMember)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSDelCommitteeMember(
+                                      bizCommitteeMember.Id
+                        );
+                }
+                )
+            );
+            return Result;
+        }
+
         #endregion
 
     }

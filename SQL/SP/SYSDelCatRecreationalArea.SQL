@@ -13,7 +13,7 @@ BEGIN
 END 
 GO
 
-CREATE PROC [dbo].[SYSUpdCatRecreationalArea] 
+CREATE PROC [dbo].[SYSDelCatRecreationalArea] 
     
     @Id  		INT,
     @AreaName 	NVARCHAR(255),

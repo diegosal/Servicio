@@ -91,17 +91,13 @@ namespace RM.Core.Data.Entities
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTypeUser", idParameter);
         }
     
-        public virtual int SYSDelCatTypeVisit(Nullable<int> id, string typeVisit)
+        public virtual int SYSDelCatTypeVisit(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
                 new ObjectParameter("Id", id) :
                 new ObjectParameter("Id", typeof(int));
     
-            var typeVisitParameter = typeVisit != null ?
-                new ObjectParameter("TypeVisit", typeVisit) :
-                new ObjectParameter("TypeVisit", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTypeVisit", idParameter, typeVisitParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTypeVisit", idParameter);
         }
     
         public virtual int SYSDelCommitteeMember(Nullable<int> id)
@@ -767,7 +763,7 @@ namespace RM.Core.Data.Entities
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatPaymentStatus", idParameter, statusNameParameter);
         }
     
-        public virtual int SYSUpdCatRecreationalArea(Nullable<int> id, string areaName, Nullable<bool> active)
+        public virtual int SYSUpdCatRecreationalArea(Nullable<int> id, string areaName)
         {
             var idParameter = id.HasValue ?
                 new ObjectParameter("Id", id) :
@@ -777,14 +773,10 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("AreaName", areaName) :
                 new ObjectParameter("AreaName", typeof(string));
     
-            var activeParameter = active.HasValue ?
-                new ObjectParameter("Active", active) :
-                new ObjectParameter("Active", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatRecreationalArea", idParameter, areaNameParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatRecreationalArea", idParameter, areaNameParameter);
         }
     
-        public virtual int SYSUpdCatSupplier(Nullable<int> id, string supplierName, string contactNumer, Nullable<bool> active)
+        public virtual int SYSUpdCatSupplier(Nullable<int> id, string supplierName, string contactNumer)
         {
             var idParameter = id.HasValue ?
                 new ObjectParameter("Id", id) :
@@ -798,11 +790,7 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("ContactNumer", contactNumer) :
                 new ObjectParameter("ContactNumer", typeof(string));
     
-            var activeParameter = active.HasValue ?
-                new ObjectParameter("Active", active) :
-                new ObjectParameter("Active", typeof(bool));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatSupplier", idParameter, supplierNameParameter, contactNumerParameter, activeParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatSupplier", idParameter, supplierNameParameter, contactNumerParameter);
         }
     
         public virtual int SYSUpdCatTicketStatus(Nullable<int> id, string statusName)
@@ -984,13 +972,17 @@ namespace RM.Core.Data.Entities
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdUserPassWord", idParameter, passWordParameter, passWordSaltParameter);
         }
     
-        public virtual int SYSUpdVehicle(string plates)
+        public virtual int SYSUpdVehicle(Nullable<int> id, string plates)
         {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
             var platesParameter = plates != null ?
                 new ObjectParameter("Plates", plates) :
                 new ObjectParameter("Plates", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdVehicle", platesParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdVehicle", idParameter, platesParameter);
         }
     
         public virtual int SYSUpdVisit(string carnet)
@@ -1000,6 +992,41 @@ namespace RM.Core.Data.Entities
                 new ObjectParameter("Carnet", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdVisit", carnetParameter);
+        }
+    
+        public virtual int SYSDelCatRecreationalArea(Nullable<int> id, string areaName, Nullable<bool> active)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var areaNameParameter = areaName != null ?
+                new ObjectParameter("AreaName", areaName) :
+                new ObjectParameter("AreaName", typeof(string));
+    
+            var activeParameter = active.HasValue ?
+                new ObjectParameter("Active", active) :
+                new ObjectParameter("Active", typeof(bool));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatRecreationalArea", idParameter, areaNameParameter, activeParameter);
+        }
+    
+        public virtual int SYSDelCatSupplier(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatSupplier", idParameter);
+        }
+    
+        public virtual int SYSDelVehicle(Nullable<int> id)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelVehicle", idParameter);
         }
     }
 }

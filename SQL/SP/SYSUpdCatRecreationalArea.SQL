@@ -16,8 +16,7 @@ GO
 CREATE PROC [dbo].[SYSUpdCatRecreationalArea] 
     
     @Id  		INT,
-    @AreaName 	NVARCHAR(255),
-    @Active 	BIT
+    @AreaName 	NVARCHAR(255)
     
 AS 
 

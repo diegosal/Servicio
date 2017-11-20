@@ -8,7 +8,6 @@ namespace RM.Core.Data.Biz
     {
         public RMModel dbContext;
 
-
         public BizLogic()
         {
             dbContext = new RMModel();

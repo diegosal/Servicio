@@ -23,7 +23,7 @@ AS
 
 	BEGIN TRAN
 
-	UPDATE [dbo].[SYSDelCatPaymentStatus] SET
+	UPDATE [dbo].[CatPaymentStatus] SET
 		Active = 0,
         ModificationDate = GETDATE()
    	WHERE  [Id] = @Id

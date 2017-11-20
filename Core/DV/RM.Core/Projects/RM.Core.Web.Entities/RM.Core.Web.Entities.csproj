@@ -42,29 +42,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\BizAddress.cs" />
-    <Compile Include="Views\BizAssistControl.cs" />
-    <Compile Include="Views\BizCommitteeMember.cs" />
-    <Compile Include="Views\BizCompany.cs" />
-    <Compile Include="Views\BizEvent.cs" />
-    <Compile Include="Views\BizEventStatus.cs" />
-    <Compile Include="Views\BizEventuality.cs" />
-    <Compile Include="Views\BizInternalBox.cs" />
-    <Compile Include="Views\BizInternalExpense.cs" />
-    <Compile Include="Views\BizPayment.cs" />
-    <Compile Include="Views\BizPaymentStatus.cs" />
-    <Compile Include="Views\BizRecreationalArea.cs" />
-    <Compile Include="Views\BizSupplier.cs" />
-    <Compile Include="Views\BizTicket.cs" />
-    <Compile Include="Views\BizTicketStatus.cs" />
-    <Compile Include="Views\BizTypeCommittee.cs" />
-    <Compile Include="Views\BizTypeUser.cs" />
-    <Compile Include="Views\BizTypeVisit.cs" />
-    <Compile Include="Views\BizUser.cs" />
-    <Compile Include="Views\BizVehicle.cs" />
-    <Compile Include="Views\BizVisit.cs" />
-    <Compile Include="Views\TokenUser.cs" />
+    <Compile Include="Views\WebAddress.cs" />
+    <Compile Include="Views\WebAssistControl.cs" />
+    <Compile Include="Views\WebCommitteeMember.cs" />
+    <Compile Include="Views\WebCompany.cs" />
+    <Compile Include="Views\WebEvent.cs" />
+    <Compile Include="Views\WebEventStatus.cs" />
+    <Compile Include="Views\WebEventuality.cs" />
+    <Compile Include="Views\WebInternalBox.cs" />
+    <Compile Include="Views\WebInternalExpense.cs" />
+    <Compile Include="Views\WebPayment.cs" />
+    <Compile Include="Views\WebPaymentStatus.cs" />
+    <Compile Include="Views\WebRecreationalArea.cs" />
     <Compile Include="Views\WebResponse.cs" />
+    <Compile Include="Views\WebSupplier.cs" />
+    <Compile Include="Views\WebTicket.cs" />
+    <Compile Include="Views\WebTicketStatus.cs" />
+    <Compile Include="Views\WebTypeCommittee.cs" />
+    <Compile Include="Views\WebTypeUser.cs" />
+    <Compile Include="Views\WebTypeVisit.cs" />
+    <Compile Include="Views\WebUser.cs" />
+    <Compile Include="Views\WebVehicle.cs" />
+    <Compile Include="Views\WebVisit.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
