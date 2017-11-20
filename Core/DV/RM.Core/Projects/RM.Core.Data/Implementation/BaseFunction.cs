@@ -1,13 +1,9 @@
 ﻿using RM.Core.Data.Interface;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using RM.Core.Business.Entities.Views;
 using RM.Core.Data.Biz;
 using RM.Core.Data.Adapter;
-using RM.Core.Data.Entities;
 
 namespace RM.Core.Data.Implementation
 {
@@ -19,7 +15,7 @@ namespace RM.Core.Data.Implementation
             string Result = BizCall(
                 new Action(() =>
                 {
-                    bizUser = dbContext.SYSFuncLoginUser(Email).FirstOrDefault().DataUserToBizUser();
+                    bizUser = dbContext.SYSFuncLoginUser(Email).FirstOrDefault().DataUserLogInToBizUser();
                 }
                 )
             );

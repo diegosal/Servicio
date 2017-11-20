@@ -9,6 +9,8 @@ namespace RM.Core.Business.Entities.Views
         public int UserId { get; set; }
         public DateTime CheckIn { get; set; }
         public DateTime CheckOut { get; set; }
+        public string TypeVisit { get; set; }
+        public string Nombre { get; set; }
         public string VisitName { get; set; }
         public string Carnet { get; set; }
         public string Plates { get; set; }
