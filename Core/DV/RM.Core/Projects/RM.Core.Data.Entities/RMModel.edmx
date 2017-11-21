@@ -1,0 +1,1151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="RM.DV.CoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="SYSDelAddress" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCatEventStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCatEventuality" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCatPaymentStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCatRecreationalArea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="AreaName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCatSupplier" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCatTicketStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCatTypeCommittee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCatTypeUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCatTypeVisit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCommitteeMember" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSDelVehicle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSFuncLoginUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSGetAddress" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetAssistControl" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCatEventStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCatEventuality" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCatPaymentStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCatRecreationalArea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCatSupplier" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCatTicketStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCatTypeCommittee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCatTypeUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCatTypeVisit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCommitteeMember" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetEvent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetInternalBox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Amount" Type="numeric" Mode="In" />
+          <Parameter Name="CreationDate" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="SYSGetInternalExpense" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetTicket" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSGetUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSGetVehicle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSGetVisit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSInsAddress" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="StreetName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Number" Type="nvarchar" Mode="In" />
+          <Parameter Name="PostalCode" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsAssistControl" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCatEventStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StatusName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCatEventuality" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="EventualityName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCatPaymentStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StatusName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCatRecreationalArea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="AreaName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCatSupplier" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SupplierName" Type="nvarchar" Mode="In" />
+          <Parameter Name="ContactNumer" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCatTicketStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StatusName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCatTypeCommittee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TypeCommittee" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCatTypeUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TypeUser" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCatTypeVisit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="TypeVisit" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCommitteeMember" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="CommitteeTypeId" Type="int" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsEvent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="RecreationalAreaId" Type="int" Mode="In" />
+          <Parameter Name="StartDate" Type="datetime" Mode="In" />
+          <Parameter Name="EndDate" Type="datetime" Mode="In" />
+          <Parameter Name="Status" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSInsInternalBox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Amount" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="SYSInsInternalExpense" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="Amount" Type="numeric" Mode="In" />
+        </Function>
+        <Function Name="SYSInsPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="Amount" Type="numeric" Mode="In" />
+          <Parameter Name="PaymentStatus" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSInsTicket" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="EventualityId" Type="int" Mode="In" />
+          <Parameter Name="StatusId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSInsUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CompanyId" Type="int" Mode="In" />
+          <Parameter Name="TypeId" Type="int" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserMiddleName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserLastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserMotherName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+          <Parameter Name="PassWord" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="PassWordSalt" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsVehicle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="Plates" Type="nvarchar" Mode="In" />
+          <Parameter Name="Model" Type="nvarchar" Mode="In" />
+          <Parameter Name="Active" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="SYSInsVisit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="VisitId" Type="int" Mode="In" />
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="VisitName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Carnet" Type="nvarchar" Mode="In" />
+          <Parameter Name="Plates" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdAddress" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="StreetName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Number" Type="nvarchar" Mode="In" />
+          <Parameter Name="PostalCode" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdAssistControl" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCatEventStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="StatusName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCatEventuality" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="EventualityName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCatPaymentStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="StatusName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCatRecreationalArea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="AreaName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCatSupplier" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="SupplierName" Type="nvarchar" Mode="In" />
+          <Parameter Name="ContactNumer" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCatTicketStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="StatusName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCatTypeCommittee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="TypeCommittee" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCatTypeUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="TypeUser" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCatTypeVisit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="TypeVisit" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCommitteeMember" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="CommitteeTypeId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="CompanyName" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdEvent" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="EventStatus" Type="int" Mode="In" />
+          <Parameter Name="RecreationalAreaId" Type="int" Mode="In" />
+          <Parameter Name="StartDate" Type="datetime" Mode="In" />
+          <Parameter Name="EndDate" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdPayment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="PaymentStatus" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdTicket" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="StatusId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="TypeId" Type="int" Mode="In" />
+          <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserMiddleName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserLastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="UserMotherName" Type="nvarchar" Mode="In" />
+          <Parameter Name="Email" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdUserPassWord" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="PassWord" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="PassWordSalt" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdVehicle" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="Plates" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="SYSUpdVisit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Carnet" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="RMDVCoreModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RM.DV.CoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="RMModel" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="SYSDelAddress">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCatEventStatus">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCatEventuality">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCatPaymentStatus">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCatTicketStatus">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCatTypeCommittee">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCatTypeUser">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCatTypeVisit">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCommitteeMember">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCompany">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelUser">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSFuncLoginUser" ReturnType="Collection(RM.DV.CoreModel.SYSFuncLoginUser_Result)">
+          <Parameter Name="Email" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetAddress" ReturnType="Collection(RM.DV.CoreModel.SYSGetAddress_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetAssistControl" ReturnType="Collection(RM.DV.CoreModel.SYSGetAssistControl_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCatEventStatus" ReturnType="Collection(RM.DV.CoreModel.SYSGetCatEventStatus_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCatEventuality" ReturnType="Collection(RM.DV.CoreModel.SYSGetCatEventuality_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCatPaymentStatus" ReturnType="Collection(RM.DV.CoreModel.SYSGetCatPaymentStatus_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCatRecreationalArea" ReturnType="Collection(RM.DV.CoreModel.SYSGetCatRecreationalArea_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCatSupplier" ReturnType="Collection(RM.DV.CoreModel.SYSGetCatSupplier_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCatTicketStatus" ReturnType="Collection(RM.DV.CoreModel.SYSGetCatTicketStatus_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCatTypeCommittee" ReturnType="Collection(RM.DV.CoreModel.SYSGetCatTypeCommittee_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCatTypeUser" ReturnType="Collection(RM.DV.CoreModel.SYSGetCatTypeUser_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCatTypeVisit" ReturnType="Collection(RM.DV.CoreModel.SYSGetCatTypeVisit_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCommitteeMember" ReturnType="Collection(RM.DV.CoreModel.SYSGetCommitteeMember_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetCompany" ReturnType="Collection(RM.DV.CoreModel.SYSGetCompany_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetEvent" ReturnType="Collection(RM.DV.CoreModel.SYSGetEvent_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetInternalBox" ReturnType="Collection(RM.DV.CoreModel.SYSGetInternalBox_Result)">
+            <Parameter Name="Amount" Mode="In" Type="Decimal" />
+            <Parameter Name="CreationDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetInternalExpense" ReturnType="Collection(RM.DV.CoreModel.SYSGetInternalExpense_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetPayment" ReturnType="Collection(RM.DV.CoreModel.SYSGetPayment_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetTicket" ReturnType="Collection(RM.DV.CoreModel.SYSGetTicket_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetUser" ReturnType="Collection(RM.DV.CoreModel.SYSGetUser_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetVehicle" ReturnType="Collection(RM.DV.CoreModel.SYSGetVehicle_Result)">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSGetVisit" ReturnType="Collection(RM.DV.CoreModel.SYSGetVisit_Result)">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsAddress">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="StreetName" Mode="In" Type="String" />
+            <Parameter Name="Number" Mode="In" Type="String" />
+            <Parameter Name="PostalCode" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsAssistControl">
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCatEventStatus">
+            <Parameter Name="StatusName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCatEventuality">
+            <Parameter Name="EventualityName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCatPaymentStatus">
+            <Parameter Name="StatusName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCatRecreationalArea">
+            <Parameter Name="AreaName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCatSupplier">
+            <Parameter Name="SupplierName" Mode="In" Type="String" />
+            <Parameter Name="ContactNumer" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCatTicketStatus">
+            <Parameter Name="StatusName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCatTypeCommittee">
+            <Parameter Name="TypeCommittee" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCatTypeUser">
+            <Parameter Name="TypeUser" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCatTypeVisit">
+            <Parameter Name="TypeVisit" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCommitteeMember">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="CommitteeTypeId" Mode="In" Type="Int32" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsCompany">
+            <Parameter Name="CompanyName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsEvent">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="RecreationalAreaId" Mode="In" Type="Int32" />
+            <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+            <Parameter Name="Status" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsInternalBox">
+          <Parameter Name="Amount" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsInternalExpense">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="Amount" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsPayment">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="Amount" Mode="In" Type="Decimal" />
+            <Parameter Name="PaymentStatus" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsTicket">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="EventualityId" Mode="In" Type="Int32" />
+            <Parameter Name="StatusId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsUser">
+            <Parameter Name="CompanyId" Mode="In" Type="Int32" />
+            <Parameter Name="TypeId" Mode="In" Type="Int32" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="UserMiddleName" Mode="In" Type="String" />
+            <Parameter Name="UserLastName" Mode="In" Type="String" />
+            <Parameter Name="UserMotherName" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="PassWord" Mode="In" Type="String" />
+            <Parameter Name="PassWordSalt" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsVehicle">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="Plates" Mode="In" Type="String" />
+            <Parameter Name="Model" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSInsVisit">
+            <Parameter Name="VisitId" Mode="In" Type="Int32" />
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="VisitName" Mode="In" Type="String" />
+            <Parameter Name="Carnet" Mode="In" Type="String" />
+            <Parameter Name="Plates" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdAddress">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="StreetName" Mode="In" Type="String" />
+            <Parameter Name="Number" Mode="In" Type="String" />
+            <Parameter Name="PostalCode" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdAssistControl">
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCatEventStatus">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="StatusName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCatEventuality">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="EventualityName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCatPaymentStatus">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="StatusName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCatRecreationalArea">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="AreaName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCatSupplier">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="SupplierName" Mode="In" Type="String" />
+            <Parameter Name="ContactNumer" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCatTicketStatus">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="StatusName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCatTypeCommittee">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="TypeCommittee" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCatTypeUser">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="TypeUser" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCatTypeVisit">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="TypeVisit" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCommitteeMember">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="CommitteeTypeId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdCompany">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="CompanyName" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdEvent">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="EventStatus" Mode="In" Type="Int32" />
+            <Parameter Name="RecreationalAreaId" Mode="In" Type="Int32" />
+            <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+            <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdPayment">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="PaymentStatus" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdTicket">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="StatusId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdUser">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="TypeId" Mode="In" Type="Int32" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="UserMiddleName" Mode="In" Type="String" />
+            <Parameter Name="UserLastName" Mode="In" Type="String" />
+            <Parameter Name="UserMotherName" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdUserPassWord">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="PassWord" Mode="In" Type="String" />
+            <Parameter Name="PassWordSalt" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdVehicle">
+          <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="Plates" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSUpdVisit">
+          <Parameter Name="Carnet" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCatRecreationalArea">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="AreaName" Mode="In" Type="String" />
+            <Parameter Name="Active" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelCatSupplier">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SYSDelVehicle">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="SYSFuncLoginUser_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="TypeId" Nullable="false" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="UserMiddleName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="UserLastName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="UserMotherName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="PassWord" Nullable="false" />
+          <Property Type="String" Name="PassWordSalt" Nullable="false" MaxLength="32" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetAddress_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="StreetName" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="Number" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="PostalCode" Nullable="false" MaxLength="10" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetAssistControl_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="DateTime" Name="CheckIn" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="CheckOut" Nullable="false" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCatEventStatus_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="StatusName" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCatEventuality_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="EventualityName" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCatPaymentStatus_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="StatusName" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCatRecreationalArea_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="AreaName" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCatSupplier_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="SupplierName" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="ContactNumer" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCatTicketStatus_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="StatusName" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCatTypeCommittee_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="TypeCommittee" Nullable="false" MaxLength="100" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCatTypeUser_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="TypeUser" Nullable="false" MaxLength="100" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCatTypeVisit_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="TypeVisit" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCommitteeMember_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="603" />
+          <Property Type="String" Name="TypeCommittee" Nullable="true" MaxLength="100" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetCompany_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="CompanyName" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetEvent_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="603" />
+          <Property Type="String" Name="StatusName" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="AreaName" Nullable="true" MaxLength="255" />
+          <Property Type="DateTime" Name="StartDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="EndDate" Nullable="false" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SYSGetInternalBox_Result">
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SYSGetInternalExpense_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SYSGetPayment_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="603" />
+          <Property Type="String" Name="StatusName" Nullable="true" MaxLength="255" />
+          <Property Type="Decimal" Name="Amount" Nullable="false" Precision="18" Scale="0" />
+          <Property Type="DateTime" Name="PaymentDate" Nullable="false" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SYSGetTicket_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="603" />
+          <Property Type="String" Name="EventualityName" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="StatusName" Nullable="true" MaxLength="255" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="SYSGetUser_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="CompanyName" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="TypeUser" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="UserMiddleName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="UserLastName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="UserMotherName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="Email" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="PassWord" Nullable="false" />
+          <Property Type="String" Name="PassWordSalt" Nullable="false" MaxLength="32" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetVehicle_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="603" />
+          <Property Type="String" Name="Plates" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="Model" Nullable="false" MaxLength="255" />
+          <Property Type="DateTime" Name="CreationDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="ModificationDate" Nullable="false" Precision="23" />
+          <Property Type="Boolean" Name="Active" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SYSGetVisit_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="TypeVisit" Nullable="true" MaxLength="255" />
+          <Property Type="String" Name="Nombre" Nullable="false" MaxLength="603" />
+          <Property Type="DateTime" Name="CheckIn" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="CheckOut" Nullable="false" Precision="23" />
+          <Property Type="String" Name="VisitName" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="Carnet" Nullable="false" MaxLength="250" />
+          <Property Type="String" Name="Plates" Nullable="false" MaxLength="50" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RMDVCoreModelStoreContainer" CdmEntityContainer="RMModel" >
+          <FunctionImportMapping FunctionImportName="SYSDelAddress" FunctionName="RM.DV.CoreModel.Store.SYSDelAddress" />
+          <FunctionImportMapping FunctionImportName="SYSDelCatEventStatus" FunctionName="RM.DV.CoreModel.Store.SYSDelCatEventStatus" />
+          <FunctionImportMapping FunctionImportName="SYSDelCatEventuality" FunctionName="RM.DV.CoreModel.Store.SYSDelCatEventuality" />
+          <FunctionImportMapping FunctionImportName="SYSDelCatPaymentStatus" FunctionName="RM.DV.CoreModel.Store.SYSDelCatPaymentStatus" />
+          <FunctionImportMapping FunctionImportName="SYSDelCatTicketStatus" FunctionName="RM.DV.CoreModel.Store.SYSDelCatTicketStatus" />
+          <FunctionImportMapping FunctionImportName="SYSDelCatTypeCommittee" FunctionName="RM.DV.CoreModel.Store.SYSDelCatTypeCommittee" />
+          <FunctionImportMapping FunctionImportName="SYSDelCatTypeUser" FunctionName="RM.DV.CoreModel.Store.SYSDelCatTypeUser" />
+          <FunctionImportMapping FunctionImportName="SYSDelCatTypeVisit" FunctionName="RM.DV.CoreModel.Store.SYSDelCatTypeVisit" />
+          <FunctionImportMapping FunctionImportName="SYSDelCommitteeMember" FunctionName="RM.DV.CoreModel.Store.SYSDelCommitteeMember" />
+          <FunctionImportMapping FunctionImportName="SYSDelCompany" FunctionName="RM.DV.CoreModel.Store.SYSDelCompany" />
+          <FunctionImportMapping FunctionImportName="SYSDelUser" FunctionName="RM.DV.CoreModel.Store.SYSDelUser" />
+          <FunctionImportMapping FunctionImportName="SYSFuncLoginUser" FunctionName="RM.DV.CoreModel.Store.SYSFuncLoginUser">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSFuncLoginUser_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserMiddleName" ColumnName="UserMiddleName" />
+                <ScalarProperty Name="UserLastName" ColumnName="UserLastName" />
+                <ScalarProperty Name="UserMotherName" ColumnName="UserMotherName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+                <ScalarProperty Name="PassWordSalt" ColumnName="PassWordSalt" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetAddress" FunctionName="RM.DV.CoreModel.Store.SYSGetAddress">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetAddress_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="StreetName" ColumnName="StreetName" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetAssistControl" FunctionName="RM.DV.CoreModel.Store.SYSGetAssistControl">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetAssistControl_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="CheckIn" ColumnName="CheckIn" />
+                <ScalarProperty Name="CheckOut" ColumnName="CheckOut" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCatEventStatus" FunctionName="RM.DV.CoreModel.Store.SYSGetCatEventStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCatEventStatus_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCatEventuality" FunctionName="RM.DV.CoreModel.Store.SYSGetCatEventuality">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCatEventuality_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EventualityName" ColumnName="EventualityName" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCatPaymentStatus" FunctionName="RM.DV.CoreModel.Store.SYSGetCatPaymentStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCatPaymentStatus_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCatRecreationalArea" FunctionName="RM.DV.CoreModel.Store.SYSGetCatRecreationalArea">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCatRecreationalArea_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="AreaName" ColumnName="AreaName" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCatSupplier" FunctionName="RM.DV.CoreModel.Store.SYSGetCatSupplier">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCatSupplier_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+                <ScalarProperty Name="ContactNumer" ColumnName="ContactNumer" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCatTicketStatus" FunctionName="RM.DV.CoreModel.Store.SYSGetCatTicketStatus">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCatTicketStatus_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCatTypeCommittee" FunctionName="RM.DV.CoreModel.Store.SYSGetCatTypeCommittee">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCatTypeCommittee_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TypeCommittee" ColumnName="TypeCommittee" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCatTypeUser" FunctionName="RM.DV.CoreModel.Store.SYSGetCatTypeUser">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCatTypeUser_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TypeUser" ColumnName="TypeUser" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCatTypeVisit" FunctionName="RM.DV.CoreModel.Store.SYSGetCatTypeVisit">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCatTypeVisit_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TypeVisit" ColumnName="TypeVisit" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCommitteeMember" FunctionName="RM.DV.CoreModel.Store.SYSGetCommitteeMember">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCommitteeMember_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="TypeCommittee" ColumnName="TypeCommittee" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetCompany" FunctionName="RM.DV.CoreModel.Store.SYSGetCompany">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetCompany_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetEvent" FunctionName="RM.DV.CoreModel.Store.SYSGetEvent">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetEvent_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+                <ScalarProperty Name="AreaName" ColumnName="AreaName" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetInternalBox" FunctionName="RM.DV.CoreModel.Store.SYSGetInternalBox">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetInternalBox_Result">
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetInternalExpense" FunctionName="RM.DV.CoreModel.Store.SYSGetInternalExpense">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetInternalExpense_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetPayment" FunctionName="RM.DV.CoreModel.Store.SYSGetPayment">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetPayment_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetTicket" FunctionName="RM.DV.CoreModel.Store.SYSGetTicket">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetTicket_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="EventualityName" ColumnName="EventualityName" />
+                <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetUser" FunctionName="RM.DV.CoreModel.Store.SYSGetUser">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetUser_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+                <ScalarProperty Name="TypeUser" ColumnName="TypeUser" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserMiddleName" ColumnName="UserMiddleName" />
+                <ScalarProperty Name="UserLastName" ColumnName="UserLastName" />
+                <ScalarProperty Name="UserMotherName" ColumnName="UserMotherName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+                <ScalarProperty Name="PassWordSalt" ColumnName="PassWordSalt" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetVehicle" FunctionName="RM.DV.CoreModel.Store.SYSGetVehicle">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetVehicle_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Plates" ColumnName="Plates" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+                <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSGetVisit" FunctionName="RM.DV.CoreModel.Store.SYSGetVisit">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RM.DV.CoreModel.SYSGetVisit_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TypeVisit" ColumnName="TypeVisit" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="CheckIn" ColumnName="CheckIn" />
+                <ScalarProperty Name="CheckOut" ColumnName="CheckOut" />
+                <ScalarProperty Name="VisitName" ColumnName="VisitName" />
+                <ScalarProperty Name="Carnet" ColumnName="Carnet" />
+                <ScalarProperty Name="Plates" ColumnName="Plates" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SYSInsAddress" FunctionName="RM.DV.CoreModel.Store.SYSInsAddress" />
+          <FunctionImportMapping FunctionImportName="SYSInsAssistControl" FunctionName="RM.DV.CoreModel.Store.SYSInsAssistControl" />
+          <FunctionImportMapping FunctionImportName="SYSInsCatEventStatus" FunctionName="RM.DV.CoreModel.Store.SYSInsCatEventStatus" />
+          <FunctionImportMapping FunctionImportName="SYSInsCatEventuality" FunctionName="RM.DV.CoreModel.Store.SYSInsCatEventuality" />
+          <FunctionImportMapping FunctionImportName="SYSInsCatPaymentStatus" FunctionName="RM.DV.CoreModel.Store.SYSInsCatPaymentStatus" />
+          <FunctionImportMapping FunctionImportName="SYSInsCatRecreationalArea" FunctionName="RM.DV.CoreModel.Store.SYSInsCatRecreationalArea" />
+          <FunctionImportMapping FunctionImportName="SYSInsCatSupplier" FunctionName="RM.DV.CoreModel.Store.SYSInsCatSupplier" />
+          <FunctionImportMapping FunctionImportName="SYSInsCatTicketStatus" FunctionName="RM.DV.CoreModel.Store.SYSInsCatTicketStatus" />
+          <FunctionImportMapping FunctionImportName="SYSInsCatTypeCommittee" FunctionName="RM.DV.CoreModel.Store.SYSInsCatTypeCommittee" />
+          <FunctionImportMapping FunctionImportName="SYSInsCatTypeUser" FunctionName="RM.DV.CoreModel.Store.SYSInsCatTypeUser" />
+          <FunctionImportMapping FunctionImportName="SYSInsCatTypeVisit" FunctionName="RM.DV.CoreModel.Store.SYSInsCatTypeVisit" />
+          <FunctionImportMapping FunctionImportName="SYSInsCommitteeMember" FunctionName="RM.DV.CoreModel.Store.SYSInsCommitteeMember" />
+          <FunctionImportMapping FunctionImportName="SYSInsCompany" FunctionName="RM.DV.CoreModel.Store.SYSInsCompany" />
+          <FunctionImportMapping FunctionImportName="SYSInsEvent" FunctionName="RM.DV.CoreModel.Store.SYSInsEvent" />
+          <FunctionImportMapping FunctionImportName="SYSInsInternalBox" FunctionName="RM.DV.CoreModel.Store.SYSInsInternalBox" />
+          <FunctionImportMapping FunctionImportName="SYSInsInternalExpense" FunctionName="RM.DV.CoreModel.Store.SYSInsInternalExpense" />
+          <FunctionImportMapping FunctionImportName="SYSInsPayment" FunctionName="RM.DV.CoreModel.Store.SYSInsPayment" />
+          <FunctionImportMapping FunctionImportName="SYSInsTicket" FunctionName="RM.DV.CoreModel.Store.SYSInsTicket" />
+          <FunctionImportMapping FunctionImportName="SYSInsUser" FunctionName="RM.DV.CoreModel.Store.SYSInsUser" />
+          <FunctionImportMapping FunctionImportName="SYSInsVehicle" FunctionName="RM.DV.CoreModel.Store.SYSInsVehicle" />
+          <FunctionImportMapping FunctionImportName="SYSInsVisit" FunctionName="RM.DV.CoreModel.Store.SYSInsVisit" />
+          <FunctionImportMapping FunctionImportName="SYSUpdAddress" FunctionName="RM.DV.CoreModel.Store.SYSUpdAddress" />
+          <FunctionImportMapping FunctionImportName="SYSUpdAssistControl" FunctionName="RM.DV.CoreModel.Store.SYSUpdAssistControl" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCatEventStatus" FunctionName="RM.DV.CoreModel.Store.SYSUpdCatEventStatus" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCatEventuality" FunctionName="RM.DV.CoreModel.Store.SYSUpdCatEventuality" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCatPaymentStatus" FunctionName="RM.DV.CoreModel.Store.SYSUpdCatPaymentStatus" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCatRecreationalArea" FunctionName="RM.DV.CoreModel.Store.SYSUpdCatRecreationalArea" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCatSupplier" FunctionName="RM.DV.CoreModel.Store.SYSUpdCatSupplier" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCatTicketStatus" FunctionName="RM.DV.CoreModel.Store.SYSUpdCatTicketStatus" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCatTypeCommittee" FunctionName="RM.DV.CoreModel.Store.SYSUpdCatTypeCommittee" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCatTypeUser" FunctionName="RM.DV.CoreModel.Store.SYSUpdCatTypeUser" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCatTypeVisit" FunctionName="RM.DV.CoreModel.Store.SYSUpdCatTypeVisit" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCommitteeMember" FunctionName="RM.DV.CoreModel.Store.SYSUpdCommitteeMember" />
+          <FunctionImportMapping FunctionImportName="SYSUpdCompany" FunctionName="RM.DV.CoreModel.Store.SYSUpdCompany" />
+          <FunctionImportMapping FunctionImportName="SYSUpdEvent" FunctionName="RM.DV.CoreModel.Store.SYSUpdEvent" />
+          <FunctionImportMapping FunctionImportName="SYSUpdPayment" FunctionName="RM.DV.CoreModel.Store.SYSUpdPayment" />
+          <FunctionImportMapping FunctionImportName="SYSUpdTicket" FunctionName="RM.DV.CoreModel.Store.SYSUpdTicket" />
+          <FunctionImportMapping FunctionImportName="SYSUpdUser" FunctionName="RM.DV.CoreModel.Store.SYSUpdUser" />
+          <FunctionImportMapping FunctionImportName="SYSUpdUserPassWord" FunctionName="RM.DV.CoreModel.Store.SYSUpdUserPassWord" />
+          <FunctionImportMapping FunctionImportName="SYSUpdVehicle" FunctionName="RM.DV.CoreModel.Store.SYSUpdVehicle" />
+          <FunctionImportMapping FunctionImportName="SYSUpdVisit" FunctionName="RM.DV.CoreModel.Store.SYSUpdVisit" />
+          <FunctionImportMapping FunctionImportName="SYSDelCatRecreationalArea" FunctionName="RM.DV.CoreModel.Store.SYSDelCatRecreationalArea" />
+          <FunctionImportMapping FunctionImportName="SYSDelCatSupplier" FunctionName="RM.DV.CoreModel.Store.SYSDelCatSupplier" />
+          <FunctionImportMapping FunctionImportName="SYSDelVehicle" FunctionName="RM.DV.CoreModel.Store.SYSDelVehicle" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
