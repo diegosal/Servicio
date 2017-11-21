@@ -2,7 +2,7 @@
 
 namespace RM.Core.Business.Entities.Views
 {
-    public class BizAssistControl
+    public class WebAssistControl
     {
         public int Id { get; set; }
         public int UserId { get; set; }

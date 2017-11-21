@@ -105,7 +105,7 @@ namespace RM.Core.Data.Adapter
             return bizEventualityList;
         }
 
-        public static List<BizInternalBox> ListInternalBoxToListBizInternalBox(this List<SYSGetInternalBox_Result> DataInternalBoxList)
+        public static List<BizInternalBox> ListDataInternalBoxToListBizInternalBox(this List<SYSGetInternalBox_Result> DataInternalBoxList)
         {
             List<BizInternalBox> bizInternalBoxList = new List<BizInternalBox>();
 
@@ -189,7 +189,7 @@ namespace RM.Core.Data.Adapter
             return bizTicketList;
         }
 
-        public static List<BizTicketStatus> ListDatTicketStatusToListBizTicketStatus(this List<SYSGetCatTicketStatus_Result> DataTicketStatusList)
+        public static List<BizTicketStatus> ListDataTicketStatusToListBizTicketStatus(this List<SYSGetCatTicketStatus_Result> DataTicketStatusList)
         {
             List<BizTicketStatus> bizTicketStatusList = new List<BizTicketStatus>();
 
@@ -423,6 +423,7 @@ namespace RM.Core.Data.Adapter
             {
                 Id = DataPayment.Id,
                 UserId = 0,
+                PaymentStatus = 0,
                 Nombre = DataPayment.Nombre,
                 Amount = DataPayment.Amount,
                 StatusName = DataPayment.StatusName,
@@ -470,6 +471,9 @@ namespace RM.Core.Data.Adapter
             BizTicket bizTicket = new BizTicket
             {
                 Id = DataTicket.Id,
+                UserId = 0,
+                EventualityId = 0,
+                StatusId = 0,
                 Nombre = DataTicket.Nombre,
                 EventualityName = DataTicket.EventualityName,
                 StatusName = DataTicket.StatusName,
