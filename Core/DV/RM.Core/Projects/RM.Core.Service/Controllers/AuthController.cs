@@ -1,12 +1,8 @@
 ﻿using RM.Core.Business;
-using RM.Core.Business.Entities.Views;
-using RM.Core.Service.Adapters;
 using RM.Core.Web.Entities.Views;
+using RM.Core.Service.Adapters;
+using RM.Core.Business.Entities.Views;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace RM.Core.Service.Controllers
@@ -37,7 +33,7 @@ namespace RM.Core.Service.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult Get(int id)
+        public IHttpActionResult Get()
         {
             return Unauthorized();
         }
@@ -59,12 +55,12 @@ namespace RM.Core.Service.Controllers
 
             catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(ex.ToString());
             }
         }
 
         [HttpDelete]
-        public IHttpActionResult Delete(int id)
+        public IHttpActionResult Delete()
         {
             return Unauthorized();
         }
