@@ -5,5 +5,6 @@ namespace RM.Core.Data.Interface
     interface IBaseFunction
     {
         BizUser DataFuncLogin(string Email);
+        string UpdateUserPassWord(BizUser bizUser);
     }
 }

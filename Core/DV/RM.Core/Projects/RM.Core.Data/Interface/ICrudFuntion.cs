@@ -54,7 +54,6 @@ namespace RM.Core.Data.Interface
         string UpdateVisit(BizVisit bizVisit);
         string UpdateAssistControl(BizAssistControl bizAssistControl);
         string UpdatePayment(BizPayment bizPayment);
-        string UpdateUserPassWord(BizUser bizUser);
 
         #endregion
 

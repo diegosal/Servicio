@@ -24,5 +24,23 @@ namespace RM.Core.Data.Implementation
             else
                 return null;
         }
+
+        public string UpdateUserPassWord(BizUser bizUser)
+        {
+            string Result = "";
+            int result = 0;
+            Result = BizCall(
+                new Action(() =>
+                {
+                    result = dbContext.SYSUpdUserPassWord(
+                                      bizUser.Id,
+                                      bizUser.PassWord,
+                                      bizUser.PassWordSalt
+                        );
+                }
+                )
+            );
+            return Result;
+        }
     }
 }

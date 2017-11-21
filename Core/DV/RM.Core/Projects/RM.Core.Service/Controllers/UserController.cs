@@ -38,21 +38,7 @@ namespace RM.Core.Service.Controllers
             //var configuration = new HttpConfiguration();
             //var request = new System.Net.Http.HttpRequestMessage();
             //request.Properties[System.Web.Http.Hosting.HttpPropertyKeys.HttpConfigurationKey] = configuration;
-            //try
-            //{
-            //    BizUser bizUser = user.WebUserToBizUser();
-            //    WebUser userResponse = userFunctions.BizFuncLogin(bizUser.Email, bizUser.PassWord).BizUserToWebUser();
-
-            //    if (userResponse == null)
-            //        return Unauthorized();
-            //    else
-            //        return Ok(userResponse);
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    return BadRequest();
-            //}
+            
         }
 
         [HttpPut]

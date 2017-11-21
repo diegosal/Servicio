@@ -34,5 +34,17 @@ namespace RM.Core.Business
                 return null;
             }
         }
+
+        public string BizUpdateUserPassWord(BizUser bizUser)
+        {
+            bizUser.PassWord = PasswordStorage.CreateHash(bizUser.PassWord);
+            return BizCall(
+                   new Action(() =>
+                   {
+                       baseFuntion.UpdateUserPassWord(bizUser);
+                   }
+                   )
+            );
+        }
     }
 }
