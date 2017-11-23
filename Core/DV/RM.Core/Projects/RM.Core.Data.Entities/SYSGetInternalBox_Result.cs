@@ -10,10 +10,21 @@
 namespace RM.Core.Data.Entities
 {
     using System;
-    
+
+    /// <summary>
+    /// Class SYSGetInternalBox_Result.
+    /// </summary>
     public partial class SYSGetInternalBox_Result
     {
+        /// <summary>
+        /// Gets or sets the amount.
+        /// </summary>
+        /// <value>The amount.</value>
         public decimal Amount { get; set; }
+        /// <summary>
+        /// Gets or sets the creation date.
+        /// </summary>
+        /// <value>The creation date.</value>
         public System.DateTime CreationDate { get; set; }
     }
 }

@@ -10,11 +10,23 @@ using System.Web.Http;
 
 namespace RM.Core.Service.Controllers
 {
+    /// <summary>
+    /// Class VehicleController.
+    /// </summary>
+    /// <seealso cref="System.Web.Http.ApiController" />
     public class VehicleController : ApiController
     {
 
+        /// <summary>
+        /// The crud fuction
+        /// </summary>
         private BizCrudFuntion crudFuction = new BizCrudFuntion();
 
+        /// <summary>
+        /// Posts the specified web vehicle.
+        /// </summary>
+        /// <param name="webVehicle">The web vehicle.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpPost]
         public IHttpActionResult Post(WebVehicle webVehicle)
         {
@@ -26,6 +38,12 @@ namespace RM.Core.Service.Controllers
                 return Ok(response);
         }
 
+        /// <summary>
+        /// Gets the specified identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="active">if set to <c>true</c> [active].</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpGet]
         public IHttpActionResult Get(int? id = null, bool? active = null)
         {
@@ -37,6 +55,11 @@ namespace RM.Core.Service.Controllers
                 return Ok(webVehicleList);
         }
 
+        /// <summary>
+        /// Puts the specified web vehicle.
+        /// </summary>
+        /// <param name="webVehicle">The web vehicle.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpPut]
         public IHttpActionResult Put(WebVehicle webVehicle)
         {
@@ -48,6 +71,11 @@ namespace RM.Core.Service.Controllers
                 return Ok(response);
         }
 
+        /// <summary>
+        /// Deletes the specified web vehicle.
+        /// </summary>
+        /// <param name="webVehicle">The web vehicle.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpDelete]
         public IHttpActionResult Delete(WebVehicle webVehicle)
         {

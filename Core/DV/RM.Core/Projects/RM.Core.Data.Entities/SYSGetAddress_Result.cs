@@ -10,16 +10,51 @@
 namespace RM.Core.Data.Entities
 {
     using System;
-    
+
+    /// <summary>
+    /// Class SYSGetAddress_Result.
+    /// </summary>
     public partial class SYSGetAddress_Result
     {
+        /// <summary>
+        /// Gets or sets the identifier.
+        /// </summary>
+        /// <value>The identifier.</value>
         public int Id { get; set; }
+        /// <summary>
+        /// Gets or sets the user identifier.
+        /// </summary>
+        /// <value>The user identifier.</value>
         public int UserId { get; set; }
+        /// <summary>
+        /// Gets or sets the name of the street.
+        /// </summary>
+        /// <value>The name of the street.</value>
         public string StreetName { get; set; }
+        /// <summary>
+        /// Gets or sets the number.
+        /// </summary>
+        /// <value>The number.</value>
         public string Number { get; set; }
+        /// <summary>
+        /// Gets or sets the postal code.
+        /// </summary>
+        /// <value>The postal code.</value>
         public string PostalCode { get; set; }
+        /// <summary>
+        /// Gets or sets the creation date.
+        /// </summary>
+        /// <value>The creation date.</value>
         public System.DateTime CreationDate { get; set; }
+        /// <summary>
+        /// Gets or sets the modification date.
+        /// </summary>
+        /// <value>The modification date.</value>
         public System.DateTime ModificationDate { get; set; }
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="SYSGetAddress_Result"/> is active.
+        /// </summary>
+        /// <value><c>true</c> if active; otherwise, <c>false</c>.</value>
         public bool Active { get; set; }
     }
 }

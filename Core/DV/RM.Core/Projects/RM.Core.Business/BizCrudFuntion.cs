@@ -7,12 +7,24 @@ using System.Collections.Generic;
 
 namespace RM.Core.Business
 {
+    /// <summary>
+    /// Class BizCrudFuntion.
+    /// </summary>
+    /// <seealso cref="RM.Core.Business.Biz.BizLogic" />
     public class BizCrudFuntion: BizLogic
     {
+        /// <summary>
+        /// The crud funtion
+        /// </summary>
         private CrudFuntion crudFuntion = new CrudFuntion();
 
         #region INSERT
 
+        /// <summary>
+        /// Bizs the insert type user.
+        /// </summary>
+        /// <param name="bizTypeUser">The biz type user.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertTypeUser(BizTypeUser bizTypeUser)
         {
             return BizCall(
@@ -24,6 +36,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the insert type committee.
+        /// </summary>
+        /// <param name="bizTypeCommittee">The biz type committee.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertTypeCommittee(BizTypeCommittee bizTypeCommittee)
         {
             return BizCall(
@@ -35,6 +52,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the insert type visit.
+        /// </summary>
+        /// <param name="bizTypeVisit">The biz type visit.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertTypeVisit(BizTypeVisit bizTypeVisit)
         {
             return BizCall(
@@ -46,6 +68,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the insert recreational area.
+        /// </summary>
+        /// <param name="bizRecreationalArea">The biz recreational area.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertRecreationalArea(BizRecreationalArea bizRecreationalArea)
         {
             return BizCall(
@@ -57,6 +84,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the insert eventuality.
+        /// </summary>
+        /// <param name="bizEventuality">The biz eventuality.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertEventuality(BizEventuality bizEventuality)
         {
             return BizCall(
@@ -68,6 +100,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert ticket status.
+        /// </summary>
+        /// <param name="bizTicketStatus">The biz ticket status.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertTicketStatus(BizTicketStatus bizTicketStatus)
         {
             return BizCall(
@@ -79,6 +116,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert payment status.
+        /// </summary>
+        /// <param name="bizPaymentStatus">The biz payment status.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertPaymentStatus(BizPaymentStatus bizPaymentStatus)
         {
             return BizCall(
@@ -90,6 +132,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert event status.
+        /// </summary>
+        /// <param name="bizEventStatus">The biz event status.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertEventStatus(BizEventStatus bizEventStatus)
         {
             return BizCall(
@@ -101,6 +148,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert supplier.
+        /// </summary>
+        /// <param name="bizSupplier">The biz supplier.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertSupplier(BizSupplier bizSupplier)
         {
             return BizCall(
@@ -112,6 +164,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert company.
+        /// </summary>
+        /// <param name="bizCompany">The biz company.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertCompany(BizCompany bizCompany)
         {
             return BizCall(
@@ -123,6 +180,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert user.
+        /// </summary>
+        /// <param name="bizUser">The biz user.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertUser(BizUser bizUser)
         {
             bizUser.PassWord = PasswordStorage.CreateHash(bizUser.PassWord);
@@ -135,6 +197,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert vehicle.
+        /// </summary>
+        /// <param name="bizVehicle">The biz vehicle.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertVehicle(BizVehicle bizVehicle)
         {
             return BizCall(
@@ -146,6 +213,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert address.
+        /// </summary>
+        /// <param name="bizAddress">The biz address.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertAddress(BizAddress bizAddress)
         {
             return BizCall(
@@ -157,6 +229,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert committee member.
+        /// </summary>
+        /// <param name="bizCommitteeMember">The biz committee member.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertCommitteeMember(BizCommitteeMember bizCommitteeMember)
         {
             return BizCall(
@@ -168,6 +245,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert event.
+        /// </summary>
+        /// <param name="bizEvent">The biz event.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertEvent(BizEvent bizEvent)
         {
             return BizCall(
@@ -179,6 +261,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert ticket.
+        /// </summary>
+        /// <param name="bizTicket">The biz ticket.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertTicket(BizTicket bizTicket)
         {
             return BizCall(
@@ -190,6 +277,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert visit.
+        /// </summary>
+        /// <param name="bizVisit">The biz visit.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertVisit(BizVisit bizVisit)
         {
             return BizCall(
@@ -201,6 +293,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert assist control.
+        /// </summary>
+        /// <param name="bizAssistControl">The biz assist control.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertAssistControl(BizAssistControl bizAssistControl)
         {
             return BizCall(
@@ -212,6 +309,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert payment.
+        /// </summary>
+        /// <param name="bizPayment">The biz payment.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertPayment(BizPayment bizPayment)
         {
             return BizCall(
@@ -223,6 +325,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert internal box.
+        /// </summary>
+        /// <param name="bizInternalBox">The biz internal box.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertInternalBox(BizInternalBox bizInternalBox)
         {
             return BizCall(
@@ -234,6 +341,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the insert internal expense.
+        /// </summary>
+        /// <param name="bizInternalExpense">The biz internal expense.</param>
+        /// <returns>System.String.</returns>
         public string BizInsertInternalExpense(BizInternalExpense bizInternalExpense)
         {
             return BizCall(
@@ -249,6 +361,11 @@ namespace RM.Core.Business
 
         #region UPDATE
 
+        /// <summary>
+        /// Bizs the update type user.
+        /// </summary>
+        /// <param name="bizTypeUser">The biz type user.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateTypeUser(BizTypeUser bizTypeUser)
         {
             return BizCall(
@@ -260,6 +377,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the update type committee.
+        /// </summary>
+        /// <param name="bizTypeCommittee">The biz type committee.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateTypeCommittee(BizTypeCommittee bizTypeCommittee)
         {
             return BizCall(
@@ -271,6 +393,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the update type visit.
+        /// </summary>
+        /// <param name="bizTypeVisit">The biz type visit.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateTypeVisit(BizTypeVisit bizTypeVisit)
         {
             return BizCall(
@@ -282,6 +409,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the update recreational area.
+        /// </summary>
+        /// <param name="bizRecreationalArea">The biz recreational area.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateRecreationalArea(BizRecreationalArea bizRecreationalArea)
         {
             return BizCall(
@@ -293,6 +425,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the update eventuality.
+        /// </summary>
+        /// <param name="bizEventuality">The biz eventuality.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateEventuality(BizEventuality bizEventuality)
         {
             return BizCall(
@@ -304,6 +441,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the update ticket status.
+        /// </summary>
+        /// <param name="bizTicketStatus">The biz ticket status.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateTicketStatus(BizTicketStatus bizTicketStatus)
         {
             return BizCall(
@@ -315,6 +457,11 @@ namespace RM.Core.Business
           );
         }
 
+        /// <summary>
+        /// Bizs the update payment status.
+        /// </summary>
+        /// <param name="bizPaymentStatus">The biz payment status.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdatePaymentStatus(BizPaymentStatus bizPaymentStatus)
         {
             return BizCall(
@@ -326,6 +473,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the update event status.
+        /// </summary>
+        /// <param name="bizEventStatus">The biz event status.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateEventStatus(BizEventStatus bizEventStatus)
         {
             return BizCall(
@@ -337,6 +489,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the update supplier.
+        /// </summary>
+        /// <param name="bizSupplier">The biz supplier.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateSupplier(BizSupplier bizSupplier)
         {
             return BizCall(
@@ -348,6 +505,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the update company.
+        /// </summary>
+        /// <param name="bizCompany">The biz company.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateCompany(BizCompany bizCompany)
         {
             return BizCall(
@@ -359,6 +521,11 @@ namespace RM.Core.Business
              );
         }
 
+        /// <summary>
+        /// Bizs the update user.
+        /// </summary>
+        /// <param name="bizUser">The biz user.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateUser(BizUser bizUser)
         {
             return BizCall(
@@ -370,6 +537,11 @@ namespace RM.Core.Business
               );
         }
 
+        /// <summary>
+        /// Bizs the update vehicle.
+        /// </summary>
+        /// <param name="bizVehicle">The biz vehicle.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateVehicle(BizVehicle bizVehicle)
         {
             return BizCall(
@@ -381,6 +553,11 @@ namespace RM.Core.Business
               );
         }
 
+        /// <summary>
+        /// Bizs the update address.
+        /// </summary>
+        /// <param name="bizAddress">The biz address.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateAddress(BizAddress bizAddress)
         {
             return BizCall(
@@ -392,6 +569,11 @@ namespace RM.Core.Business
               );
         }
 
+        /// <summary>
+        /// Bizs the update committee member.
+        /// </summary>
+        /// <param name="bizCommitteeMember">The biz committee member.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateCommitteeMember(BizCommitteeMember bizCommitteeMember)
         {
             return BizCall(
@@ -403,6 +585,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the update event.
+        /// </summary>
+        /// <param name="bizEvent">The biz event.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateEvent(BizEvent bizEvent)
         {
             return BizCall(
@@ -414,6 +601,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the update ticket.
+        /// </summary>
+        /// <param name="bizTicket">The biz ticket.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateTicket(BizTicket bizTicket)
         {
             return BizCall(
@@ -425,6 +617,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the update visit.
+        /// </summary>
+        /// <param name="bizVisit">The biz visit.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateVisit(BizVisit bizVisit)
         {
             return BizCall(
@@ -436,6 +633,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the update assist control.
+        /// </summary>
+        /// <param name="bizAssistControl">The biz assist control.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdateAssistControl(BizAssistControl bizAssistControl)
         {
             return BizCall(
@@ -447,6 +649,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the update payment.
+        /// </summary>
+        /// <param name="bizPayment">The biz payment.</param>
+        /// <returns>System.String.</returns>
         public string BizUpdatePayment(BizPayment bizPayment)
         {
             return BizCall(
@@ -462,6 +669,12 @@ namespace RM.Core.Business
 
         #region GET
 
+        /// <summary>
+        /// Bizs the get type user.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizTypeUser&gt;.</returns>
         public List<BizTypeUser> BizGetTypeUser(int? Id = null, bool? Active = null)
         {
             List<BizTypeUser> bizTypeUser = new List<BizTypeUser>();
@@ -475,6 +688,12 @@ namespace RM.Core.Business
             return bizTypeUser;
         }
 
+        /// <summary>
+        /// Bizs the get type committee.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizTypeCommittee&gt;.</returns>
         public List<BizTypeCommittee> BizGetTypeCommittee(int? Id = null, bool? Active = null)
         {
             List<BizTypeCommittee> bizTypeCommittee = new List<BizTypeCommittee>();
@@ -488,6 +707,12 @@ namespace RM.Core.Business
             return bizTypeCommittee;
         }
 
+        /// <summary>
+        /// Bizs the get type visit.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizTypeVisit&gt;.</returns>
         public List<BizTypeVisit> BizGetTypeVisit(int? Id = null, bool? Active = null)
         {
             List<BizTypeVisit> bizTypeVisit = new List<BizTypeVisit>();
@@ -501,6 +726,12 @@ namespace RM.Core.Business
             return bizTypeVisit;
         }
 
+        /// <summary>
+        /// Bizs the get recreational area.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizRecreationalArea&gt;.</returns>
         public List<BizRecreationalArea> BizGetRecreationalArea(int? Id = null, bool? Active = null)
         {
             List<BizRecreationalArea> bizRecreationalArea = new List<BizRecreationalArea>();
@@ -514,6 +745,12 @@ namespace RM.Core.Business
             return bizRecreationalArea;
         }
 
+        /// <summary>
+        /// Bizs the get eventuality.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizEventuality&gt;.</returns>
         public List<BizEventuality> BizGetEventuality(int? Id = null, bool? Active = null)
         {
             List<BizEventuality> bizEventuality = new List<BizEventuality>();
@@ -527,6 +764,12 @@ namespace RM.Core.Business
             return bizEventuality;
         }
 
+        /// <summary>
+        /// Bizs the get ticket status.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizTicketStatus&gt;.</returns>
         public List<BizTicketStatus> BizGetTicketStatus(int? Id = null, bool? Active = null)
         {
             List<BizTicketStatus> biziTicketStatus = new List<BizTicketStatus>();
@@ -540,6 +783,12 @@ namespace RM.Core.Business
             return biziTicketStatus;
         }
 
+        /// <summary>
+        /// Bizs the get payment status.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizPaymentStatus&gt;.</returns>
         public List<BizPaymentStatus> BizGetPaymentStatus(int? Id = null, bool? Active = null)
         {
             List<BizPaymentStatus> biziPaymentStatus = new List<BizPaymentStatus>();
@@ -553,6 +802,12 @@ namespace RM.Core.Business
             return biziPaymentStatus;
         }
 
+        /// <summary>
+        /// Bizs the get event status.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizEventStatus&gt;.</returns>
         public List<BizEventStatus> BizGetEventStatus(int? Id = null, bool? Active = null)
         {
             List<BizEventStatus> bizEventStatus = new List<BizEventStatus>();
@@ -566,6 +821,12 @@ namespace RM.Core.Business
             return bizEventStatus;
         }
 
+        /// <summary>
+        /// Bizs the get supplier.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizSupplier&gt;.</returns>
         public List<BizSupplier> BizGetSupplier(int? Id = null, bool? Active = null)
         {
             List<BizSupplier> bizSupplier = new List<BizSupplier>();
@@ -579,6 +840,12 @@ namespace RM.Core.Business
             return bizSupplier;
         }
 
+        /// <summary>
+        /// Bizs the get company.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizCompany&gt;.</returns>
         public List<BizCompany> BizGetCompany(int? Id = null, bool? Active = null)
         {
             List<BizCompany> bizCompany = new List<BizCompany>();
@@ -592,6 +859,12 @@ namespace RM.Core.Business
             return bizCompany;
         }
 
+        /// <summary>
+        /// Bizs the get user.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizUser&gt;.</returns>
         public List<BizUser> BizGetUser(int? Id = null, bool? Active = null)
         {
             List<BizUser> bizUser = new List<BizUser>();
@@ -605,6 +878,12 @@ namespace RM.Core.Business
             return bizUser;
         }
 
+        /// <summary>
+        /// Bizs the get vehicle.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizVehicle&gt;.</returns>
         public List<BizVehicle> BizGetVehicle(int? Id = null, bool? Active = null)
         {
             List<BizVehicle> bizVehicle = new List<BizVehicle>();
@@ -618,6 +897,12 @@ namespace RM.Core.Business
             return bizVehicle;
         }
 
+        /// <summary>
+        /// Bizs the get address.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizAddress&gt;.</returns>
         public List<BizAddress> BizGetAddress(int? Id = null, bool? Active = null)
         {
             List<BizAddress> bizAddress = new List<BizAddress>();
@@ -631,6 +916,12 @@ namespace RM.Core.Business
             return bizAddress;
         }
 
+        /// <summary>
+        /// Bizs the get committee member.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizCommitteeMember&gt;.</returns>
         public List<BizCommitteeMember> BizGetCommitteeMember(int? Id = null, bool? Active = null)
         {
             List<BizCommitteeMember> bizCommitteeMember = new List<BizCommitteeMember>();
@@ -644,6 +935,12 @@ namespace RM.Core.Business
             return bizCommitteeMember;
         }
 
+        /// <summary>
+        /// Bizs the get event.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizEvent&gt;.</returns>
         public List<BizEvent> BizGetEvent(int? Id = null, bool? Active = null)
         {
             List<BizEvent> bizEvent = new List<BizEvent>();
@@ -657,6 +954,12 @@ namespace RM.Core.Business
             return bizEvent;
         }
 
+        /// <summary>
+        /// Bizs the get ticket.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizTicket&gt;.</returns>
         public List<BizTicket> BizGetTicket(int? Id = null, bool? Active = null)
         {
             List<BizTicket> bizTicket = new List<BizTicket>();
@@ -670,6 +973,12 @@ namespace RM.Core.Business
             return bizTicket;
         }
 
+        /// <summary>
+        /// Bizs the get visit.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizVisit&gt;.</returns>
         public List<BizVisit> BizGetVisit(int? Id = null, bool? Active = null)
         {
             List<BizVisit> bizVisit = new List<BizVisit>();
@@ -683,6 +992,12 @@ namespace RM.Core.Business
             return bizVisit;
         }
 
+        /// <summary>
+        /// Bizs the get assist control.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizAssistControl&gt;.</returns>
         public List<BizAssistControl> BizGetAssistControl(int? Id = null, bool? Active = null)
         {
             List<BizAssistControl> bizAssistControl = new List<BizAssistControl>();
@@ -696,6 +1011,12 @@ namespace RM.Core.Business
             return bizAssistControl;
         }
 
+        /// <summary>
+        /// Bizs the get payment.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizPayment&gt;.</returns>
         public List<BizPayment> BizGetPayment(int? Id = null, bool? Active = null)
         {
             List<BizPayment> bizPayment = new List<BizPayment>();
@@ -709,6 +1030,12 @@ namespace RM.Core.Business
             return bizPayment;
         }
 
+        /// <summary>
+        /// Bizs the get internal box.
+        /// </summary>
+        /// <param name="Amount">The amount.</param>
+        /// <param name="CreationDate">The creation date.</param>
+        /// <returns>List&lt;BizInternalBox&gt;.</returns>
         public List<BizInternalBox> BizGetInternalBox(decimal? Amount, DateTime? CreationDate)
         {
             List<BizInternalBox> bizInternalBox = new List<BizInternalBox>();
@@ -723,6 +1050,12 @@ namespace RM.Core.Business
             return bizInternalBox;
         }
 
+        /// <summary>
+        /// Bizs the get internal expense.
+        /// </summary>
+        /// <param name="Id">The identifier.</param>
+        /// <param name="Active">if set to <c>true</c> [active].</param>
+        /// <returns>List&lt;BizInternalExpense&gt;.</returns>
         public List<BizInternalExpense> BizGetInternalExpense(int? Id = null, bool? Active = null)
         {
             List<BizInternalExpense> bizInternalExpense = new List<BizInternalExpense>();
@@ -741,6 +1074,11 @@ namespace RM.Core.Business
 
         #region DELETE
 
+        /// <summary>
+        /// Bizs the delete type user.
+        /// </summary>
+        /// <param name="bizTypeUser">The biz type user.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteTypeUser(BizTypeUser bizTypeUser)
         {
             return BizCall(
@@ -752,6 +1090,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the delete type committee.
+        /// </summary>
+        /// <param name="bizTypeCommittee">The biz type committee.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteTypeCommittee(BizTypeCommittee bizTypeCommittee)
         {
             return BizCall(
@@ -763,6 +1106,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the delete type visit.
+        /// </summary>
+        /// <param name="bizTypeVisit">The biz type visit.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteTypeVisit(BizTypeVisit bizTypeVisit)
         {
             return BizCall(
@@ -774,6 +1122,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the delete recreational area.
+        /// </summary>
+        /// <param name="bizRecreationalArea">The biz recreational area.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteRecreationalArea(BizRecreationalArea bizRecreationalArea)
         {
             return BizCall(
@@ -785,6 +1138,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the delete eventuality.
+        /// </summary>
+        /// <param name="bizEventuality">The biz eventuality.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteEventuality(BizEventuality bizEventuality)
         {
             return BizCall(
@@ -796,6 +1154,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the delete ticket status.
+        /// </summary>
+        /// <param name="bizTicketStatus">The biz ticket status.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteTicketStatus(BizTicketStatus bizTicketStatus)
         {
             return BizCall(
@@ -807,6 +1170,11 @@ namespace RM.Core.Business
           );
         }
 
+        /// <summary>
+        /// Bizs the delete payment status.
+        /// </summary>
+        /// <param name="bizPaymentStatus">The biz payment status.</param>
+        /// <returns>System.String.</returns>
         public string BizDeletePaymentStatus(BizPaymentStatus bizPaymentStatus)
         {
             return BizCall(
@@ -818,6 +1186,11 @@ namespace RM.Core.Business
            );
         }
 
+        /// <summary>
+        /// Bizs the delete event status.
+        /// </summary>
+        /// <param name="bizEventStatus">The biz event status.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteEventStatus(BizEventStatus bizEventStatus)
         {
             return BizCall(
@@ -829,6 +1202,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the delete supplier.
+        /// </summary>
+        /// <param name="bizSupplier">The biz supplier.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteSupplier(BizSupplier bizSupplier)
         {
             return BizCall(
@@ -840,6 +1218,11 @@ namespace RM.Core.Business
             );
         }
 
+        /// <summary>
+        /// Bizs the delete company.
+        /// </summary>
+        /// <param name="bizCompany">The biz company.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteCompany(BizCompany bizCompany)
         {
             return BizCall(
@@ -851,6 +1234,11 @@ namespace RM.Core.Business
              );
         }
 
+        /// <summary>
+        /// Bizs the delete user.
+        /// </summary>
+        /// <param name="bizUser">The biz user.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteUser(BizUser bizUser)
         {
             return BizCall(
@@ -862,6 +1250,11 @@ namespace RM.Core.Business
               );
         }
 
+        /// <summary>
+        /// Bizs the delete vehicle.
+        /// </summary>
+        /// <param name="bizVehicle">The biz vehicle.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteVehicle(BizVehicle bizVehicle)
         {
             return BizCall(
@@ -873,6 +1266,11 @@ namespace RM.Core.Business
               );
         }
 
+        /// <summary>
+        /// Bizs the delete address.
+        /// </summary>
+        /// <param name="bizAddress">The biz address.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteAddress(BizAddress bizAddress)
         {
             return BizCall(
@@ -884,6 +1282,11 @@ namespace RM.Core.Business
               );
         }
 
+        /// <summary>
+        /// Bizs the delete committee member.
+        /// </summary>
+        /// <param name="bizCommitteeMember">The biz committee member.</param>
+        /// <returns>System.String.</returns>
         public string BizDeleteCommitteeMember(BizCommitteeMember bizCommitteeMember)
         {
             return BizCall(

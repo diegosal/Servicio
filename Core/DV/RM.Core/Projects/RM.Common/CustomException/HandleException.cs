@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace RM.Common.CustomException
 {
+    /// <summary>
+    /// Class HandleException.
+    /// </summary>
     public class HandleException
     {
     }

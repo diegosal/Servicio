@@ -10,14 +10,41 @@
 namespace RM.Core.Data.Entities
 {
     using System;
-    
+
+    /// <summary>
+    /// Class SYSGetEvent_Result.
+    /// </summary>
     public partial class SYSGetEvent_Result
     {
+        /// <summary>
+        /// Gets or sets the identifier.
+        /// </summary>
+        /// <value>The identifier.</value>
         public int Id { get; set; }
+        /// <summary>
+        /// Gets or sets the nombre.
+        /// </summary>
+        /// <value>The nombre.</value>
         public string Nombre { get; set; }
+        /// <summary>
+        /// Gets or sets the name of the status.
+        /// </summary>
+        /// <value>The name of the status.</value>
         public string StatusName { get; set; }
+        /// <summary>
+        /// Gets or sets the name of the area.
+        /// </summary>
+        /// <value>The name of the area.</value>
         public string AreaName { get; set; }
+        /// <summary>
+        /// Gets or sets the start date.
+        /// </summary>
+        /// <value>The start date.</value>
         public System.DateTime StartDate { get; set; }
+        /// <summary>
+        /// Gets or sets the end date.
+        /// </summary>
+        /// <value>The end date.</value>
         public System.DateTime EndDate { get; set; }
     }
 }

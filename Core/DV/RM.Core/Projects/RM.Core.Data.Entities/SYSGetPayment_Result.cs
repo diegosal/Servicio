@@ -10,13 +10,36 @@
 namespace RM.Core.Data.Entities
 {
     using System;
-    
+
+    /// <summary>
+    /// Class SYSGetPayment_Result.
+    /// </summary>
     public partial class SYSGetPayment_Result
     {
+        /// <summary>
+        /// Gets or sets the identifier.
+        /// </summary>
+        /// <value>The identifier.</value>
         public int Id { get; set; }
+        /// <summary>
+        /// Gets or sets the nombre.
+        /// </summary>
+        /// <value>The nombre.</value>
         public string Nombre { get; set; }
+        /// <summary>
+        /// Gets or sets the name of the status.
+        /// </summary>
+        /// <value>The name of the status.</value>
         public string StatusName { get; set; }
+        /// <summary>
+        /// Gets or sets the amount.
+        /// </summary>
+        /// <value>The amount.</value>
         public decimal Amount { get; set; }
+        /// <summary>
+        /// Gets or sets the payment date.
+        /// </summary>
+        /// <value>The payment date.</value>
         public System.DateTime PaymentDate { get; set; }
     }
 }

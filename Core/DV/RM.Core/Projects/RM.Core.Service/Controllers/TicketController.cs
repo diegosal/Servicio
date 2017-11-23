@@ -10,11 +10,23 @@ using System.Web.Http;
 
 namespace RM.Core.Service.Controllers
 {
+    /// <summary>
+    /// Class TicketController.
+    /// </summary>
+    /// <seealso cref="System.Web.Http.ApiController" />
     public class TicketController : ApiController
     {
 
+        /// <summary>
+        /// The crud fuction
+        /// </summary>
         private BizCrudFuntion crudFuction = new BizCrudFuntion();
 
+        /// <summary>
+        /// Posts the specified web ticket.
+        /// </summary>
+        /// <param name="webTicket">The web ticket.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpPost]
         public IHttpActionResult Post(WebTicket webTicket)
         {
@@ -26,6 +38,12 @@ namespace RM.Core.Service.Controllers
                 return Ok(response);
         }
 
+        /// <summary>
+        /// Gets the specified identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="active">if set to <c>true</c> [active].</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpGet]
         public IHttpActionResult Get(int? id = null, bool? active = null)
         {
@@ -37,6 +55,11 @@ namespace RM.Core.Service.Controllers
                 return Ok(webTicketList);
         }
 
+        /// <summary>
+        /// Puts the specified web ticket.
+        /// </summary>
+        /// <param name="webTicket">The web ticket.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpPut]
         public IHttpActionResult Put(WebTicket webTicket)
         {
@@ -48,6 +71,10 @@ namespace RM.Core.Service.Controllers
                 return Ok(response);
         }
 
+        /// <summary>
+        /// Deletes this instance.
+        /// </summary>
+        /// <returns>IHttpActionResult.</returns>
         [HttpDelete]
         public IHttpActionResult Delete()
         {

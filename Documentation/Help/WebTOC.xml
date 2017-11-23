@@ -1,0 +1,1687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="e2791eb2-0d5d-432f-ba71-cc0d0a2f47ba" Title="PasswordSecurity Namespace" Url="html/N-PasswordSecurity.htm">
+    <HelpTOCNode Id="45602264-ba92-4a1e-886f-a140fbcc154c" Title="CannotPerformOperationException Class" Url="html/T-PasswordSecurity.CannotPerformOperationException.htm">
+      <HelpTOCNode Title="CannotPerformOperationException Members" Url="html/AllMembers.T-PasswordSecurity.CannotPerformOperationException.htm" />
+      <HelpTOCNode Id="f8998eed-587f-4b7b-a9e3-ab3fe0c2b95b" Title="CannotPerformOperationException Constructor " Url="html/Overload-PasswordSecurity.CannotPerformOperationException.-ctor.htm">
+        <HelpTOCNode Title="CannotPerformOperationException Constructor " Url="html/M-PasswordSecurity.CannotPerformOperationException.-ctor.htm" />
+        <HelpTOCNode Title="CannotPerformOperationException Constructor (String)" Url="html/M-PasswordSecurity.CannotPerformOperationException.-ctor_1.htm" />
+        <HelpTOCNode Title="CannotPerformOperationException Constructor (String, Exception)" Url="html/M-PasswordSecurity.CannotPerformOperationException.-ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CannotPerformOperationException Methods" Url="html/Methods.T-PasswordSecurity.CannotPerformOperationException.htm" />
+      <HelpTOCNode Title="CannotPerformOperationException Properties" Url="html/Properties.T-PasswordSecurity.CannotPerformOperationException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="cc051551-5d16-4571-a8b7-f146d5a7a6fb" Title="InvalidHashException Class" Url="html/T-PasswordSecurity.InvalidHashException.htm">
+      <HelpTOCNode Title="InvalidHashException Members" Url="html/AllMembers.T-PasswordSecurity.InvalidHashException.htm" />
+      <HelpTOCNode Id="5dffefbf-5645-4957-bc5e-0746a2639230" Title="InvalidHashException Constructor " Url="html/Overload-PasswordSecurity.InvalidHashException.-ctor.htm">
+        <HelpTOCNode Title="InvalidHashException Constructor " Url="html/M-PasswordSecurity.InvalidHashException.-ctor.htm" />
+        <HelpTOCNode Title="InvalidHashException Constructor (String)" Url="html/M-PasswordSecurity.InvalidHashException.-ctor_1.htm" />
+        <HelpTOCNode Title="InvalidHashException Constructor (String, Exception)" Url="html/M-PasswordSecurity.InvalidHashException.-ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InvalidHashException Methods" Url="html/Methods.T-PasswordSecurity.InvalidHashException.htm" />
+      <HelpTOCNode Title="InvalidHashException Properties" Url="html/Properties.T-PasswordSecurity.InvalidHashException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="82d0ca0f-16f2-445e-91d3-ce052bca390e" Title="PasswordStorage Class" Url="html/T-PasswordSecurity.PasswordStorage.htm">
+      <HelpTOCNode Title="PasswordStorage Members" Url="html/AllMembers.T-PasswordSecurity.PasswordStorage.htm" />
+      <HelpTOCNode Id="fee10715-82b7-473b-8e9c-387bc7b2a238" Title="PasswordStorage Fields" Url="html/Fields.T-PasswordSecurity.PasswordStorage.htm">
+        <HelpTOCNode Title="HASH_ALGORITHM_INDEX Field" Url="html/F-PasswordSecurity.PasswordStorage.HASH_ALGORITHM_INDEX.htm" />
+        <HelpTOCNode Title="HASH_BYTES Field" Url="html/F-PasswordSecurity.PasswordStorage.HASH_BYTES.htm" />
+        <HelpTOCNode Title="HASH_SECTIONS Field" Url="html/F-PasswordSecurity.PasswordStorage.HASH_SECTIONS.htm" />
+        <HelpTOCNode Title="HASH_SIZE_INDEX Field" Url="html/F-PasswordSecurity.PasswordStorage.HASH_SIZE_INDEX.htm" />
+        <HelpTOCNode Title="ITERATION_INDEX Field" Url="html/F-PasswordSecurity.PasswordStorage.ITERATION_INDEX.htm" />
+        <HelpTOCNode Title="PBKDF2_INDEX Field" Url="html/F-PasswordSecurity.PasswordStorage.PBKDF2_INDEX.htm" />
+        <HelpTOCNode Title="PBKDF2_ITERATIONS Field" Url="html/F-PasswordSecurity.PasswordStorage.PBKDF2_ITERATIONS.htm" />
+        <HelpTOCNode Title="SALT_BYTES Field" Url="html/F-PasswordSecurity.PasswordStorage.SALT_BYTES.htm" />
+        <HelpTOCNode Title="SALT_INDEX Field" Url="html/F-PasswordSecurity.PasswordStorage.SALT_INDEX.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3b04faf8-d714-4bdf-aad9-270fcdf60dc7" Title="PasswordStorage Methods" Url="html/Methods.T-PasswordSecurity.PasswordStorage.htm">
+        <HelpTOCNode Title="CreateHash Method " Url="html/M-PasswordSecurity.PasswordStorage.CreateHash.htm" />
+        <HelpTOCNode Title="PBKDF2 Method " Url="html/M-PasswordSecurity.PasswordStorage.PBKDF2.htm" />
+        <HelpTOCNode Title="SlowEquals Method " Url="html/M-PasswordSecurity.PasswordStorage.SlowEquals.htm" />
+        <HelpTOCNode Title="VerifyPassword Method " Url="html/M-PasswordSecurity.PasswordStorage.VerifyPassword.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="b28e3db9-fa0e-4441-9cff-1b7650e4316b" Title="RM.Common Namespace" Url="html/N-RM.Common.htm">
+    <HelpTOCNode Id="932e6554-5ebd-4d90-bdab-6d9ddd8256e7" Title="ConstString Class" Url="html/T-RM.Common.ConstString.htm">
+      <HelpTOCNode Title="ConstString Members" Url="html/AllMembers.T-RM.Common.ConstString.htm" />
+      <HelpTOCNode Id="23fb1968-4a45-4590-8745-198a901ea125" Title="ConstString Fields" Url="html/Fields.T-RM.Common.ConstString.htm">
+        <HelpTOCNode Title="Secret Field" Url="html/F-RM.Common.ConstString.Secret.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ConstString Methods" Url="html/Methods.T-RM.Common.ConstString.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b6b0e636-6877-48ce-bcca-7d0a9eafb16f" Title="ExceptionMessage Class" Url="html/T-RM.Common.ExceptionMessage.htm">
+      <HelpTOCNode Title="ExceptionMessage Members" Url="html/AllMembers.T-RM.Common.ExceptionMessage.htm" />
+      <HelpTOCNode Id="96236be5-00a4-4370-98de-d6d46930bd23" Title="ExceptionMessage Fields" Url="html/Fields.T-RM.Common.ExceptionMessage.htm">
+        <HelpTOCNode Title="ConstraintError Field" Url="html/F-RM.Common.ExceptionMessage.ConstraintError.htm" />
+        <HelpTOCNode Title="DbConnectionError Field" Url="html/F-RM.Common.ExceptionMessage.DbConnectionError.htm" />
+        <HelpTOCNode Title="NotUniqueEmail Field" Url="html/F-RM.Common.ExceptionMessage.NotUniqueEmail.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ExceptionMessage Methods" Url="html/Methods.T-RM.Common.ExceptionMessage.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="5f08c384-ccef-4739-9503-895d212b02e2" Title="RM.Common.CustomException Namespace" Url="html/N-RM.Common.CustomException.htm">
+    <HelpTOCNode Id="aa879d20-ba1b-40d4-985c-b2e21dd3d227" Title="CustomException Class" Url="html/T-RM.Common.CustomException.CustomException.htm">
+      <HelpTOCNode Title="CustomException Members" Url="html/AllMembers.T-RM.Common.CustomException.CustomException.htm" />
+      <HelpTOCNode Id="a508cddb-3fc6-4e2f-a95b-2740c902290e" Title="CustomException Constructor " Url="html/Overload-RM.Common.CustomException.CustomException.-ctor.htm">
+        <HelpTOCNode Title="CustomException Constructor " Url="html/M-RM.Common.CustomException.CustomException.-ctor.htm" />
+        <HelpTOCNode Title="CustomException Constructor (String)" Url="html/M-RM.Common.CustomException.CustomException.-ctor_1.htm" />
+        <HelpTOCNode Title="CustomException Constructor (String, Object[])" Url="html/M-RM.Common.CustomException.CustomException.-ctor_2.htm" />
+        <HelpTOCNode Title="CustomException Constructor (String, Exception)" Url="html/M-RM.Common.CustomException.CustomException.-ctor_3.htm" />
+        <HelpTOCNode Title="CustomException Constructor (String, Exception, Object[])" Url="html/M-RM.Common.CustomException.CustomException.-ctor_4.htm" />
+        <HelpTOCNode Title="CustomException Constructor (SerializationInfo, StreamingContext)" Url="html/M-RM.Common.CustomException.CustomException.-ctor_5.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CustomException Methods" Url="html/Methods.T-RM.Common.CustomException.CustomException.htm" />
+      <HelpTOCNode Title="CustomException Properties" Url="html/Properties.T-RM.Common.CustomException.CustomException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="f8c37459-a377-435f-ac28-c8470cf5db6f" Title="HandleException Class" Url="html/T-RM.Common.CustomException.HandleException.htm">
+      <HelpTOCNode Title="HandleException Methods" Url="html/Methods.T-RM.Common.CustomException.HandleException.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="f295f024-a2fb-4aed-8e66-b931b4d792e2" Title="RM.Common.Helpers Namespace" Url="html/N-RM.Common.Helpers.htm">
+    <HelpTOCNode Id="0d050790-83c5-4037-8760-66761459bdfb" Title="AppException Class" Url="html/T-RM.Common.Helpers.AppException.htm">
+      <HelpTOCNode Title="AppException Members" Url="html/AllMembers.T-RM.Common.Helpers.AppException.htm" />
+      <HelpTOCNode Id="dee1ce7c-3c59-4012-9185-156724427659" Title="AppException Constructor " Url="html/Overload-RM.Common.Helpers.AppException.-ctor.htm">
+        <HelpTOCNode Title="AppException Constructor " Url="html/M-RM.Common.Helpers.AppException.-ctor.htm" />
+        <HelpTOCNode Title="AppException Constructor (String)" Url="html/M-RM.Common.Helpers.AppException.-ctor_1.htm" />
+        <HelpTOCNode Title="AppException Constructor (String, Object[])" Url="html/M-RM.Common.Helpers.AppException.-ctor_2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AppException Methods" Url="html/Methods.T-RM.Common.Helpers.AppException.htm" />
+      <HelpTOCNode Title="AppException Properties" Url="html/Properties.T-RM.Common.Helpers.AppException.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="67274793-f36d-4a5b-9063-932e4a31e6c8" Title="AppSettings Class" Url="html/T-RM.Common.Helpers.AppSettings.htm">
+      <HelpTOCNode Title="AppSettings Members" Url="html/AllMembers.T-RM.Common.Helpers.AppSettings.htm" />
+      <HelpTOCNode Title="AppSettings Methods" Url="html/Methods.T-RM.Common.Helpers.AppSettings.htm" />
+      <HelpTOCNode Id="b135030b-34c5-409b-a312-03f75e87f522" Title="AppSettings Properties" Url="html/Properties.T-RM.Common.Helpers.AppSettings.htm">
+        <HelpTOCNode Title="Secret Property " Url="html/P-RM.Common.Helpers.AppSettings.Secret.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="abd0f79c-b2d9-4089-b810-0e92f5c75306" Title="StringHelpers Class" Url="html/T-RM.Common.Helpers.StringHelpers.htm">
+      <HelpTOCNode Title="StringHelpers Members" Url="html/AllMembers.T-RM.Common.Helpers.StringHelpers.htm" />
+      <HelpTOCNode Id="815a5a1e-6ed3-4059-a565-837e3f65b145" Title="StringHelpers Methods" Url="html/Methods.T-RM.Common.Helpers.StringHelpers.htm">
+        <HelpTOCNode Title="ToJsonString(M) Method " Url="html/M-RM.Common.Helpers.StringHelpers.ToJsonString--1.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="2812fa17-460a-4d81-91de-4f8bb3433c62" Title="RM.Core.Business Namespace" Url="html/N-RM.Core.Business.htm">
+    <HelpTOCNode Id="05dc09f5-5152-4b95-9d5b-3427b073d999" Title="BizCrudFuntion Class" Url="html/T-RM.Core.Business.BizCrudFuntion.htm">
+      <HelpTOCNode Title="BizCrudFuntion Members" Url="html/AllMembers.T-RM.Core.Business.BizCrudFuntion.htm" />
+      <HelpTOCNode Id="8885b9b5-dae4-4371-b34b-dba7f5364747" Title="BizCrudFuntion Fields" Url="html/Fields.T-RM.Core.Business.BizCrudFuntion.htm">
+        <HelpTOCNode Title="crudFuntion Field" Url="html/F-RM.Core.Business.BizCrudFuntion.crudFuntion.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="31e54d95-1b71-4b27-b69f-09dbe38134cf" Title="BizCrudFuntion Methods" Url="html/Methods.T-RM.Core.Business.BizCrudFuntion.htm">
+        <HelpTOCNode Title="BizDeleteAddress Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteAddress.htm" />
+        <HelpTOCNode Title="BizDeleteCommitteeMember Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteCommitteeMember.htm" />
+        <HelpTOCNode Title="BizDeleteCompany Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteCompany.htm" />
+        <HelpTOCNode Title="BizDeleteEventStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteEventStatus.htm" />
+        <HelpTOCNode Title="BizDeleteEventuality Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteEventuality.htm" />
+        <HelpTOCNode Title="BizDeletePaymentStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeletePaymentStatus.htm" />
+        <HelpTOCNode Title="BizDeleteRecreationalArea Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteRecreationalArea.htm" />
+        <HelpTOCNode Title="BizDeleteSupplier Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteSupplier.htm" />
+        <HelpTOCNode Title="BizDeleteTicketStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteTicketStatus.htm" />
+        <HelpTOCNode Title="BizDeleteTypeCommittee Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteTypeCommittee.htm" />
+        <HelpTOCNode Title="BizDeleteTypeUser Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteTypeUser.htm" />
+        <HelpTOCNode Title="BizDeleteTypeVisit Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteTypeVisit.htm" />
+        <HelpTOCNode Title="BizDeleteUser Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteUser.htm" />
+        <HelpTOCNode Title="BizDeleteVehicle Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizDeleteVehicle.htm" />
+        <HelpTOCNode Title="BizGetAddress Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetAddress.htm" />
+        <HelpTOCNode Title="BizGetAssistControl Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetAssistControl.htm" />
+        <HelpTOCNode Title="BizGetCommitteeMember Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetCommitteeMember.htm" />
+        <HelpTOCNode Title="BizGetCompany Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetCompany.htm" />
+        <HelpTOCNode Title="BizGetEvent Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetEvent.htm" />
+        <HelpTOCNode Title="BizGetEventStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetEventStatus.htm" />
+        <HelpTOCNode Title="BizGetEventuality Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetEventuality.htm" />
+        <HelpTOCNode Title="BizGetInternalBox Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetInternalBox.htm" />
+        <HelpTOCNode Title="BizGetInternalExpense Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetInternalExpense.htm" />
+        <HelpTOCNode Title="BizGetPayment Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetPayment.htm" />
+        <HelpTOCNode Title="BizGetPaymentStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetPaymentStatus.htm" />
+        <HelpTOCNode Title="BizGetRecreationalArea Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetRecreationalArea.htm" />
+        <HelpTOCNode Title="BizGetSupplier Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetSupplier.htm" />
+        <HelpTOCNode Title="BizGetTicket Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetTicket.htm" />
+        <HelpTOCNode Title="BizGetTicketStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetTicketStatus.htm" />
+        <HelpTOCNode Title="BizGetTypeCommittee Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetTypeCommittee.htm" />
+        <HelpTOCNode Title="BizGetTypeUser Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetTypeUser.htm" />
+        <HelpTOCNode Title="BizGetTypeVisit Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetTypeVisit.htm" />
+        <HelpTOCNode Title="BizGetUser Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetUser.htm" />
+        <HelpTOCNode Title="BizGetVehicle Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetVehicle.htm" />
+        <HelpTOCNode Title="BizGetVisit Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizGetVisit.htm" />
+        <HelpTOCNode Title="BizInsertAddress Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertAddress.htm" />
+        <HelpTOCNode Title="BizInsertAssistControl Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertAssistControl.htm" />
+        <HelpTOCNode Title="BizInsertCommitteeMember Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertCommitteeMember.htm" />
+        <HelpTOCNode Title="BizInsertCompany Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertCompany.htm" />
+        <HelpTOCNode Title="BizInsertEvent Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertEvent.htm" />
+        <HelpTOCNode Title="BizInsertEventStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertEventStatus.htm" />
+        <HelpTOCNode Title="BizInsertEventuality Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertEventuality.htm" />
+        <HelpTOCNode Title="BizInsertInternalBox Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertInternalBox.htm" />
+        <HelpTOCNode Title="BizInsertInternalExpense Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertInternalExpense.htm" />
+        <HelpTOCNode Title="BizInsertPayment Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertPayment.htm" />
+        <HelpTOCNode Title="BizInsertPaymentStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertPaymentStatus.htm" />
+        <HelpTOCNode Title="BizInsertRecreationalArea Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertRecreationalArea.htm" />
+        <HelpTOCNode Title="BizInsertSupplier Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertSupplier.htm" />
+        <HelpTOCNode Title="BizInsertTicket Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertTicket.htm" />
+        <HelpTOCNode Title="BizInsertTicketStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertTicketStatus.htm" />
+        <HelpTOCNode Title="BizInsertTypeCommittee Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertTypeCommittee.htm" />
+        <HelpTOCNode Title="BizInsertTypeUser Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertTypeUser.htm" />
+        <HelpTOCNode Title="BizInsertTypeVisit Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertTypeVisit.htm" />
+        <HelpTOCNode Title="BizInsertUser Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertUser.htm" />
+        <HelpTOCNode Title="BizInsertVehicle Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertVehicle.htm" />
+        <HelpTOCNode Title="BizInsertVisit Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizInsertVisit.htm" />
+        <HelpTOCNode Title="BizUpdateAddress Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateAddress.htm" />
+        <HelpTOCNode Title="BizUpdateAssistControl Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateAssistControl.htm" />
+        <HelpTOCNode Title="BizUpdateCommitteeMember Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateCommitteeMember.htm" />
+        <HelpTOCNode Title="BizUpdateCompany Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateCompany.htm" />
+        <HelpTOCNode Title="BizUpdateEvent Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateEvent.htm" />
+        <HelpTOCNode Title="BizUpdateEventStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateEventStatus.htm" />
+        <HelpTOCNode Title="BizUpdateEventuality Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateEventuality.htm" />
+        <HelpTOCNode Title="BizUpdatePayment Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdatePayment.htm" />
+        <HelpTOCNode Title="BizUpdatePaymentStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdatePaymentStatus.htm" />
+        <HelpTOCNode Title="BizUpdateRecreationalArea Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateRecreationalArea.htm" />
+        <HelpTOCNode Title="BizUpdateSupplier Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateSupplier.htm" />
+        <HelpTOCNode Title="BizUpdateTicket Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateTicket.htm" />
+        <HelpTOCNode Title="BizUpdateTicketStatus Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateTicketStatus.htm" />
+        <HelpTOCNode Title="BizUpdateTypeCommittee Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateTypeCommittee.htm" />
+        <HelpTOCNode Title="BizUpdateTypeUser Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateTypeUser.htm" />
+        <HelpTOCNode Title="BizUpdateTypeVisit Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateTypeVisit.htm" />
+        <HelpTOCNode Title="BizUpdateUser Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateUser.htm" />
+        <HelpTOCNode Title="BizUpdateVehicle Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateVehicle.htm" />
+        <HelpTOCNode Title="BizUpdateVisit Method " Url="html/M-RM.Core.Business.BizCrudFuntion.BizUpdateVisit.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="85e22d49-ff9c-47bc-b873-6dd2a0cb9d6b" Title="UserFunctions Class" Url="html/T-RM.Core.Business.UserFunctions.htm">
+      <HelpTOCNode Title="UserFunctions Members" Url="html/AllMembers.T-RM.Core.Business.UserFunctions.htm" />
+      <HelpTOCNode Id="b3cfc932-e122-4bcf-9c60-2a6e972e166e" Title="UserFunctions Fields" Url="html/Fields.T-RM.Core.Business.UserFunctions.htm">
+        <HelpTOCNode Title="baseFuntion Field" Url="html/F-RM.Core.Business.UserFunctions.baseFuntion.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7ba9a7c4-8452-476a-bef4-cd38c4a12665" Title="UserFunctions Methods" Url="html/Methods.T-RM.Core.Business.UserFunctions.htm">
+        <HelpTOCNode Title="BizFuncLogin Method " Url="html/M-RM.Core.Business.UserFunctions.BizFuncLogin.htm" />
+        <HelpTOCNode Title="BizUpdateUserPassWord Method " Url="html/M-RM.Core.Business.UserFunctions.BizUpdateUserPassWord.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="8b94a93b-b128-4ac0-97da-c45eaefc07a9" Title="RM.Core.Business.Biz Namespace" Url="html/N-RM.Core.Business.Biz.htm">
+    <HelpTOCNode Id="6135a205-c390-4787-ae0f-2536b4c5f67e" Title="BizLogic Class" Url="html/T-RM.Core.Business.Biz.BizLogic.htm">
+      <HelpTOCNode Title="BizLogic Members" Url="html/AllMembers.T-RM.Core.Business.Biz.BizLogic.htm" />
+      <HelpTOCNode Id="ed741bc8-e42d-4637-988f-fd7e77ec67c9" Title="BizLogic Methods" Url="html/Methods.T-RM.Core.Business.Biz.BizLogic.htm">
+        <HelpTOCNode Title="BizCall Method " Url="html/M-RM.Core.Business.Biz.BizLogic.BizCall.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="fd105544-d56b-4959-b101-e77958c75065" Title="RM.Core.Business.Entities.Views Namespace" Url="html/N-RM.Core.Business.Entities.Views.htm">
+    <HelpTOCNode Id="38d09c6b-cdcf-4117-ab47-0971078712fd" Title="BizAddress Class" Url="html/T-RM.Core.Business.Entities.Views.BizAddress.htm">
+      <HelpTOCNode Title="BizAddress Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizAddress.htm" />
+      <HelpTOCNode Title="BizAddress Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizAddress.htm" />
+      <HelpTOCNode Id="da7a5da0-d3f9-48b0-9501-4c1b4437a785" Title="BizAddress Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizAddress.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizAddress.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizAddress.Id.htm" />
+        <HelpTOCNode Title="Number Property " Url="html/P-RM.Core.Business.Entities.Views.BizAddress.Number.htm" />
+        <HelpTOCNode Title="PostalCode Property " Url="html/P-RM.Core.Business.Entities.Views.BizAddress.PostalCode.htm" />
+        <HelpTOCNode Title="StreetName Property " Url="html/P-RM.Core.Business.Entities.Views.BizAddress.StreetName.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Business.Entities.Views.BizAddress.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="56931423-ea89-4469-a9eb-e663a1ff9a1d" Title="BizAssistControl Class" Url="html/T-RM.Core.Business.Entities.Views.BizAssistControl.htm">
+      <HelpTOCNode Title="BizAssistControl Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizAssistControl.htm" />
+      <HelpTOCNode Title="BizAssistControl Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizAssistControl.htm" />
+      <HelpTOCNode Id="15f889af-cb88-4cce-a4c5-beea715d0df8" Title="BizAssistControl Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizAssistControl.htm">
+        <HelpTOCNode Title="CheckIn Property " Url="html/P-RM.Core.Business.Entities.Views.BizAssistControl.CheckIn.htm" />
+        <HelpTOCNode Title="CheckOut Property " Url="html/P-RM.Core.Business.Entities.Views.BizAssistControl.CheckOut.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizAssistControl.Id.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Business.Entities.Views.BizAssistControl.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="36a2cb73-f271-49e4-ae37-28c111d73c8f" Title="BizCommitteeMember Class" Url="html/T-RM.Core.Business.Entities.Views.BizCommitteeMember.htm">
+      <HelpTOCNode Title="BizCommitteeMember Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizCommitteeMember.htm" />
+      <HelpTOCNode Title="BizCommitteeMember Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizCommitteeMember.htm" />
+      <HelpTOCNode Id="bca871b4-077c-498a-976f-81c489de6aad" Title="BizCommitteeMember Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizCommitteeMember.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizCommitteeMember.Active.htm" />
+        <HelpTOCNode Title="CommitteeType Property " Url="html/P-RM.Core.Business.Entities.Views.BizCommitteeMember.CommitteeType.htm" />
+        <HelpTOCNode Title="CommitteeTypeId Property " Url="html/P-RM.Core.Business.Entities.Views.BizCommitteeMember.CommitteeTypeId.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizCommitteeMember.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Business.Entities.Views.BizCommitteeMember.Nombre.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Business.Entities.Views.BizCommitteeMember.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5c35e757-c23b-4e55-9b24-2ec57e78edec" Title="BizCompany Class" Url="html/T-RM.Core.Business.Entities.Views.BizCompany.htm">
+      <HelpTOCNode Title="BizCompany Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizCompany.htm" />
+      <HelpTOCNode Title="BizCompany Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizCompany.htm" />
+      <HelpTOCNode Id="e7bcef85-af19-49e3-824c-e36816479368" Title="BizCompany Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizCompany.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizCompany.Active.htm" />
+        <HelpTOCNode Title="CompanyName Property " Url="html/P-RM.Core.Business.Entities.Views.BizCompany.CompanyName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizCompany.Id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="54c7611d-d802-4a5a-9c78-f3ed2b20bc21" Title="BizEvent Class" Url="html/T-RM.Core.Business.Entities.Views.BizEvent.htm">
+      <HelpTOCNode Title="BizEvent Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizEvent.htm" />
+      <HelpTOCNode Title="BizEvent Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizEvent.htm" />
+      <HelpTOCNode Id="923cd18c-9b1b-4145-9545-c6f58532b649" Title="BizEvent Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizEvent.htm">
+        <HelpTOCNode Title="AreaName Property " Url="html/P-RM.Core.Business.Entities.Views.BizEvent.AreaName.htm" />
+        <HelpTOCNode Title="EndDate Property " Url="html/P-RM.Core.Business.Entities.Views.BizEvent.EndDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizEvent.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Business.Entities.Views.BizEvent.Nombre.htm" />
+        <HelpTOCNode Title="RecreationalAreaId Property " Url="html/P-RM.Core.Business.Entities.Views.BizEvent.RecreationalAreaId.htm" />
+        <HelpTOCNode Title="StartDate Property " Url="html/P-RM.Core.Business.Entities.Views.BizEvent.StartDate.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/P-RM.Core.Business.Entities.Views.BizEvent.Status.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Business.Entities.Views.BizEvent.StatusName.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Business.Entities.Views.BizEvent.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f0ccc86b-648f-4487-8e23-007417a3de42" Title="BizEventStatus Class" Url="html/T-RM.Core.Business.Entities.Views.BizEventStatus.htm">
+      <HelpTOCNode Title="BizEventStatus Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizEventStatus.htm" />
+      <HelpTOCNode Title="BizEventStatus Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizEventStatus.htm" />
+      <HelpTOCNode Id="3b78d2bb-7745-437c-9502-4f12748e32ff" Title="BizEventStatus Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizEventStatus.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizEventStatus.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizEventStatus.Id.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Business.Entities.Views.BizEventStatus.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2a1b4365-bf36-4740-924a-54c233a467c3" Title="BizEventuality Class" Url="html/T-RM.Core.Business.Entities.Views.BizEventuality.htm">
+      <HelpTOCNode Title="BizEventuality Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizEventuality.htm" />
+      <HelpTOCNode Title="BizEventuality Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizEventuality.htm" />
+      <HelpTOCNode Id="a50c919a-a706-4f73-ba3b-32c0f1bae256" Title="BizEventuality Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizEventuality.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizEventuality.Active.htm" />
+        <HelpTOCNode Title="EventualityName Property " Url="html/P-RM.Core.Business.Entities.Views.BizEventuality.EventualityName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizEventuality.Id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8923bd82-091e-48d4-be85-031f3bddaf79" Title="BizInternalBox Class" Url="html/T-RM.Core.Business.Entities.Views.BizInternalBox.htm">
+      <HelpTOCNode Title="BizInternalBox Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizInternalBox.htm" />
+      <HelpTOCNode Title="BizInternalBox Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizInternalBox.htm" />
+      <HelpTOCNode Id="775c86a2-8a9e-436d-aa10-53f2f7ca4cab" Title="BizInternalBox Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizInternalBox.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/P-RM.Core.Business.Entities.Views.BizInternalBox.Amount.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Business.Entities.Views.BizInternalBox.CreationDate.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f19f6af5-5d8e-4e4a-b8a9-1370eded6115" Title="BizInternalExpense Class" Url="html/T-RM.Core.Business.Entities.Views.BizInternalExpense.htm">
+      <HelpTOCNode Title="BizInternalExpense Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizInternalExpense.htm" />
+      <HelpTOCNode Title="BizInternalExpense Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizInternalExpense.htm" />
+      <HelpTOCNode Id="c9d863e6-fce2-4b84-baa6-7cc6b0fb6993" Title="BizInternalExpense Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizInternalExpense.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/P-RM.Core.Business.Entities.Views.BizInternalExpense.Amount.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Business.Entities.Views.BizInternalExpense.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizInternalExpense.Id.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Business.Entities.Views.BizInternalExpense.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e5d64a05-d57c-43ee-8b34-411f777f4cd6" Title="BizPayment Class" Url="html/T-RM.Core.Business.Entities.Views.BizPayment.htm">
+      <HelpTOCNode Title="BizPayment Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizPayment.htm" />
+      <HelpTOCNode Title="BizPayment Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizPayment.htm" />
+      <HelpTOCNode Id="642f03ec-8139-4027-90b3-c47da67666ea" Title="BizPayment Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizPayment.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/P-RM.Core.Business.Entities.Views.BizPayment.Amount.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizPayment.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Business.Entities.Views.BizPayment.Nombre.htm" />
+        <HelpTOCNode Title="PaymentDate Property " Url="html/P-RM.Core.Business.Entities.Views.BizPayment.PaymentDate.htm" />
+        <HelpTOCNode Title="PaymentStatus Property " Url="html/P-RM.Core.Business.Entities.Views.BizPayment.PaymentStatus.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Business.Entities.Views.BizPayment.StatusName.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Business.Entities.Views.BizPayment.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a89600c0-2ca7-4e04-a225-443fd4b936fe" Title="BizPaymentStatus Class" Url="html/T-RM.Core.Business.Entities.Views.BizPaymentStatus.htm">
+      <HelpTOCNode Title="BizPaymentStatus Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizPaymentStatus.htm" />
+      <HelpTOCNode Title="BizPaymentStatus Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizPaymentStatus.htm" />
+      <HelpTOCNode Id="92d65010-2262-42b4-a99c-5f435921ce37" Title="BizPaymentStatus Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizPaymentStatus.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizPaymentStatus.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizPaymentStatus.Id.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Business.Entities.Views.BizPaymentStatus.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="95933b17-d651-4913-8e15-56d398f3c4b4" Title="BizRecreationalArea Class" Url="html/T-RM.Core.Business.Entities.Views.BizRecreationalArea.htm">
+      <HelpTOCNode Title="BizRecreationalArea Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizRecreationalArea.htm" />
+      <HelpTOCNode Title="BizRecreationalArea Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizRecreationalArea.htm" />
+      <HelpTOCNode Id="1031dc3c-0d50-46da-aace-362122d6562d" Title="BizRecreationalArea Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizRecreationalArea.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizRecreationalArea.Active.htm" />
+        <HelpTOCNode Title="AreaName Property " Url="html/P-RM.Core.Business.Entities.Views.BizRecreationalArea.AreaName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizRecreationalArea.Id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6fa8d4cf-30dd-4f65-b7d7-f54d1b00df72" Title="BizSupplier Class" Url="html/T-RM.Core.Business.Entities.Views.BizSupplier.htm">
+      <HelpTOCNode Title="BizSupplier Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizSupplier.htm" />
+      <HelpTOCNode Title="BizSupplier Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizSupplier.htm" />
+      <HelpTOCNode Id="4fec1bc7-7805-49cf-b392-3e25caf0ad34" Title="BizSupplier Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizSupplier.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizSupplier.Active.htm" />
+        <HelpTOCNode Title="ContactNumer Property " Url="html/P-RM.Core.Business.Entities.Views.BizSupplier.ContactNumer.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizSupplier.Id.htm" />
+        <HelpTOCNode Title="SupplierName Property " Url="html/P-RM.Core.Business.Entities.Views.BizSupplier.SupplierName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="3fb754d9-e87b-41f7-8dde-5505e4e425a5" Title="BizTicket Class" Url="html/T-RM.Core.Business.Entities.Views.BizTicket.htm">
+      <HelpTOCNode Title="BizTicket Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizTicket.htm" />
+      <HelpTOCNode Title="BizTicket Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizTicket.htm" />
+      <HelpTOCNode Id="73ee704a-b967-40ce-872e-a6b6a300a700" Title="BizTicket Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizTicket.htm">
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicket.CreationDate.htm" />
+        <HelpTOCNode Title="EventualityId Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicket.EventualityId.htm" />
+        <HelpTOCNode Title="EventualityName Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicket.EventualityName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicket.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicket.ModificationDate.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicket.Nombre.htm" />
+        <HelpTOCNode Title="StatusId Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicket.StatusId.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicket.StatusName.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicket.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="c023cfc1-3313-4c72-a736-a4fcdd57f15c" Title="BizTicketStatus Class" Url="html/T-RM.Core.Business.Entities.Views.BizTicketStatus.htm">
+      <HelpTOCNode Title="BizTicketStatus Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizTicketStatus.htm" />
+      <HelpTOCNode Title="BizTicketStatus Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizTicketStatus.htm" />
+      <HelpTOCNode Id="37f4cc63-02e7-40c8-b8e7-deca457df385" Title="BizTicketStatus Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizTicketStatus.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicketStatus.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicketStatus.Id.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Business.Entities.Views.BizTicketStatus.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="994e8da1-0c2d-4275-8c18-0e225e6581e9" Title="BizTypeCommittee Class" Url="html/T-RM.Core.Business.Entities.Views.BizTypeCommittee.htm">
+      <HelpTOCNode Title="BizTypeCommittee Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizTypeCommittee.htm" />
+      <HelpTOCNode Title="BizTypeCommittee Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizTypeCommittee.htm" />
+      <HelpTOCNode Id="dd73540e-3061-489b-b83a-453640215344" Title="BizTypeCommittee Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizTypeCommittee.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizTypeCommittee.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizTypeCommittee.Id.htm" />
+        <HelpTOCNode Title="TypeCommittee Property " Url="html/P-RM.Core.Business.Entities.Views.BizTypeCommittee.TypeCommittee.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6677e1ea-d563-4cb8-8e8e-d1375dbe7c09" Title="BizTypeUser Class" Url="html/T-RM.Core.Business.Entities.Views.BizTypeUser.htm">
+      <HelpTOCNode Title="BizTypeUser Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizTypeUser.htm" />
+      <HelpTOCNode Title="BizTypeUser Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizTypeUser.htm" />
+      <HelpTOCNode Id="d378e01f-cd4b-4c5f-9baa-10f583256621" Title="BizTypeUser Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizTypeUser.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizTypeUser.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizTypeUser.Id.htm" />
+        <HelpTOCNode Title="TypeUser Property " Url="html/P-RM.Core.Business.Entities.Views.BizTypeUser.TypeUser.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2cb63d3c-aa7a-4451-9769-7c178231e0fe" Title="BizTypeVisit Class" Url="html/T-RM.Core.Business.Entities.Views.BizTypeVisit.htm">
+      <HelpTOCNode Title="BizTypeVisit Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizTypeVisit.htm" />
+      <HelpTOCNode Title="BizTypeVisit Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizTypeVisit.htm" />
+      <HelpTOCNode Id="14ade08d-0edc-4259-b7ea-3cef1f1deae1" Title="BizTypeVisit Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizTypeVisit.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizTypeVisit.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizTypeVisit.Id.htm" />
+        <HelpTOCNode Title="TypeVisit Property " Url="html/P-RM.Core.Business.Entities.Views.BizTypeVisit.TypeVisit.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="52419b48-7aa7-44e9-8646-8e44af8a1130" Title="BizUser Class" Url="html/T-RM.Core.Business.Entities.Views.BizUser.htm">
+      <HelpTOCNode Title="BizUser Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizUser.htm" />
+      <HelpTOCNode Title="BizUser Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizUser.htm" />
+      <HelpTOCNode Id="dc4c3a8d-288f-46d3-9139-cc859ceca8fb" Title="BizUser Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizUser.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.Active.htm" />
+        <HelpTOCNode Title="CompanyId Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.CompanyId.htm" />
+        <HelpTOCNode Title="CompanyName Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.CompanyName.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.Email.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.Id.htm" />
+        <HelpTOCNode Title="PassWord Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.PassWord.htm" />
+        <HelpTOCNode Title="PassWordSalt Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.PassWordSalt.htm" />
+        <HelpTOCNode Title="TypeId Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.TypeId.htm" />
+        <HelpTOCNode Title="UserLastName Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.UserLastName.htm" />
+        <HelpTOCNode Title="UserMiddleName Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.UserMiddleName.htm" />
+        <HelpTOCNode Title="UserMotherName Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.UserMotherName.htm" />
+        <HelpTOCNode Title="UserName Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.UserName.htm" />
+        <HelpTOCNode Title="UserType Property " Url="html/P-RM.Core.Business.Entities.Views.BizUser.UserType.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="572d71b0-3c58-4ac3-b59e-b3b311e89c3d" Title="BizVehicle Class" Url="html/T-RM.Core.Business.Entities.Views.BizVehicle.htm">
+      <HelpTOCNode Title="BizVehicle Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizVehicle.htm" />
+      <HelpTOCNode Title="BizVehicle Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizVehicle.htm" />
+      <HelpTOCNode Id="7af2af4d-a85e-476d-ba1e-efa03e0d9133" Title="BizVehicle Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizVehicle.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Business.Entities.Views.BizVehicle.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizVehicle.Id.htm" />
+        <HelpTOCNode Title="Model Property " Url="html/P-RM.Core.Business.Entities.Views.BizVehicle.Model.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Business.Entities.Views.BizVehicle.Nombre.htm" />
+        <HelpTOCNode Title="Plates Property " Url="html/P-RM.Core.Business.Entities.Views.BizVehicle.Plates.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Business.Entities.Views.BizVehicle.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2116416f-1cad-4293-85c4-0802734006eb" Title="BizVisit Class" Url="html/T-RM.Core.Business.Entities.Views.BizVisit.htm">
+      <HelpTOCNode Title="BizVisit Members" Url="html/AllMembers.T-RM.Core.Business.Entities.Views.BizVisit.htm" />
+      <HelpTOCNode Title="BizVisit Methods" Url="html/Methods.T-RM.Core.Business.Entities.Views.BizVisit.htm" />
+      <HelpTOCNode Id="6ea78f8f-35f1-4dd2-a274-8a013f084271" Title="BizVisit Properties" Url="html/Properties.T-RM.Core.Business.Entities.Views.BizVisit.htm">
+        <HelpTOCNode Title="Carnet Property " Url="html/P-RM.Core.Business.Entities.Views.BizVisit.Carnet.htm" />
+        <HelpTOCNode Title="CheckIn Property " Url="html/P-RM.Core.Business.Entities.Views.BizVisit.CheckIn.htm" />
+        <HelpTOCNode Title="CheckOut Property " Url="html/P-RM.Core.Business.Entities.Views.BizVisit.CheckOut.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Business.Entities.Views.BizVisit.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Business.Entities.Views.BizVisit.Nombre.htm" />
+        <HelpTOCNode Title="Plates Property " Url="html/P-RM.Core.Business.Entities.Views.BizVisit.Plates.htm" />
+        <HelpTOCNode Title="TypeVisit Property " Url="html/P-RM.Core.Business.Entities.Views.BizVisit.TypeVisit.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Business.Entities.Views.BizVisit.UserId.htm" />
+        <HelpTOCNode Title="VisitId Property " Url="html/P-RM.Core.Business.Entities.Views.BizVisit.VisitId.htm" />
+        <HelpTOCNode Title="VisitName Property " Url="html/P-RM.Core.Business.Entities.Views.BizVisit.VisitName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="2ac14a8f-a486-4efd-99c3-b81b41beaedb" Title="RM.Core.Client Namespace" Url="html/N-RM.Core.Client.htm">
+    <HelpTOCNode Id="d7ee4601-f6f3-4311-93ce-256a11824694" Title="WebClient Class" Url="html/T-RM.Core.Client.WebClient.htm">
+      <HelpTOCNode Title="WebClient Members" Url="html/AllMembers.T-RM.Core.Client.WebClient.htm" />
+      <HelpTOCNode Id="bce3331d-2052-48d5-8bdc-5cef81a869a1" Title="WebClient Methods" Url="html/Methods.T-RM.Core.Client.WebClient.htm">
+        <HelpTOCNode Title="PostAsync(T, M) Method " Url="html/M-RM.Core.Client.WebClient.PostAsync--2.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="21de142b-e6b9-428a-8372-6bcd6aa6b989" Title="RM.Core.Data.Adapter Namespace" Url="html/N-RM.Core.Data.Adapter.htm">
+    <HelpTOCNode Id="11735c36-db7b-4758-b569-65ac1bf3bee2" Title="BaseAdapter Class" Url="html/T-RM.Core.Data.Adapter.BaseAdapter.htm">
+      <HelpTOCNode Title="BaseAdapter Members" Url="html/AllMembers.T-RM.Core.Data.Adapter.BaseAdapter.htm" />
+      <HelpTOCNode Id="247ccf53-917b-4c10-a61c-502f345b7b24" Title="BaseAdapter Methods" Url="html/Methods.T-RM.Core.Data.Adapter.BaseAdapter.htm">
+        <HelpTOCNode Title="DataAddressToBizAddress Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataAddressToBizAddress.htm" />
+        <HelpTOCNode Title="DataAssistControlToBizAssistControl Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataAssistControlToBizAssistControl.htm" />
+        <HelpTOCNode Title="DataCommitteeMemberToBizCommitteeMember Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataCommitteeMemberToBizCommitteeMember.htm" />
+        <HelpTOCNode Title="DataCompanyToBizCompany Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataCompanyToBizCompany.htm" />
+        <HelpTOCNode Title="DataEventStatusToBizEventStatus Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataEventStatusToBizEventStatus.htm" />
+        <HelpTOCNode Title="DataEventToBizEvent Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataEventToBizEvent.htm" />
+        <HelpTOCNode Title="DataEventualityToBizEventuality Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataEventualityToBizEventuality.htm" />
+        <HelpTOCNode Title="DataInternalBoxToBizInternalBox Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataInternalBoxToBizInternalBox.htm" />
+        <HelpTOCNode Title="DataInternalExpenseToBizInternalExpense Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataInternalExpenseToBizInternalExpense.htm" />
+        <HelpTOCNode Title="DataPaymentStatusToBizPaymentStatus Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataPaymentStatusToBizPaymentStatus.htm" />
+        <HelpTOCNode Title="DataPaymentToBizPayment Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataPaymentToBizPayment.htm" />
+        <HelpTOCNode Title="DataRecreationalAreaToBizRecreationalArea Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataRecreationalAreaToBizRecreationalArea.htm" />
+        <HelpTOCNode Title="DataSupplierToBizSupplier Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataSupplierToBizSupplier.htm" />
+        <HelpTOCNode Title="DataTicketStatusToBizTicketStatus Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataTicketStatusToBizTicketStatus.htm" />
+        <HelpTOCNode Title="DataTicketToBizTicket Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataTicketToBizTicket.htm" />
+        <HelpTOCNode Title="DataTypeCommitteeToBizTypeCommittee Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataTypeCommitteeToBizTypeCommittee.htm" />
+        <HelpTOCNode Title="DataTypeUserToBizTypeUser Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataTypeUserToBizTypeUser.htm" />
+        <HelpTOCNode Title="DataTypeVisitToBizTypeVisit Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataTypeVisitToBizTypeVisit.htm" />
+        <HelpTOCNode Title="DataUserLogInToBizUser Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataUserLogInToBizUser.htm" />
+        <HelpTOCNode Title="DataUserToBizUser Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataUserToBizUser.htm" />
+        <HelpTOCNode Title="DataVehicleToBizVehicle Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataVehicleToBizVehicle.htm" />
+        <HelpTOCNode Title="DataVisitToBizVisit Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.DataVisitToBizVisit.htm" />
+        <HelpTOCNode Title="ListDataAddressToListBizAddress Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataAddressToListBizAddress.htm" />
+        <HelpTOCNode Title="ListDataAEventualityToListBizEventuality Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataAEventualityToListBizEventuality.htm" />
+        <HelpTOCNode Title="ListDataAssistControlToListBizAssistControl Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataAssistControlToListBizAssistControl.htm" />
+        <HelpTOCNode Title="ListDataCommitteeMemberToListBizCommitteeMember Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataCommitteeMemberToListBizCommitteeMember.htm" />
+        <HelpTOCNode Title="ListDataCompanyToListBizCompany Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataCompanyToListBizCompany.htm" />
+        <HelpTOCNode Title="ListDataEventStatusToListBizEventStatus Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataEventStatusToListBizEventStatus.htm" />
+        <HelpTOCNode Title="ListDataEventToListBizEvent Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataEventToListBizEvent.htm" />
+        <HelpTOCNode Title="ListDataInternalBoxToListBizInternalBox Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataInternalBoxToListBizInternalBox.htm" />
+        <HelpTOCNode Title="ListDataInternalExpenseToListBizInternalExpense Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataInternalExpenseToListBizInternalExpense.htm" />
+        <HelpTOCNode Title="ListDataPaymentStatusToListBizPaymentStatus Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataPaymentStatusToListBizPaymentStatus.htm" />
+        <HelpTOCNode Title="ListDataPaymentToListBizPayment Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataPaymentToListBizPayment.htm" />
+        <HelpTOCNode Title="ListDataRecreationalAreaToListBizRecreationalArea Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataRecreationalAreaToListBizRecreationalArea.htm" />
+        <HelpTOCNode Title="ListDataSupplierToListBizSupplier Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataSupplierToListBizSupplier.htm" />
+        <HelpTOCNode Title="ListDataTicketStatusToListBizTicketStatus Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataTicketStatusToListBizTicketStatus.htm" />
+        <HelpTOCNode Title="ListDataTicketToListBizTicket Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataTicketToListBizTicket.htm" />
+        <HelpTOCNode Title="ListDataTypeCommitteeToListBizTypeCommittee Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataTypeCommitteeToListBizTypeCommittee.htm" />
+        <HelpTOCNode Title="ListDataTypeUserToListBizTypeUser Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataTypeUserToListBizTypeUser.htm" />
+        <HelpTOCNode Title="ListDataTypeVisitToListBizTypeVisit Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataTypeVisitToListBizTypeVisit.htm" />
+        <HelpTOCNode Title="ListDataUserToListBizUser Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataUserToListBizUser.htm" />
+        <HelpTOCNode Title="ListDataVehicleToListBizVehicle Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataVehicleToListBizVehicle.htm" />
+        <HelpTOCNode Title="ListDataVisitToListBizVisit Method " Url="html/M-RM.Core.Data.Adapter.BaseAdapter.ListDataVisitToListBizVisit.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="e8d375ec-bf89-4aeb-ace7-5397765f713d" Title="RM.Core.Data.Biz Namespace" Url="html/N-RM.Core.Data.Biz.htm">
+    <HelpTOCNode Id="68073fdd-0f9b-4ac9-bba3-e9db05894603" Title="BizLogic Class" Url="html/T-RM.Core.Data.Biz.BizLogic.htm">
+      <HelpTOCNode Title="BizLogic Members" Url="html/AllMembers.T-RM.Core.Data.Biz.BizLogic.htm" />
+      <HelpTOCNode Title="BizLogic Constructor " Url="html/M-RM.Core.Data.Biz.BizLogic.-ctor.htm" />
+      <HelpTOCNode Id="28a768c0-6392-450a-b62a-31dbe6823870" Title="BizLogic Fields" Url="html/Fields.T-RM.Core.Data.Biz.BizLogic.htm">
+        <HelpTOCNode Title="dbContext Field" Url="html/F-RM.Core.Data.Biz.BizLogic.dbContext.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="53efe05d-6ab6-4ef0-a30e-ef48487896a9" Title="BizLogic Methods" Url="html/Methods.T-RM.Core.Data.Biz.BizLogic.htm">
+        <HelpTOCNode Title="BizCall Method " Url="html/M-RM.Core.Data.Biz.BizLogic.BizCall.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="1179a7de-95d2-43e5-bcb3-501c8812dd87" Title="RM.Core.Data.Entities Namespace" Url="html/N-RM.Core.Data.Entities.htm">
+    <HelpTOCNode Id="81989890-ffbb-4a24-8ba8-e6d8aa23f6d3" Title="RMModel Class" Url="html/T-RM.Core.Data.Entities.RMModel.htm">
+      <HelpTOCNode Title="RMModel Members" Url="html/AllMembers.T-RM.Core.Data.Entities.RMModel.htm" />
+      <HelpTOCNode Title="RMModel Constructor " Url="html/M-RM.Core.Data.Entities.RMModel.-ctor.htm" />
+      <HelpTOCNode Id="b0c975ed-754b-4945-b76a-6f3e40267ced" Title="RMModel Methods" Url="html/Methods.T-RM.Core.Data.Entities.RMModel.htm">
+        <HelpTOCNode Id="2471fce4-fddf-42c8-9522-8eab26f606e2" Title="OnModelCreating Method " Url="html/Overload-RM.Core.Data.Entities.RMModel.OnModelCreating.htm">
+          <HelpTOCNode Title="OnModelCreating Method " Url="html/M-RM.Core.Data.Entities.RMModel.OnModelCreating.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SYSDelAddress Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelAddress.htm" />
+        <HelpTOCNode Title="SYSDelCatEventStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCatEventStatus.htm" />
+        <HelpTOCNode Title="SYSDelCatEventuality Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCatEventuality.htm" />
+        <HelpTOCNode Title="SYSDelCatPaymentStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCatPaymentStatus.htm" />
+        <HelpTOCNode Title="SYSDelCatRecreationalArea Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCatRecreationalArea.htm" />
+        <HelpTOCNode Title="SYSDelCatSupplier Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCatSupplier.htm" />
+        <HelpTOCNode Title="SYSDelCatTicketStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCatTicketStatus.htm" />
+        <HelpTOCNode Title="SYSDelCatTypeCommittee Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCatTypeCommittee.htm" />
+        <HelpTOCNode Title="SYSDelCatTypeUser Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCatTypeUser.htm" />
+        <HelpTOCNode Title="SYSDelCatTypeVisit Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCatTypeVisit.htm" />
+        <HelpTOCNode Title="SYSDelCommitteeMember Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCommitteeMember.htm" />
+        <HelpTOCNode Title="SYSDelCompany Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelCompany.htm" />
+        <HelpTOCNode Title="SYSDelUser Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelUser.htm" />
+        <HelpTOCNode Title="SYSDelVehicle Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSDelVehicle.htm" />
+        <HelpTOCNode Title="SYSFuncLoginUser Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSFuncLoginUser.htm" />
+        <HelpTOCNode Title="SYSGetAddress Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetAddress.htm" />
+        <HelpTOCNode Title="SYSGetAssistControl Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetAssistControl.htm" />
+        <HelpTOCNode Title="SYSGetCatEventStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCatEventStatus.htm" />
+        <HelpTOCNode Title="SYSGetCatEventuality Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCatEventuality.htm" />
+        <HelpTOCNode Title="SYSGetCatPaymentStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCatPaymentStatus.htm" />
+        <HelpTOCNode Title="SYSGetCatRecreationalArea Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCatRecreationalArea.htm" />
+        <HelpTOCNode Title="SYSGetCatSupplier Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCatSupplier.htm" />
+        <HelpTOCNode Title="SYSGetCatTicketStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCatTicketStatus.htm" />
+        <HelpTOCNode Title="SYSGetCatTypeCommittee Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCatTypeCommittee.htm" />
+        <HelpTOCNode Title="SYSGetCatTypeUser Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCatTypeUser.htm" />
+        <HelpTOCNode Title="SYSGetCatTypeVisit Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCatTypeVisit.htm" />
+        <HelpTOCNode Title="SYSGetCommitteeMember Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCommitteeMember.htm" />
+        <HelpTOCNode Title="SYSGetCompany Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetCompany.htm" />
+        <HelpTOCNode Title="SYSGetEvent Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetEvent.htm" />
+        <HelpTOCNode Title="SYSGetInternalBox Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetInternalBox.htm" />
+        <HelpTOCNode Title="SYSGetInternalExpense Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetInternalExpense.htm" />
+        <HelpTOCNode Title="SYSGetPayment Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetPayment.htm" />
+        <HelpTOCNode Title="SYSGetTicket Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetTicket.htm" />
+        <HelpTOCNode Title="SYSGetUser Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetUser.htm" />
+        <HelpTOCNode Title="SYSGetVehicle Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetVehicle.htm" />
+        <HelpTOCNode Title="SYSGetVisit Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSGetVisit.htm" />
+        <HelpTOCNode Title="SYSInsAddress Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsAddress.htm" />
+        <HelpTOCNode Title="SYSInsAssistControl Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsAssistControl.htm" />
+        <HelpTOCNode Title="SYSInsCatEventStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCatEventStatus.htm" />
+        <HelpTOCNode Title="SYSInsCatEventuality Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCatEventuality.htm" />
+        <HelpTOCNode Title="SYSInsCatPaymentStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCatPaymentStatus.htm" />
+        <HelpTOCNode Title="SYSInsCatRecreationalArea Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCatRecreationalArea.htm" />
+        <HelpTOCNode Title="SYSInsCatSupplier Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCatSupplier.htm" />
+        <HelpTOCNode Title="SYSInsCatTicketStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCatTicketStatus.htm" />
+        <HelpTOCNode Title="SYSInsCatTypeCommittee Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCatTypeCommittee.htm" />
+        <HelpTOCNode Title="SYSInsCatTypeUser Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCatTypeUser.htm" />
+        <HelpTOCNode Title="SYSInsCatTypeVisit Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCatTypeVisit.htm" />
+        <HelpTOCNode Title="SYSInsCommitteeMember Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCommitteeMember.htm" />
+        <HelpTOCNode Title="SYSInsCompany Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsCompany.htm" />
+        <HelpTOCNode Title="SYSInsEvent Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsEvent.htm" />
+        <HelpTOCNode Title="SYSInsInternalBox Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsInternalBox.htm" />
+        <HelpTOCNode Title="SYSInsInternalExpense Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsInternalExpense.htm" />
+        <HelpTOCNode Title="SYSInsPayment Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsPayment.htm" />
+        <HelpTOCNode Title="SYSInsTicket Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsTicket.htm" />
+        <HelpTOCNode Title="SYSInsUser Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsUser.htm" />
+        <HelpTOCNode Title="SYSInsVehicle Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsVehicle.htm" />
+        <HelpTOCNode Title="SYSInsVisit Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSInsVisit.htm" />
+        <HelpTOCNode Title="SYSUpdAddress Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdAddress.htm" />
+        <HelpTOCNode Title="SYSUpdAssistControl Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdAssistControl.htm" />
+        <HelpTOCNode Title="SYSUpdCatEventStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCatEventStatus.htm" />
+        <HelpTOCNode Title="SYSUpdCatEventuality Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCatEventuality.htm" />
+        <HelpTOCNode Title="SYSUpdCatPaymentStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCatPaymentStatus.htm" />
+        <HelpTOCNode Title="SYSUpdCatRecreationalArea Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCatRecreationalArea.htm" />
+        <HelpTOCNode Title="SYSUpdCatSupplier Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCatSupplier.htm" />
+        <HelpTOCNode Title="SYSUpdCatTicketStatus Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCatTicketStatus.htm" />
+        <HelpTOCNode Title="SYSUpdCatTypeCommittee Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCatTypeCommittee.htm" />
+        <HelpTOCNode Title="SYSUpdCatTypeUser Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCatTypeUser.htm" />
+        <HelpTOCNode Title="SYSUpdCatTypeVisit Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCatTypeVisit.htm" />
+        <HelpTOCNode Title="SYSUpdCommitteeMember Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCommitteeMember.htm" />
+        <HelpTOCNode Title="SYSUpdCompany Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdCompany.htm" />
+        <HelpTOCNode Title="SYSUpdEvent Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdEvent.htm" />
+        <HelpTOCNode Title="SYSUpdPayment Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdPayment.htm" />
+        <HelpTOCNode Title="SYSUpdTicket Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdTicket.htm" />
+        <HelpTOCNode Title="SYSUpdUser Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdUser.htm" />
+        <HelpTOCNode Title="SYSUpdUserPassWord Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdUserPassWord.htm" />
+        <HelpTOCNode Title="SYSUpdVehicle Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdVehicle.htm" />
+        <HelpTOCNode Title="SYSUpdVisit Method " Url="html/M-RM.Core.Data.Entities.RMModel.SYSUpdVisit.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="RMModel Properties" Url="html/Properties.T-RM.Core.Data.Entities.RMModel.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5cb55751-f02f-442d-98ee-7b0adb149cd5" Title="SYSFuncLoginUser_Result Class" Url="html/T-RM.Core.Data.Entities.SYSFuncLoginUser_Result.htm">
+      <HelpTOCNode Title="SYSFuncLoginUser_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSFuncLoginUser_Result.htm" />
+      <HelpTOCNode Title="SYSFuncLoginUser_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSFuncLoginUser_Result.htm" />
+      <HelpTOCNode Id="4e570f09-5c51-4c79-8e35-340760220854" Title="SYSFuncLoginUser_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSFuncLoginUser_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSFuncLoginUser_Result.Active.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/P-RM.Core.Data.Entities.SYSFuncLoginUser_Result.Email.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSFuncLoginUser_Result.Id.htm" />
+        <HelpTOCNode Title="PassWord Property " Url="html/P-RM.Core.Data.Entities.SYSFuncLoginUser_Result.PassWord.htm" />
+        <HelpTOCNode Title="PassWordSalt Property " Url="html/P-RM.Core.Data.Entities.SYSFuncLoginUser_Result.PassWordSalt.htm" />
+        <HelpTOCNode Title="TypeId Property " Url="html/P-RM.Core.Data.Entities.SYSFuncLoginUser_Result.TypeId.htm" />
+        <HelpTOCNode Title="UserLastName Property " Url="html/P-RM.Core.Data.Entities.SYSFuncLoginUser_Result.UserLastName.htm" />
+        <HelpTOCNode Title="UserMiddleName Property " Url="html/P-RM.Core.Data.Entities.SYSFuncLoginUser_Result.UserMiddleName.htm" />
+        <HelpTOCNode Title="UserMotherName Property " Url="html/P-RM.Core.Data.Entities.SYSFuncLoginUser_Result.UserMotherName.htm" />
+        <HelpTOCNode Title="UserName Property " Url="html/P-RM.Core.Data.Entities.SYSFuncLoginUser_Result.UserName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5b1d4da5-bf29-4150-9011-a3da6e469c08" Title="SYSGetAddress_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetAddress_Result.htm">
+      <HelpTOCNode Title="SYSGetAddress_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetAddress_Result.htm" />
+      <HelpTOCNode Title="SYSGetAddress_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetAddress_Result.htm" />
+      <HelpTOCNode Id="c5812be3-285b-4c71-af10-908e8d4c7fd4" Title="SYSGetAddress_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetAddress_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetAddress_Result.Active.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetAddress_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetAddress_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetAddress_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="Number Property " Url="html/P-RM.Core.Data.Entities.SYSGetAddress_Result.Number.htm" />
+        <HelpTOCNode Title="PostalCode Property " Url="html/P-RM.Core.Data.Entities.SYSGetAddress_Result.PostalCode.htm" />
+        <HelpTOCNode Title="StreetName Property " Url="html/P-RM.Core.Data.Entities.SYSGetAddress_Result.StreetName.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Data.Entities.SYSGetAddress_Result.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="9c764f2d-63a8-49f9-81d2-411b98e7b3c1" Title="SYSGetAssistControl_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetAssistControl_Result.htm">
+      <HelpTOCNode Title="SYSGetAssistControl_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetAssistControl_Result.htm" />
+      <HelpTOCNode Title="SYSGetAssistControl_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetAssistControl_Result.htm" />
+      <HelpTOCNode Id="2cae4ab2-9849-46f0-957c-9bc638e3d272" Title="SYSGetAssistControl_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetAssistControl_Result.htm">
+        <HelpTOCNode Title="CheckIn Property " Url="html/P-RM.Core.Data.Entities.SYSGetAssistControl_Result.CheckIn.htm" />
+        <HelpTOCNode Title="CheckOut Property " Url="html/P-RM.Core.Data.Entities.SYSGetAssistControl_Result.CheckOut.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetAssistControl_Result.Id.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Data.Entities.SYSGetAssistControl_Result.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f5632c78-fe76-42bb-94cf-ba07a32335f3" Title="SYSGetCatEventStatus_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCatEventStatus_Result.htm">
+      <HelpTOCNode Title="SYSGetCatEventStatus_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCatEventStatus_Result.htm" />
+      <HelpTOCNode Title="SYSGetCatEventStatus_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCatEventStatus_Result.htm" />
+      <HelpTOCNode Id="64f66ac2-a7e6-4deb-aaa7-6efe9a4ee98f" Title="SYSGetCatEventStatus_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCatEventStatus_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatEventStatus_Result.Active.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatEventStatus_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatEventStatus_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatEventStatus_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatEventStatus_Result.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b23c6d55-8dd8-4281-adee-5ef6073bc6d6" Title="SYSGetCatEventuality_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCatEventuality_Result.htm">
+      <HelpTOCNode Title="SYSGetCatEventuality_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCatEventuality_Result.htm" />
+      <HelpTOCNode Title="SYSGetCatEventuality_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCatEventuality_Result.htm" />
+      <HelpTOCNode Id="cc4bc19c-bfdb-4f3e-8b88-f14ae52b7029" Title="SYSGetCatEventuality_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCatEventuality_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatEventuality_Result.Active.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatEventuality_Result.CreationDate.htm" />
+        <HelpTOCNode Title="EventualityName Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatEventuality_Result.EventualityName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatEventuality_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatEventuality_Result.ModificationDate.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="995c1f6d-d093-4b41-a15a-d73e2208a92a" Title="SYSGetCatPaymentStatus_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCatPaymentStatus_Result.htm">
+      <HelpTOCNode Title="SYSGetCatPaymentStatus_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCatPaymentStatus_Result.htm" />
+      <HelpTOCNode Title="SYSGetCatPaymentStatus_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCatPaymentStatus_Result.htm" />
+      <HelpTOCNode Id="a4dc05ec-6aed-49d7-9601-766b7f4065be" Title="SYSGetCatPaymentStatus_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCatPaymentStatus_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatPaymentStatus_Result.Active.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatPaymentStatus_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatPaymentStatus_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatPaymentStatus_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatPaymentStatus_Result.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="26b3bb97-ce34-47ff-85a8-8cb127c95e4b" Title="SYSGetCatRecreationalArea_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCatRecreationalArea_Result.htm">
+      <HelpTOCNode Title="SYSGetCatRecreationalArea_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCatRecreationalArea_Result.htm" />
+      <HelpTOCNode Title="SYSGetCatRecreationalArea_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCatRecreationalArea_Result.htm" />
+      <HelpTOCNode Id="ce7731b1-43ba-48f2-91ec-6f1ec9e2a957" Title="SYSGetCatRecreationalArea_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCatRecreationalArea_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatRecreationalArea_Result.Active.htm" />
+        <HelpTOCNode Title="AreaName Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatRecreationalArea_Result.AreaName.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatRecreationalArea_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatRecreationalArea_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatRecreationalArea_Result.ModificationDate.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6d51d5e4-b4e9-4614-ae13-f2ea514b8e68" Title="SYSGetCatSupplier_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCatSupplier_Result.htm">
+      <HelpTOCNode Title="SYSGetCatSupplier_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCatSupplier_Result.htm" />
+      <HelpTOCNode Title="SYSGetCatSupplier_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCatSupplier_Result.htm" />
+      <HelpTOCNode Id="bedcd057-2c76-4a9a-95b6-ae352590148e" Title="SYSGetCatSupplier_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCatSupplier_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatSupplier_Result.Active.htm" />
+        <HelpTOCNode Title="ContactNumer Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatSupplier_Result.ContactNumer.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatSupplier_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatSupplier_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatSupplier_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="SupplierName Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatSupplier_Result.SupplierName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="96dfe445-a7e9-444b-b9ee-0eae5df8ae09" Title="SYSGetCatTicketStatus_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCatTicketStatus_Result.htm">
+      <HelpTOCNode Title="SYSGetCatTicketStatus_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCatTicketStatus_Result.htm" />
+      <HelpTOCNode Title="SYSGetCatTicketStatus_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCatTicketStatus_Result.htm" />
+      <HelpTOCNode Id="3fd610de-e110-4d79-8b89-dd9ef9c2a0cc" Title="SYSGetCatTicketStatus_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCatTicketStatus_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTicketStatus_Result.Active.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTicketStatus_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTicketStatus_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTicketStatus_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTicketStatus_Result.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5a7eb1d9-8982-41ed-b624-2683cc0432ec" Title="SYSGetCatTypeCommittee_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCatTypeCommittee_Result.htm">
+      <HelpTOCNode Title="SYSGetCatTypeCommittee_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCatTypeCommittee_Result.htm" />
+      <HelpTOCNode Title="SYSGetCatTypeCommittee_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCatTypeCommittee_Result.htm" />
+      <HelpTOCNode Id="eefc9f43-02e6-4211-9e5f-488acd66c34a" Title="SYSGetCatTypeCommittee_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCatTypeCommittee_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeCommittee_Result.Active.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeCommittee_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeCommittee_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeCommittee_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="TypeCommittee Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeCommittee_Result.TypeCommittee.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d3b8f0f7-1a16-4110-bdf9-ba02f60ad425" Title="SYSGetCatTypeUser_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCatTypeUser_Result.htm">
+      <HelpTOCNode Title="SYSGetCatTypeUser_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCatTypeUser_Result.htm" />
+      <HelpTOCNode Title="SYSGetCatTypeUser_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCatTypeUser_Result.htm" />
+      <HelpTOCNode Id="d4d806e8-a8a3-477f-b33d-bf8a6b8eb6a1" Title="SYSGetCatTypeUser_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCatTypeUser_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeUser_Result.Active.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeUser_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeUser_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeUser_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="TypeUser Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeUser_Result.TypeUser.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bf083d73-0272-450a-a2ab-99760faf9448" Title="SYSGetCatTypeVisit_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCatTypeVisit_Result.htm">
+      <HelpTOCNode Title="SYSGetCatTypeVisit_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCatTypeVisit_Result.htm" />
+      <HelpTOCNode Title="SYSGetCatTypeVisit_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCatTypeVisit_Result.htm" />
+      <HelpTOCNode Id="8e2450e0-d7c5-4636-bef9-e41dad345fd7" Title="SYSGetCatTypeVisit_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCatTypeVisit_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeVisit_Result.Active.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeVisit_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeVisit_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeVisit_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="TypeVisit Property " Url="html/P-RM.Core.Data.Entities.SYSGetCatTypeVisit_Result.TypeVisit.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d96c102a-aa1a-4234-9216-8b1511453c96" Title="SYSGetCommitteeMember_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCommitteeMember_Result.htm">
+      <HelpTOCNode Title="SYSGetCommitteeMember_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCommitteeMember_Result.htm" />
+      <HelpTOCNode Title="SYSGetCommitteeMember_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCommitteeMember_Result.htm" />
+      <HelpTOCNode Id="cf016679-4789-445b-853d-a33b20b8a500" Title="SYSGetCommitteeMember_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCommitteeMember_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCommitteeMember_Result.Active.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCommitteeMember_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCommitteeMember_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCommitteeMember_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Data.Entities.SYSGetCommitteeMember_Result.Nombre.htm" />
+        <HelpTOCNode Title="TypeCommittee Property " Url="html/P-RM.Core.Data.Entities.SYSGetCommitteeMember_Result.TypeCommittee.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="27ce49f5-6f56-4ccb-9305-5172158cc1d5" Title="SYSGetCompany_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetCompany_Result.htm">
+      <HelpTOCNode Title="SYSGetCompany_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetCompany_Result.htm" />
+      <HelpTOCNode Title="SYSGetCompany_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetCompany_Result.htm" />
+      <HelpTOCNode Id="32b980e1-b6da-45be-8103-87e7e7d729a5" Title="SYSGetCompany_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetCompany_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetCompany_Result.Active.htm" />
+        <HelpTOCNode Title="CompanyName Property " Url="html/P-RM.Core.Data.Entities.SYSGetCompany_Result.CompanyName.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCompany_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetCompany_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetCompany_Result.ModificationDate.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f93ab601-acde-4ceb-89c9-bb17cfea5514" Title="SYSGetEvent_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetEvent_Result.htm">
+      <HelpTOCNode Title="SYSGetEvent_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetEvent_Result.htm" />
+      <HelpTOCNode Title="SYSGetEvent_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetEvent_Result.htm" />
+      <HelpTOCNode Id="89ec0ec7-c380-4e49-a80e-a35f7b84e25e" Title="SYSGetEvent_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetEvent_Result.htm">
+        <HelpTOCNode Title="AreaName Property " Url="html/P-RM.Core.Data.Entities.SYSGetEvent_Result.AreaName.htm" />
+        <HelpTOCNode Title="EndDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetEvent_Result.EndDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetEvent_Result.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Data.Entities.SYSGetEvent_Result.Nombre.htm" />
+        <HelpTOCNode Title="StartDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetEvent_Result.StartDate.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Data.Entities.SYSGetEvent_Result.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f767b877-6d7d-4b0b-a0ec-a5b3c507c72b" Title="SYSGetInternalBox_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetInternalBox_Result.htm">
+      <HelpTOCNode Title="SYSGetInternalBox_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetInternalBox_Result.htm" />
+      <HelpTOCNode Title="SYSGetInternalBox_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetInternalBox_Result.htm" />
+      <HelpTOCNode Id="cd9b18f7-b93b-45c8-a742-e24e8385574a" Title="SYSGetInternalBox_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetInternalBox_Result.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/P-RM.Core.Data.Entities.SYSGetInternalBox_Result.Amount.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetInternalBox_Result.CreationDate.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="04a5683e-fa1f-4183-8972-edc31a4c8727" Title="SYSGetInternalExpense_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetInternalExpense_Result.htm">
+      <HelpTOCNode Title="SYSGetInternalExpense_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetInternalExpense_Result.htm" />
+      <HelpTOCNode Title="SYSGetInternalExpense_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetInternalExpense_Result.htm" />
+      <HelpTOCNode Id="aeb966e7-1508-4392-bce6-5a22703e170c" Title="SYSGetInternalExpense_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetInternalExpense_Result.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/P-RM.Core.Data.Entities.SYSGetInternalExpense_Result.Amount.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetInternalExpense_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetInternalExpense_Result.Id.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Data.Entities.SYSGetInternalExpense_Result.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="34694ae0-f1d9-49f0-970e-46dc7baa6a81" Title="SYSGetPayment_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetPayment_Result.htm">
+      <HelpTOCNode Title="SYSGetPayment_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetPayment_Result.htm" />
+      <HelpTOCNode Title="SYSGetPayment_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetPayment_Result.htm" />
+      <HelpTOCNode Id="1a6f9bc3-027d-4114-904a-c24b5038081c" Title="SYSGetPayment_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetPayment_Result.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/P-RM.Core.Data.Entities.SYSGetPayment_Result.Amount.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetPayment_Result.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Data.Entities.SYSGetPayment_Result.Nombre.htm" />
+        <HelpTOCNode Title="PaymentDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetPayment_Result.PaymentDate.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Data.Entities.SYSGetPayment_Result.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4a42bac2-b86e-4f94-9094-de9eb0a0a9fe" Title="SYSGetTicket_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetTicket_Result.htm">
+      <HelpTOCNode Title="SYSGetTicket_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetTicket_Result.htm" />
+      <HelpTOCNode Title="SYSGetTicket_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetTicket_Result.htm" />
+      <HelpTOCNode Id="723d7689-5b99-4fb7-bec2-a22365e2e84e" Title="SYSGetTicket_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetTicket_Result.htm">
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetTicket_Result.CreationDate.htm" />
+        <HelpTOCNode Title="EventualityName Property " Url="html/P-RM.Core.Data.Entities.SYSGetTicket_Result.EventualityName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetTicket_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetTicket_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Data.Entities.SYSGetTicket_Result.Nombre.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Data.Entities.SYSGetTicket_Result.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="8c63f03c-8ad3-4ee6-a58d-faddda3092a0" Title="SYSGetUser_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetUser_Result.htm">
+      <HelpTOCNode Title="SYSGetUser_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetUser_Result.htm" />
+      <HelpTOCNode Title="SYSGetUser_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetUser_Result.htm" />
+      <HelpTOCNode Id="2f4325ef-d6fc-4519-a66b-b2c03c0b9354" Title="SYSGetUser_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetUser_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.Active.htm" />
+        <HelpTOCNode Title="CompanyName Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.CompanyName.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.Email.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="PassWord Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.PassWord.htm" />
+        <HelpTOCNode Title="PassWordSalt Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.PassWordSalt.htm" />
+        <HelpTOCNode Title="TypeUser Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.TypeUser.htm" />
+        <HelpTOCNode Title="UserLastName Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.UserLastName.htm" />
+        <HelpTOCNode Title="UserMiddleName Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.UserMiddleName.htm" />
+        <HelpTOCNode Title="UserMotherName Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.UserMotherName.htm" />
+        <HelpTOCNode Title="UserName Property " Url="html/P-RM.Core.Data.Entities.SYSGetUser_Result.UserName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ece550f9-6875-42d0-abfd-12e2ead74585" Title="SYSGetVehicle_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetVehicle_Result.htm">
+      <HelpTOCNode Title="SYSGetVehicle_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetVehicle_Result.htm" />
+      <HelpTOCNode Title="SYSGetVehicle_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetVehicle_Result.htm" />
+      <HelpTOCNode Id="a62c2ab4-33a4-428d-975a-5bc60442603e" Title="SYSGetVehicle_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetVehicle_Result.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Data.Entities.SYSGetVehicle_Result.Active.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetVehicle_Result.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetVehicle_Result.Id.htm" />
+        <HelpTOCNode Title="Model Property " Url="html/P-RM.Core.Data.Entities.SYSGetVehicle_Result.Model.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Data.Entities.SYSGetVehicle_Result.ModificationDate.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Data.Entities.SYSGetVehicle_Result.Nombre.htm" />
+        <HelpTOCNode Title="Plates Property " Url="html/P-RM.Core.Data.Entities.SYSGetVehicle_Result.Plates.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b592f130-7ec5-4f4f-8cce-17dd5cd26e74" Title="SYSGetVisit_Result Class" Url="html/T-RM.Core.Data.Entities.SYSGetVisit_Result.htm">
+      <HelpTOCNode Title="SYSGetVisit_Result Members" Url="html/AllMembers.T-RM.Core.Data.Entities.SYSGetVisit_Result.htm" />
+      <HelpTOCNode Title="SYSGetVisit_Result Methods" Url="html/Methods.T-RM.Core.Data.Entities.SYSGetVisit_Result.htm" />
+      <HelpTOCNode Id="493f0fb7-4ddb-487f-b8ed-e99e6cf5a89b" Title="SYSGetVisit_Result Properties" Url="html/Properties.T-RM.Core.Data.Entities.SYSGetVisit_Result.htm">
+        <HelpTOCNode Title="Carnet Property " Url="html/P-RM.Core.Data.Entities.SYSGetVisit_Result.Carnet.htm" />
+        <HelpTOCNode Title="CheckIn Property " Url="html/P-RM.Core.Data.Entities.SYSGetVisit_Result.CheckIn.htm" />
+        <HelpTOCNode Title="CheckOut Property " Url="html/P-RM.Core.Data.Entities.SYSGetVisit_Result.CheckOut.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Data.Entities.SYSGetVisit_Result.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Data.Entities.SYSGetVisit_Result.Nombre.htm" />
+        <HelpTOCNode Title="Plates Property " Url="html/P-RM.Core.Data.Entities.SYSGetVisit_Result.Plates.htm" />
+        <HelpTOCNode Title="TypeVisit Property " Url="html/P-RM.Core.Data.Entities.SYSGetVisit_Result.TypeVisit.htm" />
+        <HelpTOCNode Title="VisitName Property " Url="html/P-RM.Core.Data.Entities.SYSGetVisit_Result.VisitName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="a8ff3985-2db9-4c32-8324-0e3f430fad37" Title="RM.Core.Data.Implementation Namespace" Url="html/N-RM.Core.Data.Implementation.htm">
+    <HelpTOCNode Id="3d3a51a6-f969-4cde-ac13-47ba15449450" Title="BaseFunction Class" Url="html/T-RM.Core.Data.Implementation.BaseFunction.htm">
+      <HelpTOCNode Title="BaseFunction Members" Url="html/AllMembers.T-RM.Core.Data.Implementation.BaseFunction.htm" />
+      <HelpTOCNode Id="5d92c2ab-7b80-45e9-804d-326b871f0abd" Title="BaseFunction Methods" Url="html/Methods.T-RM.Core.Data.Implementation.BaseFunction.htm">
+        <HelpTOCNode Title="DataFuncLogin Method " Url="html/M-RM.Core.Data.Implementation.BaseFunction.DataFuncLogin.htm" />
+        <HelpTOCNode Title="UpdateUserPassWord Method " Url="html/M-RM.Core.Data.Implementation.BaseFunction.UpdateUserPassWord.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f43bb957-b052-4562-b701-6562106199b0" Title="CrudFuntion Class" Url="html/T-RM.Core.Data.Implementation.CrudFuntion.htm">
+      <HelpTOCNode Title="CrudFuntion Members" Url="html/AllMembers.T-RM.Core.Data.Implementation.CrudFuntion.htm" />
+      <HelpTOCNode Id="b86f02f1-0ced-49e7-9521-26444965f8ba" Title="CrudFuntion Methods" Url="html/Methods.T-RM.Core.Data.Implementation.CrudFuntion.htm">
+        <HelpTOCNode Title="DeleteAddress Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteAddress.htm" />
+        <HelpTOCNode Title="DeleteCommitteeMember Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteCommitteeMember.htm" />
+        <HelpTOCNode Title="DeleteCompany Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteCompany.htm" />
+        <HelpTOCNode Title="DeleteEventStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteEventStatus.htm" />
+        <HelpTOCNode Title="DeleteEventuality Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteEventuality.htm" />
+        <HelpTOCNode Title="DeletePaymentStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeletePaymentStatus.htm" />
+        <HelpTOCNode Title="DeleteRecreationalArea Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteRecreationalArea.htm" />
+        <HelpTOCNode Title="DeleteSupplier Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteSupplier.htm" />
+        <HelpTOCNode Title="DeleteTicketStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteTicketStatus.htm" />
+        <HelpTOCNode Title="DeleteTypeCommittee Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteTypeCommittee.htm" />
+        <HelpTOCNode Title="DeleteTypeUser Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteTypeUser.htm" />
+        <HelpTOCNode Title="DeleteTypeVisit Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteTypeVisit.htm" />
+        <HelpTOCNode Title="DeleteUser Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteUser.htm" />
+        <HelpTOCNode Title="DeleteVehicle Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.DeleteVehicle.htm" />
+        <HelpTOCNode Title="GetAddress Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetAddress.htm" />
+        <HelpTOCNode Title="GetAssistControl Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetAssistControl.htm" />
+        <HelpTOCNode Title="GetCommitteeMember Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetCommitteeMember.htm" />
+        <HelpTOCNode Title="GetCompany Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetCompany.htm" />
+        <HelpTOCNode Title="GetEvent Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetEvent.htm" />
+        <HelpTOCNode Title="GetEventStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetEventStatus.htm" />
+        <HelpTOCNode Title="GetEventuality Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetEventuality.htm" />
+        <HelpTOCNode Title="GetInternalBox Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetInternalBox.htm" />
+        <HelpTOCNode Title="GetInternalExpense Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetInternalExpense.htm" />
+        <HelpTOCNode Title="GetPayment Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetPayment.htm" />
+        <HelpTOCNode Title="GetPaymentStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetPaymentStatus.htm" />
+        <HelpTOCNode Title="GetRecreationalArea Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetRecreationalArea.htm" />
+        <HelpTOCNode Title="GetSupplier Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetSupplier.htm" />
+        <HelpTOCNode Title="GetTicket Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetTicket.htm" />
+        <HelpTOCNode Title="GetTicketStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetTicketStatus.htm" />
+        <HelpTOCNode Title="GetTypeCommittee Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetTypeCommittee.htm" />
+        <HelpTOCNode Title="GetTypeUser Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetTypeUser.htm" />
+        <HelpTOCNode Title="GetTypeVisit Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetTypeVisit.htm" />
+        <HelpTOCNode Title="GetUser Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetUser.htm" />
+        <HelpTOCNode Title="GetVehicle Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetVehicle.htm" />
+        <HelpTOCNode Title="GetVisit Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.GetVisit.htm" />
+        <HelpTOCNode Title="InsertAddress Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertAddress.htm" />
+        <HelpTOCNode Title="InsertAssistControl Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertAssistControl.htm" />
+        <HelpTOCNode Title="InsertCommitteeMember Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertCommitteeMember.htm" />
+        <HelpTOCNode Title="InsertCompany Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertCompany.htm" />
+        <HelpTOCNode Title="InsertEvent Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertEvent.htm" />
+        <HelpTOCNode Title="InsertEventStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertEventStatus.htm" />
+        <HelpTOCNode Title="InsertEventuality Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertEventuality.htm" />
+        <HelpTOCNode Title="InsertInternalBox Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertInternalBox.htm" />
+        <HelpTOCNode Title="InsertInternalExpense Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertInternalExpense.htm" />
+        <HelpTOCNode Title="InsertPayment Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertPayment.htm" />
+        <HelpTOCNode Title="InsertPaymentStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertPaymentStatus.htm" />
+        <HelpTOCNode Title="InsertRecreationalArea Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertRecreationalArea.htm" />
+        <HelpTOCNode Title="InsertSupplier Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertSupplier.htm" />
+        <HelpTOCNode Title="InsertTicket Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertTicket.htm" />
+        <HelpTOCNode Title="InsertTicketStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertTicketStatus.htm" />
+        <HelpTOCNode Title="InsertTypeCommittee Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertTypeCommittee.htm" />
+        <HelpTOCNode Title="InsertTypeUser Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertTypeUser.htm" />
+        <HelpTOCNode Title="InsertTypeVisit Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertTypeVisit.htm" />
+        <HelpTOCNode Title="InsertUser Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertUser.htm" />
+        <HelpTOCNode Title="InsertVehicle Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertVehicle.htm" />
+        <HelpTOCNode Title="InsertVisit Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.InsertVisit.htm" />
+        <HelpTOCNode Title="UpdateAddress Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateAddress.htm" />
+        <HelpTOCNode Title="UpdateAssistControl Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateAssistControl.htm" />
+        <HelpTOCNode Title="UpdateCommitteeMember Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateCommitteeMember.htm" />
+        <HelpTOCNode Title="UpdateCompany Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateCompany.htm" />
+        <HelpTOCNode Title="UpdateEvent Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateEvent.htm" />
+        <HelpTOCNode Title="UpdateEventStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateEventStatus.htm" />
+        <HelpTOCNode Title="UpdateEventuality Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateEventuality.htm" />
+        <HelpTOCNode Title="UpdatePayment Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdatePayment.htm" />
+        <HelpTOCNode Title="UpdatePaymentStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdatePaymentStatus.htm" />
+        <HelpTOCNode Title="UpdateRecreationalArea Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateRecreationalArea.htm" />
+        <HelpTOCNode Title="UpdateSupplier Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateSupplier.htm" />
+        <HelpTOCNode Title="UpdateTicket Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateTicket.htm" />
+        <HelpTOCNode Title="UpdateTicketStatus Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateTicketStatus.htm" />
+        <HelpTOCNode Title="UpdateTypeCommittee Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateTypeCommittee.htm" />
+        <HelpTOCNode Title="UpdateTypeUser Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateTypeUser.htm" />
+        <HelpTOCNode Title="UpdateTypeVisit Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateTypeVisit.htm" />
+        <HelpTOCNode Title="UpdateUser Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateUser.htm" />
+        <HelpTOCNode Title="UpdateVehicle Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateVehicle.htm" />
+        <HelpTOCNode Title="UpdateVisit Method " Url="html/M-RM.Core.Data.Implementation.CrudFuntion.UpdateVisit.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="689ebb4b-f34c-4737-b9c0-5833e37426a1" Title="RM.Core.Data.Interface Namespace" Url="html/N-RM.Core.Data.Interface.htm">
+    <HelpTOCNode Id="05483d3c-ce11-4891-a765-90b81e6826dc" Title="IBaseFunction Interface" Url="html/T-RM.Core.Data.Interface.IBaseFunction.htm">
+      <HelpTOCNode Title="IBaseFunction Members" Url="html/AllMembers.T-RM.Core.Data.Interface.IBaseFunction.htm" />
+      <HelpTOCNode Id="ca58add5-e82f-4ee6-b89e-ac600e1f01a9" Title="IBaseFunction Methods" Url="html/Methods.T-RM.Core.Data.Interface.IBaseFunction.htm">
+        <HelpTOCNode Title="DataFuncLogin Method " Url="html/M-RM.Core.Data.Interface.IBaseFunction.DataFuncLogin.htm" />
+        <HelpTOCNode Title="UpdateUserPassWord Method " Url="html/M-RM.Core.Data.Interface.IBaseFunction.UpdateUserPassWord.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="98647539-4595-4584-837d-0e13b084a2d1" Title="ICrudFuntion Interface" Url="html/T-RM.Core.Data.Interface.ICrudFuntion.htm">
+      <HelpTOCNode Title="ICrudFuntion Members" Url="html/AllMembers.T-RM.Core.Data.Interface.ICrudFuntion.htm" />
+      <HelpTOCNode Id="deb60f75-484b-4027-87fd-d66c8816e5e4" Title="ICrudFuntion Methods" Url="html/Methods.T-RM.Core.Data.Interface.ICrudFuntion.htm">
+        <HelpTOCNode Title="DeleteAddress Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteAddress.htm" />
+        <HelpTOCNode Title="DeleteCommitteeMember Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteCommitteeMember.htm" />
+        <HelpTOCNode Title="DeleteCompany Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteCompany.htm" />
+        <HelpTOCNode Title="DeleteEventStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteEventStatus.htm" />
+        <HelpTOCNode Title="DeleteEventuality Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteEventuality.htm" />
+        <HelpTOCNode Title="DeletePaymentStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeletePaymentStatus.htm" />
+        <HelpTOCNode Title="DeleteRecreationalArea Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteRecreationalArea.htm" />
+        <HelpTOCNode Title="DeleteSupplier Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteSupplier.htm" />
+        <HelpTOCNode Title="DeleteTicketStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteTicketStatus.htm" />
+        <HelpTOCNode Title="DeleteTypeCommittee Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteTypeCommittee.htm" />
+        <HelpTOCNode Title="DeleteTypeUser Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteTypeUser.htm" />
+        <HelpTOCNode Title="DeleteTypeVisit Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteTypeVisit.htm" />
+        <HelpTOCNode Title="DeleteUser Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteUser.htm" />
+        <HelpTOCNode Title="DeleteVehicle Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.DeleteVehicle.htm" />
+        <HelpTOCNode Title="GetAddress Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetAddress.htm" />
+        <HelpTOCNode Title="GetAssistControl Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetAssistControl.htm" />
+        <HelpTOCNode Title="GetCommitteeMember Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetCommitteeMember.htm" />
+        <HelpTOCNode Title="GetCompany Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetCompany.htm" />
+        <HelpTOCNode Title="GetEvent Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetEvent.htm" />
+        <HelpTOCNode Title="GetEventStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetEventStatus.htm" />
+        <HelpTOCNode Title="GetEventuality Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetEventuality.htm" />
+        <HelpTOCNode Title="GetInternalBox Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetInternalBox.htm" />
+        <HelpTOCNode Title="GetInternalExpense Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetInternalExpense.htm" />
+        <HelpTOCNode Title="GetPayment Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetPayment.htm" />
+        <HelpTOCNode Title="GetPaymentStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetPaymentStatus.htm" />
+        <HelpTOCNode Title="GetRecreationalArea Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetRecreationalArea.htm" />
+        <HelpTOCNode Title="GetSupplier Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetSupplier.htm" />
+        <HelpTOCNode Title="GetTicket Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetTicket.htm" />
+        <HelpTOCNode Title="GetTicketStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetTicketStatus.htm" />
+        <HelpTOCNode Title="GetTypeCommittee Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetTypeCommittee.htm" />
+        <HelpTOCNode Title="GetTypeUser Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetTypeUser.htm" />
+        <HelpTOCNode Title="GetTypeVisit Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetTypeVisit.htm" />
+        <HelpTOCNode Title="GetUser Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetUser.htm" />
+        <HelpTOCNode Title="GetVehicle Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetVehicle.htm" />
+        <HelpTOCNode Title="GetVisit Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.GetVisit.htm" />
+        <HelpTOCNode Title="InsertAddress Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertAddress.htm" />
+        <HelpTOCNode Title="InsertAssistControl Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertAssistControl.htm" />
+        <HelpTOCNode Title="InsertCommitteeMember Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertCommitteeMember.htm" />
+        <HelpTOCNode Title="InsertCompany Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertCompany.htm" />
+        <HelpTOCNode Title="InsertEvent Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertEvent.htm" />
+        <HelpTOCNode Title="InsertEventStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertEventStatus.htm" />
+        <HelpTOCNode Title="InsertEventuality Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertEventuality.htm" />
+        <HelpTOCNode Title="InsertInternalBox Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertInternalBox.htm" />
+        <HelpTOCNode Title="InsertInternalExpense Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertInternalExpense.htm" />
+        <HelpTOCNode Title="InsertPayment Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertPayment.htm" />
+        <HelpTOCNode Title="InsertPaymentStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertPaymentStatus.htm" />
+        <HelpTOCNode Title="InsertRecreationalArea Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertRecreationalArea.htm" />
+        <HelpTOCNode Title="InsertSupplier Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertSupplier.htm" />
+        <HelpTOCNode Title="InsertTicket Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertTicket.htm" />
+        <HelpTOCNode Title="InsertTicketStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertTicketStatus.htm" />
+        <HelpTOCNode Title="InsertTypeCommittee Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertTypeCommittee.htm" />
+        <HelpTOCNode Title="InsertTypeUser Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertTypeUser.htm" />
+        <HelpTOCNode Title="InsertTypeVisit Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertTypeVisit.htm" />
+        <HelpTOCNode Title="InsertUser Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertUser.htm" />
+        <HelpTOCNode Title="InsertVehicle Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertVehicle.htm" />
+        <HelpTOCNode Title="InsertVisit Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.InsertVisit.htm" />
+        <HelpTOCNode Title="UpdateAddress Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateAddress.htm" />
+        <HelpTOCNode Title="UpdateAssistControl Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateAssistControl.htm" />
+        <HelpTOCNode Title="UpdateCommitteeMember Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateCommitteeMember.htm" />
+        <HelpTOCNode Title="UpdateCompany Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateCompany.htm" />
+        <HelpTOCNode Title="UpdateEvent Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateEvent.htm" />
+        <HelpTOCNode Title="UpdateEventStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateEventStatus.htm" />
+        <HelpTOCNode Title="UpdateEventuality Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateEventuality.htm" />
+        <HelpTOCNode Title="UpdatePayment Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdatePayment.htm" />
+        <HelpTOCNode Title="UpdatePaymentStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdatePaymentStatus.htm" />
+        <HelpTOCNode Title="UpdateRecreationalArea Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateRecreationalArea.htm" />
+        <HelpTOCNode Title="UpdateSupplier Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateSupplier.htm" />
+        <HelpTOCNode Title="UpdateTicket Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateTicket.htm" />
+        <HelpTOCNode Title="UpdateTicketStatus Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateTicketStatus.htm" />
+        <HelpTOCNode Title="UpdateTypeCommittee Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateTypeCommittee.htm" />
+        <HelpTOCNode Title="UpdateTypeUser Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateTypeUser.htm" />
+        <HelpTOCNode Title="UpdateTypeVisit Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateTypeVisit.htm" />
+        <HelpTOCNode Title="UpdateUser Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateUser.htm" />
+        <HelpTOCNode Title="UpdateVehicle Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateVehicle.htm" />
+        <HelpTOCNode Title="UpdateVisit Method " Url="html/M-RM.Core.Data.Interface.ICrudFuntion.UpdateVisit.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="01986091-bf04-411d-b86e-60b5746de5db" Title="RM.Core.Service Namespace" Url="html/N-RM.Core.Service.htm">
+    <HelpTOCNode Id="8a789f1d-23f3-459c-9e6e-6342c96b6c89" Title="BundleConfig Class" Url="html/T-RM.Core.Service.BundleConfig.htm">
+      <HelpTOCNode Title="BundleConfig Members" Url="html/AllMembers.T-RM.Core.Service.BundleConfig.htm" />
+      <HelpTOCNode Id="f6f36400-1178-4312-909b-2355d02bf890" Title="BundleConfig Methods" Url="html/Methods.T-RM.Core.Service.BundleConfig.htm">
+        <HelpTOCNode Title="RegisterBundles Method " Url="html/M-RM.Core.Service.BundleConfig.RegisterBundles.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="08fc3951-84d6-4726-93ad-703bee4fee83" Title="FilterConfig Class" Url="html/T-RM.Core.Service.FilterConfig.htm">
+      <HelpTOCNode Title="FilterConfig Members" Url="html/AllMembers.T-RM.Core.Service.FilterConfig.htm" />
+      <HelpTOCNode Id="29ab3c43-86e9-4908-954d-9566dd991135" Title="FilterConfig Methods" Url="html/Methods.T-RM.Core.Service.FilterConfig.htm">
+        <HelpTOCNode Title="RegisterGlobalFilters Method " Url="html/M-RM.Core.Service.FilterConfig.RegisterGlobalFilters.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ad88b452-8db4-4407-9f13-c2483df5a1d8" Title="RouteConfig Class" Url="html/T-RM.Core.Service.RouteConfig.htm">
+      <HelpTOCNode Title="RouteConfig Members" Url="html/AllMembers.T-RM.Core.Service.RouteConfig.htm" />
+      <HelpTOCNode Id="12e8fcc6-4c09-45bd-b435-1e807515eeb7" Title="RouteConfig Methods" Url="html/Methods.T-RM.Core.Service.RouteConfig.htm">
+        <HelpTOCNode Title="RegisterRoutes Method " Url="html/M-RM.Core.Service.RouteConfig.RegisterRoutes.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="bc59a53b-dd12-40fd-97e7-1d652618eee7" Title="WebApiApplication Class" Url="html/T-RM.Core.Service.WebApiApplication.htm">
+      <HelpTOCNode Title="WebApiApplication Members" Url="html/AllMembers.T-RM.Core.Service.WebApiApplication.htm" />
+      <HelpTOCNode Id="314ca27e-0267-45a1-bd10-dca40ee53800" Title="WebApiApplication Methods" Url="html/Methods.T-RM.Core.Service.WebApiApplication.htm">
+        <HelpTOCNode Title="Application_Start Method " Url="html/M-RM.Core.Service.WebApiApplication.Application_Start.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="WebApiApplication Properties" Url="html/Properties.T-RM.Core.Service.WebApiApplication.htm" />
+      <HelpTOCNode Title="WebApiApplication Events" Url="html/Events.T-RM.Core.Service.WebApiApplication.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="81fc213d-83f8-4790-b013-a83197f16021" Title="WebApiConfig Class" Url="html/T-RM.Core.Service.WebApiConfig.htm">
+      <HelpTOCNode Title="WebApiConfig Members" Url="html/AllMembers.T-RM.Core.Service.WebApiConfig.htm" />
+      <HelpTOCNode Id="e757305a-6938-453c-8186-fa4101de9b01" Title="WebApiConfig Methods" Url="html/Methods.T-RM.Core.Service.WebApiConfig.htm">
+        <HelpTOCNode Title="Register Method " Url="html/M-RM.Core.Service.WebApiConfig.Register.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="209f7449-5f0d-4f37-89fc-e18b2130b8f1" Title="RM.Core.Service.Adapters Namespace" Url="html/N-RM.Core.Service.Adapters.htm">
+    <HelpTOCNode Id="cce64d5e-09b0-4373-a306-3c18a835b852" Title="AutoMapperProfile Class" Url="html/T-RM.Core.Service.Adapters.AutoMapperProfile.htm">
+      <HelpTOCNode Title="AutoMapperProfile Members" Url="html/AllMembers.T-RM.Core.Service.Adapters.AutoMapperProfile.htm" />
+      <HelpTOCNode Title="AutoMapperProfile Constructor " Url="html/M-RM.Core.Service.Adapters.AutoMapperProfile.-ctor.htm" />
+      <HelpTOCNode Title="AutoMapperProfile Methods" Url="html/Methods.T-RM.Core.Service.Adapters.AutoMapperProfile.htm" />
+      <HelpTOCNode Title="AutoMapperProfile Properties" Url="html/Properties.T-RM.Core.Service.Adapters.AutoMapperProfile.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="99707981-75d8-4158-bd46-308883af1d41" Title="BaseAdapter Class" Url="html/T-RM.Core.Service.Adapters.BaseAdapter.htm">
+      <HelpTOCNode Title="BaseAdapter Members" Url="html/AllMembers.T-RM.Core.Service.Adapters.BaseAdapter.htm" />
+      <HelpTOCNode Id="3340e06e-47be-4c19-ad7d-27d1e6da9c73" Title="BaseAdapter Methods" Url="html/Methods.T-RM.Core.Service.Adapters.BaseAdapter.htm">
+        <HelpTOCNode Title="BizAddressToWebAddress Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizAddressToWebAddress.htm" />
+        <HelpTOCNode Title="BizAssistControlToWebAssistControl Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizAssistControlToWebAssistControl.htm" />
+        <HelpTOCNode Title="BizCommitteeMemberToWebCommitteeMember Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizCommitteeMemberToWebCommitteeMember.htm" />
+        <HelpTOCNode Title="BizCompanyToWebCompany Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizCompanyToWebCompany.htm" />
+        <HelpTOCNode Title="BizEventStatusToWebEventStatus Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizEventStatusToWebEventStatus.htm" />
+        <HelpTOCNode Id="62267e53-a893-43e6-af77-999def537627" Title="BizEventToWebEvent Method " Url="html/Overload-RM.Core.Service.Adapters.BaseAdapter.BizEventToWebEvent.htm">
+          <HelpTOCNode Title="BizEventToWebEvent Method (WebEvent)" Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizEventToWebEvent.htm" />
+          <HelpTOCNode Title="BizEventToWebEvent Method (BizEvent)" Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizEventToWebEvent_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="BizEventualityToWebEventuality Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizEventualityToWebEventuality.htm" />
+        <HelpTOCNode Title="BizInternalBoxToWebInternalBox Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizInternalBoxToWebInternalBox.htm" />
+        <HelpTOCNode Title="BizInternalExpenseToWebInternalExpense Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizInternalExpenseToWebInternalExpense.htm" />
+        <HelpTOCNode Title="BizPaymentStatusToWebPaymentStatus Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizPaymentStatusToWebPaymentStatus.htm" />
+        <HelpTOCNode Title="BizPaymentToWebPayment Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizPaymentToWebPayment.htm" />
+        <HelpTOCNode Title="BizRecreationalAreaToWebRecreationalArea Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizRecreationalAreaToWebRecreationalArea.htm" />
+        <HelpTOCNode Title="BizSupplierToWebSupplier Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizSupplierToWebSupplier.htm" />
+        <HelpTOCNode Title="BizTicketStatusToWebTicketStatus Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizTicketStatusToWebTicketStatus.htm" />
+        <HelpTOCNode Title="BizTicketToWebTicket Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizTicketToWebTicket.htm" />
+        <HelpTOCNode Title="BizTypeCommitteeToWebTypeCommittee Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizTypeCommitteeToWebTypeCommittee.htm" />
+        <HelpTOCNode Title="BizTypeUserToWebTypeUser Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizTypeUserToWebTypeUser.htm" />
+        <HelpTOCNode Title="BizTypeVisitToWebTypeVisit Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizTypeVisitToWebTypeVisit.htm" />
+        <HelpTOCNode Title="BizUserToWebUser Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizUserToWebUser.htm" />
+        <HelpTOCNode Title="BizVehicleToWebVehicle Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizVehicleToWebVehicle.htm" />
+        <HelpTOCNode Title="BizVisitToWebVisit Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.BizVisitToWebVisit.htm" />
+        <HelpTOCNode Title="ListBizAddressToListWebAddress Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizAddressToListWebAddress.htm" />
+        <HelpTOCNode Title="ListBizAEventualityToListWebEventuality Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizAEventualityToListWebEventuality.htm" />
+        <HelpTOCNode Title="ListBizAssistControlToListWebAssistControl Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizAssistControlToListWebAssistControl.htm" />
+        <HelpTOCNode Title="ListBizCommitteeMemberToListWebCommitteeMember Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizCommitteeMemberToListWebCommitteeMember.htm" />
+        <HelpTOCNode Title="ListBizCompanyToListWebCompany Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizCompanyToListWebCompany.htm" />
+        <HelpTOCNode Title="ListBizEventStatusToListWebEventStatus Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizEventStatusToListWebEventStatus.htm" />
+        <HelpTOCNode Title="ListBizEventToListWebEvent Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizEventToListWebEvent.htm" />
+        <HelpTOCNode Title="ListBizInternalBoxToListWebInternalBox Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizInternalBoxToListWebInternalBox.htm" />
+        <HelpTOCNode Title="ListBizInternalExpenseToListWebInternalExpense Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizInternalExpenseToListWebInternalExpense.htm" />
+        <HelpTOCNode Title="ListBizPaymentStatusToListWebPaymentStatus Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizPaymentStatusToListWebPaymentStatus.htm" />
+        <HelpTOCNode Title="ListBizPaymentToListWebPayment Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizPaymentToListWebPayment.htm" />
+        <HelpTOCNode Title="ListBizRecreationalAreaToListWebRecreationalArea Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizRecreationalAreaToListWebRecreationalArea.htm" />
+        <HelpTOCNode Title="ListBizSupplierToListWebSupplier Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizSupplierToListWebSupplier.htm" />
+        <HelpTOCNode Title="ListBizTicketStatusToListWebTicketStatus Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizTicketStatusToListWebTicketStatus.htm" />
+        <HelpTOCNode Title="ListBizTicketToListWebTicket Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizTicketToListWebTicket.htm" />
+        <HelpTOCNode Title="ListBizTypeCommitteeToListWebTypeCommittee Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizTypeCommitteeToListWebTypeCommittee.htm" />
+        <HelpTOCNode Title="ListBizTypeUserToListWebTypeUser Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizTypeUserToListWebTypeUser.htm" />
+        <HelpTOCNode Title="ListBizTypeVisitToListWebTypeVisit Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizTypeVisitToListWebTypeVisit.htm" />
+        <HelpTOCNode Title="ListBizUserToListWebUser Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizUserToListWebUser.htm" />
+        <HelpTOCNode Title="ListBizVehicleToListWebVehicle Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizVehicleToListWebVehicle.htm" />
+        <HelpTOCNode Title="ListBizVisitToListWebVisit Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.ListBizVisitToListWebVisit.htm" />
+        <HelpTOCNode Title="WebAddressToBizAddress Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebAddressToBizAddress.htm" />
+        <HelpTOCNode Title="WebAssistControlToBizAssistControl Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebAssistControlToBizAssistControl.htm" />
+        <HelpTOCNode Title="WebCommitteeMemberToBizCommitteeMember Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebCommitteeMemberToBizCommitteeMember.htm" />
+        <HelpTOCNode Title="WebCompanyToBizCompany Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebCompanyToBizCompany.htm" />
+        <HelpTOCNode Title="WebEventStatusToBizEventStatus Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebEventStatusToBizEventStatus.htm" />
+        <HelpTOCNode Title="WebEventualityToBizEventuality Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebEventualityToBizEventuality.htm" />
+        <HelpTOCNode Title="WebInternalBoxToBizInternalBox Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebInternalBoxToBizInternalBox.htm" />
+        <HelpTOCNode Title="WebInternalExpenseToBizInternalExpense Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebInternalExpenseToBizInternalExpense.htm" />
+        <HelpTOCNode Title="WebPaymentStatusToBizPaymentStatus Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebPaymentStatusToBizPaymentStatus.htm" />
+        <HelpTOCNode Title="WebPaymentToBizPayment Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebPaymentToBizPayment.htm" />
+        <HelpTOCNode Title="WebRecreationalAreaToBizRecreationalArea Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebRecreationalAreaToBizRecreationalArea.htm" />
+        <HelpTOCNode Title="WebSupplierToBizSupplier Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebSupplierToBizSupplier.htm" />
+        <HelpTOCNode Title="WebTicketStatusToBizTicketStatus Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebTicketStatusToBizTicketStatus.htm" />
+        <HelpTOCNode Title="WebTicketToBizTicket Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebTicketToBizTicket.htm" />
+        <HelpTOCNode Title="WebTypeCommitteeToBizTypeCommittee Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebTypeCommitteeToBizTypeCommittee.htm" />
+        <HelpTOCNode Title="WebTypeUserToBizTypeUser Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebTypeUserToBizTypeUser.htm" />
+        <HelpTOCNode Title="WebTypeVisitToBizTypeVisit Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebTypeVisitToBizTypeVisit.htm" />
+        <HelpTOCNode Title="WebUserToBizUser Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebUserToBizUser.htm" />
+        <HelpTOCNode Title="WebVehicleToBizVehicle Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebVehicleToBizVehicle.htm" />
+        <HelpTOCNode Title="WebVisitToBizVisit Method " Url="html/M-RM.Core.Service.Adapters.BaseAdapter.WebVisitToBizVisit.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="7ac2e5dd-dfd1-4ee5-aa36-500dabf52f6d" Title="RM.Core.Service.Controllers Namespace" Url="html/N-RM.Core.Service.Controllers.htm">
+    <HelpTOCNode Id="021a9760-0ab1-4f2f-80f2-e076774807c6" Title="AddressController Class" Url="html/T-RM.Core.Service.Controllers.AddressController.htm">
+      <HelpTOCNode Title="AddressController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.AddressController.htm" />
+      <HelpTOCNode Id="a2a486c0-eccf-4c99-98ad-036ddf1514e7" Title="AddressController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.AddressController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.AddressController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b7ae1851-f92a-4324-8e5f-8cb1eec2dbc4" Title="AddressController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.AddressController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.AddressController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.AddressController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.AddressController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.AddressController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AddressController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.AddressController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="380722b6-b3b2-4a21-9251-e5c47636d89b" Title="AssistControlController Class" Url="html/T-RM.Core.Service.Controllers.AssistControlController.htm">
+      <HelpTOCNode Title="AssistControlController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.AssistControlController.htm" />
+      <HelpTOCNode Id="8e3408dd-066d-473c-a849-45db0468a479" Title="AssistControlController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.AssistControlController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.AssistControlController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="def5c72c-7a09-4fb2-84ec-bd5844c7ccce" Title="AssistControlController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.AssistControlController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.AssistControlController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.AssistControlController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.AssistControlController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.AssistControlController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AssistControlController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.AssistControlController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="8bcdb447-0778-440e-9865-6567240f5c59" Title="AuthController Class" Url="html/T-RM.Core.Service.Controllers.AuthController.htm">
+      <HelpTOCNode Title="AuthController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.AuthController.htm" />
+      <HelpTOCNode Id="855b9b2b-f600-47b7-9ad6-a1a4c5bc6491" Title="AuthController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.AuthController.htm">
+        <HelpTOCNode Title="userFunctions Field" Url="html/F-RM.Core.Service.Controllers.AuthController.userFunctions.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5c142795-2351-4b84-9f78-e90c485f0a00" Title="AuthController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.AuthController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.AuthController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.AuthController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.AuthController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.AuthController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AuthController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.AuthController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="359445b7-9c58-4c9d-8225-88c7a7aa8732" Title="CommitteeMemberController Class" Url="html/T-RM.Core.Service.Controllers.CommitteeMemberController.htm">
+      <HelpTOCNode Title="CommitteeMemberController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.CommitteeMemberController.htm" />
+      <HelpTOCNode Id="e35aa4b7-7ba7-46ef-b04a-1c407ee42432" Title="CommitteeMemberController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.CommitteeMemberController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.CommitteeMemberController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="18f8e347-e3db-4839-a06b-2db4e1fff640" Title="CommitteeMemberController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.CommitteeMemberController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.CommitteeMemberController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.CommitteeMemberController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.CommitteeMemberController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.CommitteeMemberController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CommitteeMemberController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.CommitteeMemberController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="659365e2-08b4-486f-bb61-797ce2cc778d" Title="CompanyController Class" Url="html/T-RM.Core.Service.Controllers.CompanyController.htm">
+      <HelpTOCNode Title="CompanyController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.CompanyController.htm" />
+      <HelpTOCNode Id="ed598e63-1032-47fa-b4da-f94684fe19fd" Title="CompanyController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.CompanyController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.CompanyController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="52dc4eb1-cbd2-4014-88bb-813cf0b87582" Title="CompanyController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.CompanyController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.CompanyController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.CompanyController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.CompanyController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.CompanyController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CompanyController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.CompanyController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="9d232f78-c792-400a-8999-ddef477e66f4" Title="EventController Class" Url="html/T-RM.Core.Service.Controllers.EventController.htm">
+      <HelpTOCNode Title="EventController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.EventController.htm" />
+      <HelpTOCNode Id="9f2c4eba-3b81-4ef8-ac68-61d49abd35f8" Title="EventController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.EventController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.EventController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a1e15849-71ec-424a-95a7-16bf5e3d1600" Title="EventController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.EventController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.EventController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.EventController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.EventController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.EventController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EventController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.EventController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="fee4b026-ef46-4a61-9f9c-fec52e0e9f64" Title="EventStatusController Class" Url="html/T-RM.Core.Service.Controllers.EventStatusController.htm">
+      <HelpTOCNode Title="EventStatusController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.EventStatusController.htm" />
+      <HelpTOCNode Id="3b1cd152-f70b-4cfa-a3db-6a2013aad5d0" Title="EventStatusController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.EventStatusController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.EventStatusController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="59b33731-58fd-4b6f-8d81-b9f4e2c347e1" Title="EventStatusController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.EventStatusController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.EventStatusController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.EventStatusController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.EventStatusController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.EventStatusController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EventStatusController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.EventStatusController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="4f461c13-53a3-43db-bb97-b94b784411a3" Title="EventualityController Class" Url="html/T-RM.Core.Service.Controllers.EventualityController.htm">
+      <HelpTOCNode Title="EventualityController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.EventualityController.htm" />
+      <HelpTOCNode Id="5844221c-6983-4ae4-adae-0bab4baec633" Title="EventualityController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.EventualityController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.EventualityController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="942da9d2-0bfd-4590-9887-fdb6f0f351af" Title="EventualityController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.EventualityController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.EventualityController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.EventualityController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.EventualityController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.EventualityController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="EventualityController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.EventualityController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="2dabd286-4599-4230-acef-f91f984b96c5" Title="InternalBoxController Class" Url="html/T-RM.Core.Service.Controllers.InternalBoxController.htm">
+      <HelpTOCNode Title="InternalBoxController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.InternalBoxController.htm" />
+      <HelpTOCNode Id="5e9c2857-3953-4ca8-8836-84858b0b17a7" Title="InternalBoxController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.InternalBoxController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.InternalBoxController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0434f66a-fe49-4ed8-b6dd-3699cf3cf549" Title="InternalBoxController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.InternalBoxController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.InternalBoxController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.InternalBoxController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.InternalBoxController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.InternalBoxController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InternalBoxController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.InternalBoxController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="fe270f18-2f87-49a7-8aba-429e3d0dc07b" Title="InternalExpenseController Class" Url="html/T-RM.Core.Service.Controllers.InternalExpenseController.htm">
+      <HelpTOCNode Title="InternalExpenseController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.InternalExpenseController.htm" />
+      <HelpTOCNode Id="9c38eeaa-4b31-49d6-b9a5-00fe69d92c82" Title="InternalExpenseController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.InternalExpenseController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.InternalExpenseController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="87bb59b8-1ebe-4198-b66b-f76170a147ec" Title="InternalExpenseController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.InternalExpenseController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.InternalExpenseController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.InternalExpenseController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.InternalExpenseController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.InternalExpenseController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="InternalExpenseController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.InternalExpenseController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ef355e46-e474-4a91-afaa-7becefcf42b1" Title="PaymentController Class" Url="html/T-RM.Core.Service.Controllers.PaymentController.htm">
+      <HelpTOCNode Title="PaymentController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.PaymentController.htm" />
+      <HelpTOCNode Id="09a704c1-f8fd-4666-901f-4a8f49ec8745" Title="PaymentController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.PaymentController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.PaymentController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5b01a64b-049a-4ace-b74a-be66ffb4e9be" Title="PaymentController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.PaymentController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.PaymentController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.PaymentController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.PaymentController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.PaymentController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PaymentController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.PaymentController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="4fee5992-e04c-44c6-990e-4f5ae62a3457" Title="PaymentStatusController Class" Url="html/T-RM.Core.Service.Controllers.PaymentStatusController.htm">
+      <HelpTOCNode Title="PaymentStatusController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.PaymentStatusController.htm" />
+      <HelpTOCNode Id="3bc65dc8-5312-496e-a205-0fb6f7c76275" Title="PaymentStatusController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.PaymentStatusController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.PaymentStatusController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c656aec0-f433-4e47-a49a-8450a1be794b" Title="PaymentStatusController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.PaymentStatusController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.PaymentStatusController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.PaymentStatusController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.PaymentStatusController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.PaymentStatusController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="PaymentStatusController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.PaymentStatusController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="8207a1a8-81df-481d-af1c-909d08dab537" Title="RecreationalAreaController Class" Url="html/T-RM.Core.Service.Controllers.RecreationalAreaController.htm">
+      <HelpTOCNode Title="RecreationalAreaController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.RecreationalAreaController.htm" />
+      <HelpTOCNode Id="1c0ed731-ba5f-4862-9995-68482c663e0d" Title="RecreationalAreaController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.RecreationalAreaController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.RecreationalAreaController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6a542970-40cd-4ced-8ae9-e64b05a86f8d" Title="RecreationalAreaController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.RecreationalAreaController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.RecreationalAreaController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.RecreationalAreaController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.RecreationalAreaController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.RecreationalAreaController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="RecreationalAreaController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.RecreationalAreaController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b3393416-adc3-45ec-87c6-c77d607a58d2" Title="SupplierController Class" Url="html/T-RM.Core.Service.Controllers.SupplierController.htm">
+      <HelpTOCNode Title="SupplierController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.SupplierController.htm" />
+      <HelpTOCNode Id="163ee5bb-d710-491a-93e7-f0e0fdeace66" Title="SupplierController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.SupplierController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.SupplierController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="2e121664-0e45-439d-a224-396f6efc324c" Title="SupplierController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.SupplierController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.SupplierController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.SupplierController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.SupplierController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.SupplierController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="SupplierController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.SupplierController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b74e2f3b-6310-48b7-8d1c-722b2e5e3a36" Title="TicketController Class" Url="html/T-RM.Core.Service.Controllers.TicketController.htm">
+      <HelpTOCNode Title="TicketController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.TicketController.htm" />
+      <HelpTOCNode Id="4262f9d8-54d7-4226-819c-a62f89eb4801" Title="TicketController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.TicketController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.TicketController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="06ccc06c-f803-45a8-9bec-4dee9b66f7a1" Title="TicketController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.TicketController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.TicketController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.TicketController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.TicketController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.TicketController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TicketController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.TicketController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="6c8bf315-875e-40f3-9d1f-c20bdb538b3a" Title="TicketStatusController Class" Url="html/T-RM.Core.Service.Controllers.TicketStatusController.htm">
+      <HelpTOCNode Title="TicketStatusController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.TicketStatusController.htm" />
+      <HelpTOCNode Id="dd4ac583-96ec-4f8e-ab82-5475dd0c1a8e" Title="TicketStatusController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.TicketStatusController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.TicketStatusController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4fda0c4f-8a17-4c2c-a45e-353149f2970f" Title="TicketStatusController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.TicketStatusController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.TicketStatusController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.TicketStatusController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.TicketStatusController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.TicketStatusController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TicketStatusController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.TicketStatusController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e5faad48-5621-4381-a7b9-8d4ed83d8aaf" Title="TypeCommitteeController Class" Url="html/T-RM.Core.Service.Controllers.TypeCommitteeController.htm">
+      <HelpTOCNode Title="TypeCommitteeController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.TypeCommitteeController.htm" />
+      <HelpTOCNode Id="0a72faca-953d-4a17-b479-f5b0576a5579" Title="TypeCommitteeController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.TypeCommitteeController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.TypeCommitteeController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0b962674-5139-4277-ae78-f9d8c2b87245" Title="TypeCommitteeController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.TypeCommitteeController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.TypeCommitteeController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.TypeCommitteeController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.TypeCommitteeController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.TypeCommitteeController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TypeCommitteeController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.TypeCommitteeController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="87e047c8-0616-45e7-bbf7-5bf1dda59c62" Title="TypeUserController Class" Url="html/T-RM.Core.Service.Controllers.TypeUserController.htm">
+      <HelpTOCNode Title="TypeUserController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.TypeUserController.htm" />
+      <HelpTOCNode Id="4bc74a86-f596-49dc-ab38-87dec14447f5" Title="TypeUserController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.TypeUserController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.TypeUserController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5ebf479a-23a5-404b-a4f3-a31cfee152ab" Title="TypeUserController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.TypeUserController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.TypeUserController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.TypeUserController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.TypeUserController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.TypeUserController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TypeUserController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.TypeUserController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="27750de8-eb6c-4382-9177-460dc9dc4164" Title="TypeVisitController Class" Url="html/T-RM.Core.Service.Controllers.TypeVisitController.htm">
+      <HelpTOCNode Title="TypeVisitController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.TypeVisitController.htm" />
+      <HelpTOCNode Id="77f4cd54-0f5c-435c-b88e-297511402ff8" Title="TypeVisitController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.TypeVisitController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.TypeVisitController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="20104bdc-7d4f-4db8-a413-7b47b8f6ccdd" Title="TypeVisitController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.TypeVisitController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.TypeVisitController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.TypeVisitController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.TypeVisitController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.TypeVisitController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TypeVisitController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.TypeVisitController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="5212a8fa-8e50-4609-8546-52142970d4d8" Title="UserController Class" Url="html/T-RM.Core.Service.Controllers.UserController.htm">
+      <HelpTOCNode Title="UserController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.UserController.htm" />
+      <HelpTOCNode Id="33bc9189-2600-4089-9476-8b852f0b41a8" Title="UserController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.UserController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.UserController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="03ad5d4d-cce4-431e-bb23-dfa21ae33310" Title="UserController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.UserController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.UserController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.UserController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.UserController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.UserController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="UserController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.UserController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="38c5bbfb-641d-4dc7-b6a2-2751e4cc0729" Title="VehicleController Class" Url="html/T-RM.Core.Service.Controllers.VehicleController.htm">
+      <HelpTOCNode Title="VehicleController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.VehicleController.htm" />
+      <HelpTOCNode Id="462a2a21-e7bb-4036-8c1b-6cdad2b20528" Title="VehicleController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.VehicleController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.VehicleController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a6ba99ff-8b2a-4c07-8489-a60a4be8d524" Title="VehicleController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.VehicleController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.VehicleController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.VehicleController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.VehicleController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.VehicleController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="VehicleController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.VehicleController.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="99fa2db8-61b7-4dec-8b0b-b309da1d7587" Title="VisitController Class" Url="html/T-RM.Core.Service.Controllers.VisitController.htm">
+      <HelpTOCNode Title="VisitController Members" Url="html/AllMembers.T-RM.Core.Service.Controllers.VisitController.htm" />
+      <HelpTOCNode Id="71e4d773-f862-4766-8cc8-c6fb0e195c5f" Title="VisitController Fields" Url="html/Fields.T-RM.Core.Service.Controllers.VisitController.htm">
+        <HelpTOCNode Title="crudFuction Field" Url="html/F-RM.Core.Service.Controllers.VisitController.crudFuction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="6cc7b5b0-9998-469b-8a49-bd9e86186291" Title="VisitController Methods" Url="html/Methods.T-RM.Core.Service.Controllers.VisitController.htm">
+        <HelpTOCNode Title="Delete Method " Url="html/M-RM.Core.Service.Controllers.VisitController.Delete.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/M-RM.Core.Service.Controllers.VisitController.Get.htm" />
+        <HelpTOCNode Title="Post Method " Url="html/M-RM.Core.Service.Controllers.VisitController.Post.htm" />
+        <HelpTOCNode Title="Put Method " Url="html/M-RM.Core.Service.Controllers.VisitController.Put.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="VisitController Properties" Url="html/Properties.T-RM.Core.Service.Controllers.VisitController.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="2a0d6b0c-b301-4757-bdc5-69e7875ab4a8" Title="RM.Core.Web.Entities.Views Namespace" Url="html/N-RM.Core.Web.Entities.Views.htm">
+    <HelpTOCNode Id="6de53321-fefd-4756-b0ff-81487bdad945" Title="WebAddress Class" Url="html/T-RM.Core.Web.Entities.Views.WebAddress.htm">
+      <HelpTOCNode Title="WebAddress Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebAddress.htm" />
+      <HelpTOCNode Title="WebAddress Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebAddress.htm" />
+      <HelpTOCNode Id="3c0edd77-9092-43c2-8d69-0e6661a4e927" Title="WebAddress Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebAddress.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebAddress.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebAddress.Id.htm" />
+        <HelpTOCNode Title="Number Property " Url="html/P-RM.Core.Web.Entities.Views.WebAddress.Number.htm" />
+        <HelpTOCNode Title="PostalCode Property " Url="html/P-RM.Core.Web.Entities.Views.WebAddress.PostalCode.htm" />
+        <HelpTOCNode Title="StreetName Property " Url="html/P-RM.Core.Web.Entities.Views.WebAddress.StreetName.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Web.Entities.Views.WebAddress.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="0833daee-5323-43cc-9ff5-05c3cdb5e56a" Title="WebAssistControl Class" Url="html/T-RM.Core.Web.Entities.Views.WebAssistControl.htm">
+      <HelpTOCNode Title="WebAssistControl Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebAssistControl.htm" />
+      <HelpTOCNode Title="WebAssistControl Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebAssistControl.htm" />
+      <HelpTOCNode Id="5128d5a4-b84f-46e8-ba3f-7b48510fa0d5" Title="WebAssistControl Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebAssistControl.htm">
+        <HelpTOCNode Title="CheckIn Property " Url="html/P-RM.Core.Web.Entities.Views.WebAssistControl.CheckIn.htm" />
+        <HelpTOCNode Title="CheckOut Property " Url="html/P-RM.Core.Web.Entities.Views.WebAssistControl.CheckOut.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebAssistControl.Id.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Web.Entities.Views.WebAssistControl.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="38bb665a-4257-4b14-bd02-c53777308398" Title="WebCommitteeMember Class" Url="html/T-RM.Core.Web.Entities.Views.WebCommitteeMember.htm">
+      <HelpTOCNode Title="WebCommitteeMember Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebCommitteeMember.htm" />
+      <HelpTOCNode Title="WebCommitteeMember Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebCommitteeMember.htm" />
+      <HelpTOCNode Id="a1307ed5-5a56-435f-aa75-45be93e84c9d" Title="WebCommitteeMember Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebCommitteeMember.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebCommitteeMember.Active.htm" />
+        <HelpTOCNode Title="CommitteeType Property " Url="html/P-RM.Core.Web.Entities.Views.WebCommitteeMember.CommitteeType.htm" />
+        <HelpTOCNode Title="CommitteeTypeId Property " Url="html/P-RM.Core.Web.Entities.Views.WebCommitteeMember.CommitteeTypeId.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebCommitteeMember.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Web.Entities.Views.WebCommitteeMember.Nombre.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Web.Entities.Views.WebCommitteeMember.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d972b053-9508-4336-b804-f7057722ac31" Title="WebCompany Class" Url="html/T-RM.Core.Web.Entities.Views.WebCompany.htm">
+      <HelpTOCNode Title="WebCompany Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebCompany.htm" />
+      <HelpTOCNode Title="WebCompany Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebCompany.htm" />
+      <HelpTOCNode Id="f7175d70-cbae-45bf-b256-4f01c8d239a4" Title="WebCompany Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebCompany.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebCompany.Active.htm" />
+        <HelpTOCNode Title="CompanyName Property " Url="html/P-RM.Core.Web.Entities.Views.WebCompany.CompanyName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebCompany.Id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6b0b8548-da10-4150-ba2b-26afb68f361b" Title="WebEvent Class" Url="html/T-RM.Core.Web.Entities.Views.WebEvent.htm">
+      <HelpTOCNode Title="WebEvent Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebEvent.htm" />
+      <HelpTOCNode Title="WebEvent Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebEvent.htm" />
+      <HelpTOCNode Id="17d65ac9-8197-472b-9bf0-32ef2423f1af" Title="WebEvent Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebEvent.htm">
+        <HelpTOCNode Title="AreaName Property " Url="html/P-RM.Core.Web.Entities.Views.WebEvent.AreaName.htm" />
+        <HelpTOCNode Title="EndDate Property " Url="html/P-RM.Core.Web.Entities.Views.WebEvent.EndDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebEvent.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Web.Entities.Views.WebEvent.Nombre.htm" />
+        <HelpTOCNode Title="RecreationalAreaId Property " Url="html/P-RM.Core.Web.Entities.Views.WebEvent.RecreationalAreaId.htm" />
+        <HelpTOCNode Title="StartDate Property " Url="html/P-RM.Core.Web.Entities.Views.WebEvent.StartDate.htm" />
+        <HelpTOCNode Title="Status Property " Url="html/P-RM.Core.Web.Entities.Views.WebEvent.Status.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Web.Entities.Views.WebEvent.StatusName.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Web.Entities.Views.WebEvent.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="becf1b51-6256-4607-8226-f4b0ff0421b1" Title="WebEventStatus Class" Url="html/T-RM.Core.Web.Entities.Views.WebEventStatus.htm">
+      <HelpTOCNode Title="WebEventStatus Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebEventStatus.htm" />
+      <HelpTOCNode Title="WebEventStatus Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebEventStatus.htm" />
+      <HelpTOCNode Id="6e8d847e-0403-468d-951c-0383ec176f47" Title="WebEventStatus Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebEventStatus.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebEventStatus.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebEventStatus.Id.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Web.Entities.Views.WebEventStatus.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="57ae1ff4-e7b1-4d2a-b3d0-17c6f3a73bf4" Title="WebEventuality Class" Url="html/T-RM.Core.Web.Entities.Views.WebEventuality.htm">
+      <HelpTOCNode Title="WebEventuality Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebEventuality.htm" />
+      <HelpTOCNode Title="WebEventuality Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebEventuality.htm" />
+      <HelpTOCNode Id="15ed1b5e-e209-401f-ac39-57d503048ce9" Title="WebEventuality Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebEventuality.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebEventuality.Active.htm" />
+        <HelpTOCNode Title="EventualityName Property " Url="html/P-RM.Core.Web.Entities.Views.WebEventuality.EventualityName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebEventuality.Id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e7122722-b81b-4390-bc12-ec542e15e3b2" Title="WebInternalBox Class" Url="html/T-RM.Core.Web.Entities.Views.WebInternalBox.htm">
+      <HelpTOCNode Title="WebInternalBox Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebInternalBox.htm" />
+      <HelpTOCNode Title="WebInternalBox Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebInternalBox.htm" />
+      <HelpTOCNode Id="404ed619-8f2c-4489-8e30-f34909c0a4f2" Title="WebInternalBox Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebInternalBox.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/P-RM.Core.Web.Entities.Views.WebInternalBox.Amount.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Web.Entities.Views.WebInternalBox.CreationDate.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7f77d1bd-20f2-4c1f-939e-eaf79c7b1f1c" Title="WebInternalExpense Class" Url="html/T-RM.Core.Web.Entities.Views.WebInternalExpense.htm">
+      <HelpTOCNode Title="WebInternalExpense Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebInternalExpense.htm" />
+      <HelpTOCNode Title="WebInternalExpense Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebInternalExpense.htm" />
+      <HelpTOCNode Id="817500ff-dc90-4f2a-bd37-f0b65a817c01" Title="WebInternalExpense Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebInternalExpense.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/P-RM.Core.Web.Entities.Views.WebInternalExpense.Amount.htm" />
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Web.Entities.Views.WebInternalExpense.CreationDate.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebInternalExpense.Id.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Web.Entities.Views.WebInternalExpense.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6185fb94-e966-475c-a724-c1396f26326f" Title="WebPayment Class" Url="html/T-RM.Core.Web.Entities.Views.WebPayment.htm">
+      <HelpTOCNode Title="WebPayment Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebPayment.htm" />
+      <HelpTOCNode Title="WebPayment Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebPayment.htm" />
+      <HelpTOCNode Id="7d6baa3f-c7d5-404e-a29f-8a7fd0b6ffe5" Title="WebPayment Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebPayment.htm">
+        <HelpTOCNode Title="Amount Property " Url="html/P-RM.Core.Web.Entities.Views.WebPayment.Amount.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebPayment.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Web.Entities.Views.WebPayment.Nombre.htm" />
+        <HelpTOCNode Title="PaymentDate Property " Url="html/P-RM.Core.Web.Entities.Views.WebPayment.PaymentDate.htm" />
+        <HelpTOCNode Title="PaymentStatus Property " Url="html/P-RM.Core.Web.Entities.Views.WebPayment.PaymentStatus.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Web.Entities.Views.WebPayment.StatusName.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Web.Entities.Views.WebPayment.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="eea3d393-e14e-4a0d-be9f-a1e09649987f" Title="WebPaymentStatus Class" Url="html/T-RM.Core.Web.Entities.Views.WebPaymentStatus.htm">
+      <HelpTOCNode Title="WebPaymentStatus Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebPaymentStatus.htm" />
+      <HelpTOCNode Title="WebPaymentStatus Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebPaymentStatus.htm" />
+      <HelpTOCNode Id="a4504bf2-2359-40ce-ae5a-7308f522d676" Title="WebPaymentStatus Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebPaymentStatus.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebPaymentStatus.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebPaymentStatus.Id.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Web.Entities.Views.WebPaymentStatus.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f78892c5-843d-43a2-a649-060dacbbf5db" Title="WebRecreationalArea Class" Url="html/T-RM.Core.Web.Entities.Views.WebRecreationalArea.htm">
+      <HelpTOCNode Title="WebRecreationalArea Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebRecreationalArea.htm" />
+      <HelpTOCNode Title="WebRecreationalArea Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebRecreationalArea.htm" />
+      <HelpTOCNode Id="ed723722-43b1-4838-9324-9a0b4fb23de9" Title="WebRecreationalArea Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebRecreationalArea.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebRecreationalArea.Active.htm" />
+        <HelpTOCNode Title="AreaName Property " Url="html/P-RM.Core.Web.Entities.Views.WebRecreationalArea.AreaName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebRecreationalArea.Id.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="14e3ef96-edf7-48ee-af72-feb5ac17e530" Title="WebResponse(T, M) Class" Url="html/T-RM.Core.Web.Entities.Views.WebResponse-2.htm">
+      <HelpTOCNode Title="WebResponse(T, M) Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebResponse-2.htm" />
+      <HelpTOCNode Title="WebResponse(T, M) Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebResponse-2.htm" />
+      <HelpTOCNode Id="2f74ba32-99aa-4b9c-923a-79f7a5864428" Title="WebResponse(T, M) Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebResponse-2.htm">
+        <HelpTOCNode Title="Model Property " Url="html/P-RM.Core.Web.Entities.Views.WebResponse-2.Model.htm" />
+        <HelpTOCNode Title="Response Property " Url="html/P-RM.Core.Web.Entities.Views.WebResponse-2.Response.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="a8dc8991-da2d-4944-835d-49d3d3ef5d2e" Title="WebSupplier Class" Url="html/T-RM.Core.Web.Entities.Views.WebSupplier.htm">
+      <HelpTOCNode Title="WebSupplier Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebSupplier.htm" />
+      <HelpTOCNode Title="WebSupplier Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebSupplier.htm" />
+      <HelpTOCNode Id="b12c5363-1314-4c78-b822-e537707bf43f" Title="WebSupplier Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebSupplier.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebSupplier.Active.htm" />
+        <HelpTOCNode Title="ContactNumer Property " Url="html/P-RM.Core.Web.Entities.Views.WebSupplier.ContactNumer.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebSupplier.Id.htm" />
+        <HelpTOCNode Title="SupplierName Property " Url="html/P-RM.Core.Web.Entities.Views.WebSupplier.SupplierName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="222aecfc-5457-45bd-9f40-9fb75c3f3620" Title="WebTicket Class" Url="html/T-RM.Core.Web.Entities.Views.WebTicket.htm">
+      <HelpTOCNode Title="WebTicket Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebTicket.htm" />
+      <HelpTOCNode Title="WebTicket Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebTicket.htm" />
+      <HelpTOCNode Id="62c365de-5871-458f-b3fd-5d1426f329e7" Title="WebTicket Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebTicket.htm">
+        <HelpTOCNode Title="CreationDate Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicket.CreationDate.htm" />
+        <HelpTOCNode Title="EventualityId Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicket.EventualityId.htm" />
+        <HelpTOCNode Title="EventualityName Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicket.EventualityName.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicket.Id.htm" />
+        <HelpTOCNode Title="ModificationDate Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicket.ModificationDate.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicket.Nombre.htm" />
+        <HelpTOCNode Title="StatusId Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicket.StatusId.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicket.StatusName.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicket.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b3442386-75ed-46cf-bfd4-31a78cdf1171" Title="WebTicketStatus Class" Url="html/T-RM.Core.Web.Entities.Views.WebTicketStatus.htm">
+      <HelpTOCNode Title="WebTicketStatus Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebTicketStatus.htm" />
+      <HelpTOCNode Title="WebTicketStatus Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebTicketStatus.htm" />
+      <HelpTOCNode Id="f10c165f-6f4f-4ca7-95d5-de7c0ad8a67c" Title="WebTicketStatus Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebTicketStatus.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicketStatus.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicketStatus.Id.htm" />
+        <HelpTOCNode Title="StatusName Property " Url="html/P-RM.Core.Web.Entities.Views.WebTicketStatus.StatusName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d62d8c2a-290d-4ca2-9ea4-b175d0b661f7" Title="WebTypeCommittee Class" Url="html/T-RM.Core.Web.Entities.Views.WebTypeCommittee.htm">
+      <HelpTOCNode Title="WebTypeCommittee Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebTypeCommittee.htm" />
+      <HelpTOCNode Title="WebTypeCommittee Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebTypeCommittee.htm" />
+      <HelpTOCNode Id="f6a26fd2-6604-4013-bdfc-2fad9eededf6" Title="WebTypeCommittee Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebTypeCommittee.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebTypeCommittee.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebTypeCommittee.Id.htm" />
+        <HelpTOCNode Title="TypeCommittee Property " Url="html/P-RM.Core.Web.Entities.Views.WebTypeCommittee.TypeCommittee.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="cb46023c-d132-44da-8059-df44b99cf497" Title="WebTypeUser Class" Url="html/T-RM.Core.Web.Entities.Views.WebTypeUser.htm">
+      <HelpTOCNode Title="WebTypeUser Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebTypeUser.htm" />
+      <HelpTOCNode Title="WebTypeUser Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebTypeUser.htm" />
+      <HelpTOCNode Id="dfef967a-fbb9-40a2-8119-dcd758c65066" Title="WebTypeUser Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebTypeUser.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebTypeUser.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebTypeUser.Id.htm" />
+        <HelpTOCNode Title="TypeUser Property " Url="html/P-RM.Core.Web.Entities.Views.WebTypeUser.TypeUser.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="48f01ff8-2d71-492c-b094-634c99d2c366" Title="WebTypeVisit Class" Url="html/T-RM.Core.Web.Entities.Views.WebTypeVisit.htm">
+      <HelpTOCNode Title="WebTypeVisit Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebTypeVisit.htm" />
+      <HelpTOCNode Title="WebTypeVisit Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebTypeVisit.htm" />
+      <HelpTOCNode Id="ba07aac0-4305-44fb-8c19-8211d445bf1a" Title="WebTypeVisit Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebTypeVisit.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebTypeVisit.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebTypeVisit.Id.htm" />
+        <HelpTOCNode Title="TypeVisit Property " Url="html/P-RM.Core.Web.Entities.Views.WebTypeVisit.TypeVisit.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5cc768a1-e5b1-4000-b721-5e77de99579d" Title="WebUser Class" Url="html/T-RM.Core.Web.Entities.Views.WebUser.htm">
+      <HelpTOCNode Title="WebUser Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebUser.htm" />
+      <HelpTOCNode Title="WebUser Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebUser.htm" />
+      <HelpTOCNode Id="851f18d4-2b75-4b87-8286-66d03e40c604" Title="WebUser Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebUser.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.Active.htm" />
+        <HelpTOCNode Title="CompanyId Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.CompanyId.htm" />
+        <HelpTOCNode Title="CompanyName Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.CompanyName.htm" />
+        <HelpTOCNode Title="Email Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.Email.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.Id.htm" />
+        <HelpTOCNode Title="PassWord Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.PassWord.htm" />
+        <HelpTOCNode Title="PassWordSalt Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.PassWordSalt.htm" />
+        <HelpTOCNode Title="TypeId Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.TypeId.htm" />
+        <HelpTOCNode Title="UserLastName Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.UserLastName.htm" />
+        <HelpTOCNode Title="UserMiddleName Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.UserMiddleName.htm" />
+        <HelpTOCNode Title="UserMotherName Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.UserMotherName.htm" />
+        <HelpTOCNode Title="UserName Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.UserName.htm" />
+        <HelpTOCNode Title="UserType Property " Url="html/P-RM.Core.Web.Entities.Views.WebUser.UserType.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="911264b1-4bf3-4f5b-93d2-1460c3f0a217" Title="WebVehicle Class" Url="html/T-RM.Core.Web.Entities.Views.WebVehicle.htm">
+      <HelpTOCNode Title="WebVehicle Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebVehicle.htm" />
+      <HelpTOCNode Title="WebVehicle Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebVehicle.htm" />
+      <HelpTOCNode Id="c993c009-60e5-4f0f-a97f-88bead223347" Title="WebVehicle Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebVehicle.htm">
+        <HelpTOCNode Title="Active Property " Url="html/P-RM.Core.Web.Entities.Views.WebVehicle.Active.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebVehicle.Id.htm" />
+        <HelpTOCNode Title="Model Property " Url="html/P-RM.Core.Web.Entities.Views.WebVehicle.Model.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Web.Entities.Views.WebVehicle.Nombre.htm" />
+        <HelpTOCNode Title="Plates Property " Url="html/P-RM.Core.Web.Entities.Views.WebVehicle.Plates.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Web.Entities.Views.WebVehicle.UserId.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6c3a71b8-13c1-4c2c-8714-249220b4d8e0" Title="WebVisit Class" Url="html/T-RM.Core.Web.Entities.Views.WebVisit.htm">
+      <HelpTOCNode Title="WebVisit Members" Url="html/AllMembers.T-RM.Core.Web.Entities.Views.WebVisit.htm" />
+      <HelpTOCNode Title="WebVisit Methods" Url="html/Methods.T-RM.Core.Web.Entities.Views.WebVisit.htm" />
+      <HelpTOCNode Id="f5832876-56f0-4860-82d6-ec84c562aabf" Title="WebVisit Properties" Url="html/Properties.T-RM.Core.Web.Entities.Views.WebVisit.htm">
+        <HelpTOCNode Title="Carnet Property " Url="html/P-RM.Core.Web.Entities.Views.WebVisit.Carnet.htm" />
+        <HelpTOCNode Title="CheckIn Property " Url="html/P-RM.Core.Web.Entities.Views.WebVisit.CheckIn.htm" />
+        <HelpTOCNode Title="CheckOut Property " Url="html/P-RM.Core.Web.Entities.Views.WebVisit.CheckOut.htm" />
+        <HelpTOCNode Title="Id Property " Url="html/P-RM.Core.Web.Entities.Views.WebVisit.Id.htm" />
+        <HelpTOCNode Title="Nombre Property " Url="html/P-RM.Core.Web.Entities.Views.WebVisit.Nombre.htm" />
+        <HelpTOCNode Title="Plates Property " Url="html/P-RM.Core.Web.Entities.Views.WebVisit.Plates.htm" />
+        <HelpTOCNode Title="TypeVisit Property " Url="html/P-RM.Core.Web.Entities.Views.WebVisit.TypeVisit.htm" />
+        <HelpTOCNode Title="UserId Property " Url="html/P-RM.Core.Web.Entities.Views.WebVisit.UserId.htm" />
+        <HelpTOCNode Title="VisitId Property " Url="html/P-RM.Core.Web.Entities.Views.WebVisit.VisitId.htm" />
+        <HelpTOCNode Title="VisitName Property " Url="html/P-RM.Core.Web.Entities.Views.WebVisit.VisitName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

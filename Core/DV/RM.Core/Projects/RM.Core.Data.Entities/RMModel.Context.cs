@@ -14,20 +14,46 @@ namespace RM.Core.Data.Entities
     using System.Data.Entity.Infrastructure;
     using System.Data.Entity.Core.Objects;
     using System.Linq;
-    
+
+    /// <summary>
+    /// Class RMModel.
+    /// </summary>
+    /// <seealso cref="System.Data.Entity.DbContext" />
     public partial class RMModel : DbContext
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RMModel"/> class.
+        /// </summary>
         public RMModel()
             : base("name=RMModel")
         {
         }
-    
+
+        /// <summary>
+        /// This method is called when the model for a derived context has been initialized, but
+        /// before the model has been locked down and used to initialize the context.  The default
+        /// implementation of this method does nothing, but it can be overridden in a derived class
+        /// such that the model can be further configured before it is locked down.
+        /// </summary>
+        /// <param name="modelBuilder">The builder that defines the model for the context being created.</param>
+        /// <exception cref="UnintentionalCodeFirstException"></exception>
+        /// <remarks>Typically, this method is called only once when the first instance of a derived context
+        /// is created.  The model for that context is then cached and is for all further instances of
+        /// the context in the app domain.  This caching can be disabled by setting the ModelCaching
+        /// property on the given ModelBuidler, but note that this can seriously degrade performance.
+        /// More control over caching is provided through use of the DbModelBuilder and DbContextFactory
+        /// classes directly.</remarks>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-    
-    
+
+
+        /// <summary>
+        /// Systems the delete address.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelAddress(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -36,7 +62,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelAddress", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete cat event status.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCatEventStatus(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -45,7 +76,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatEventStatus", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete cat eventuality.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCatEventuality(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -54,7 +90,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatEventuality", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete cat payment status.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCatPaymentStatus(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -63,7 +104,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatPaymentStatus", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete cat ticket status.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCatTicketStatus(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -72,7 +118,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTicketStatus", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete cat type committee.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCatTypeCommittee(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -81,7 +132,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTypeCommittee", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete cat type user.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCatTypeUser(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -90,7 +146,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTypeUser", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete cat type visit.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCatTypeVisit(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -99,7 +160,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatTypeVisit", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete committee member.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCommitteeMember(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -108,7 +174,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCommitteeMember", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete company.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCompany(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -117,7 +188,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCompany", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete user.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelUser(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -126,7 +202,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelUser", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the function login user.
+        /// </summary>
+        /// <param name="email">The email.</param>
+        /// <returns>ObjectResult&lt;SYSFuncLoginUser_Result&gt;.</returns>
         public virtual ObjectResult<SYSFuncLoginUser_Result> SYSFuncLoginUser(string email)
         {
             var emailParameter = email != null ?
@@ -135,7 +216,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSFuncLoginUser_Result>("SYSFuncLoginUser", emailParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get address.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetAddress_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetAddress_Result> SYSGetAddress(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -144,7 +230,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetAddress_Result>("SYSGetAddress", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get assist control.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetAssistControl_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetAssistControl_Result> SYSGetAssistControl(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -153,7 +244,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetAssistControl_Result>("SYSGetAssistControl", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get cat event status.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCatEventStatus_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCatEventStatus_Result> SYSGetCatEventStatus(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -162,7 +258,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatEventStatus_Result>("SYSGetCatEventStatus", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get cat eventuality.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCatEventuality_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCatEventuality_Result> SYSGetCatEventuality(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -171,7 +272,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatEventuality_Result>("SYSGetCatEventuality", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get cat payment status.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCatPaymentStatus_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCatPaymentStatus_Result> SYSGetCatPaymentStatus(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -180,7 +286,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatPaymentStatus_Result>("SYSGetCatPaymentStatus", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get cat recreational area.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCatRecreationalArea_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCatRecreationalArea_Result> SYSGetCatRecreationalArea(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -189,7 +300,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatRecreationalArea_Result>("SYSGetCatRecreationalArea", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get cat supplier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCatSupplier_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCatSupplier_Result> SYSGetCatSupplier(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -198,7 +314,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatSupplier_Result>("SYSGetCatSupplier", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get cat ticket status.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCatTicketStatus_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCatTicketStatus_Result> SYSGetCatTicketStatus(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -207,7 +328,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatTicketStatus_Result>("SYSGetCatTicketStatus", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get cat type committee.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCatTypeCommittee_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCatTypeCommittee_Result> SYSGetCatTypeCommittee(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -216,7 +342,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatTypeCommittee_Result>("SYSGetCatTypeCommittee", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get cat type user.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCatTypeUser_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCatTypeUser_Result> SYSGetCatTypeUser(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -225,7 +356,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatTypeUser_Result>("SYSGetCatTypeUser", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get cat type visit.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCatTypeVisit_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCatTypeVisit_Result> SYSGetCatTypeVisit(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -234,7 +370,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCatTypeVisit_Result>("SYSGetCatTypeVisit", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get committee member.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCommitteeMember_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCommitteeMember_Result> SYSGetCommitteeMember(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -243,7 +384,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCommitteeMember_Result>("SYSGetCommitteeMember", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get company.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetCompany_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetCompany_Result> SYSGetCompany(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -252,7 +398,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetCompany_Result>("SYSGetCompany", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get event.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetEvent_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetEvent_Result> SYSGetEvent(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -261,7 +412,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetEvent_Result>("SYSGetEvent", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get internal box.
+        /// </summary>
+        /// <param name="amount">The amount.</param>
+        /// <param name="creationDate">The creation date.</param>
+        /// <returns>ObjectResult&lt;SYSGetInternalBox_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetInternalBox_Result> SYSGetInternalBox(Nullable<decimal> amount, Nullable<System.DateTime> creationDate)
         {
             var amountParameter = amount.HasValue ?
@@ -274,7 +431,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetInternalBox_Result>("SYSGetInternalBox", amountParameter, creationDateParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get internal expense.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetInternalExpense_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetInternalExpense_Result> SYSGetInternalExpense(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -283,7 +445,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetInternalExpense_Result>("SYSGetInternalExpense", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get payment.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetPayment_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetPayment_Result> SYSGetPayment(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -292,7 +459,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetPayment_Result>("SYSGetPayment", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get ticket.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetTicket_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetTicket_Result> SYSGetTicket(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -301,7 +473,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetTicket_Result>("SYSGetTicket", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get user.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>ObjectResult&lt;SYSGetUser_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetUser_Result> SYSGetUser(Nullable<int> id, Nullable<bool> active)
         {
             var idParameter = id.HasValue ?
@@ -314,7 +492,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetUser_Result>("SYSGetUser", idParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get vehicle.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>ObjectResult&lt;SYSGetVehicle_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetVehicle_Result> SYSGetVehicle(Nullable<int> id, Nullable<bool> active)
         {
             var idParameter = id.HasValue ?
@@ -327,7 +511,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetVehicle_Result>("SYSGetVehicle", idParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the get visit.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>ObjectResult&lt;SYSGetVisit_Result&gt;.</returns>
         public virtual ObjectResult<SYSGetVisit_Result> SYSGetVisit(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -336,7 +525,16 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SYSGetVisit_Result>("SYSGetVisit", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins address.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <param name="streetName">Name of the street.</param>
+        /// <param name="number">The number.</param>
+        /// <param name="postalCode">The postal code.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsAddress(Nullable<int> userId, string streetName, string number, string postalCode, Nullable<bool> active)
         {
             var userIdParameter = userId.HasValue ?
@@ -361,7 +559,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsAddress", userIdParameter, streetNameParameter, numberParameter, postalCodeParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins assist control.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsAssistControl(Nullable<int> userId)
         {
             var userIdParameter = userId.HasValue ?
@@ -370,7 +573,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsAssistControl", userIdParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins cat event status.
+        /// </summary>
+        /// <param name="statusName">Name of the status.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCatEventStatus(string statusName, Nullable<bool> active)
         {
             var statusNameParameter = statusName != null ?
@@ -383,7 +592,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatEventStatus", statusNameParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins cat eventuality.
+        /// </summary>
+        /// <param name="eventualityName">Name of the eventuality.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCatEventuality(string eventualityName, Nullable<bool> active)
         {
             var eventualityNameParameter = eventualityName != null ?
@@ -396,7 +611,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatEventuality", eventualityNameParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins cat payment status.
+        /// </summary>
+        /// <param name="statusName">Name of the status.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCatPaymentStatus(string statusName, Nullable<bool> active)
         {
             var statusNameParameter = statusName != null ?
@@ -409,7 +630,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatPaymentStatus", statusNameParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins cat recreational area.
+        /// </summary>
+        /// <param name="areaName">Name of the area.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCatRecreationalArea(string areaName, Nullable<bool> active)
         {
             var areaNameParameter = areaName != null ?
@@ -422,7 +649,14 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatRecreationalArea", areaNameParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins cat supplier.
+        /// </summary>
+        /// <param name="supplierName">Name of the supplier.</param>
+        /// <param name="contactNumer">The contact numer.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCatSupplier(string supplierName, string contactNumer, Nullable<bool> active)
         {
             var supplierNameParameter = supplierName != null ?
@@ -439,7 +673,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatSupplier", supplierNameParameter, contactNumerParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins cat ticket status.
+        /// </summary>
+        /// <param name="statusName">Name of the status.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCatTicketStatus(string statusName, Nullable<bool> active)
         {
             var statusNameParameter = statusName != null ?
@@ -452,7 +692,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatTicketStatus", statusNameParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins cat type committee.
+        /// </summary>
+        /// <param name="typeCommittee">The type committee.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCatTypeCommittee(string typeCommittee, Nullable<bool> active)
         {
             var typeCommitteeParameter = typeCommittee != null ?
@@ -465,7 +711,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatTypeCommittee", typeCommitteeParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins cat type user.
+        /// </summary>
+        /// <param name="typeUser">The type user.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCatTypeUser(string typeUser, Nullable<bool> active)
         {
             var typeUserParameter = typeUser != null ?
@@ -478,7 +730,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatTypeUser", typeUserParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins cat type visit.
+        /// </summary>
+        /// <param name="typeVisit">The type visit.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCatTypeVisit(string typeVisit, Nullable<bool> active)
         {
             var typeVisitParameter = typeVisit != null ?
@@ -491,7 +749,14 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCatTypeVisit", typeVisitParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins committee member.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <param name="committeeTypeId">The committee type identifier.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCommitteeMember(Nullable<int> userId, Nullable<int> committeeTypeId, Nullable<bool> active)
         {
             var userIdParameter = userId.HasValue ?
@@ -508,7 +773,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCommitteeMember", userIdParameter, committeeTypeIdParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins company.
+        /// </summary>
+        /// <param name="companyName">Name of the company.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsCompany(string companyName, Nullable<bool> active)
         {
             var companyNameParameter = companyName != null ?
@@ -521,7 +792,16 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsCompany", companyNameParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins event.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <param name="recreationalAreaId">The recreational area identifier.</param>
+        /// <param name="startDate">The start date.</param>
+        /// <param name="endDate">The end date.</param>
+        /// <param name="status">The status.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsEvent(Nullable<int> userId, Nullable<int> recreationalAreaId, Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate, Nullable<int> status)
         {
             var userIdParameter = userId.HasValue ?
@@ -546,7 +826,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsEvent", userIdParameter, recreationalAreaIdParameter, startDateParameter, endDateParameter, statusParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins internal box.
+        /// </summary>
+        /// <param name="amount">The amount.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsInternalBox(Nullable<decimal> amount)
         {
             var amountParameter = amount.HasValue ?
@@ -555,7 +840,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsInternalBox", amountParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins internal expense.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <param name="amount">The amount.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsInternalExpense(Nullable<int> userId, Nullable<decimal> amount)
         {
             var userIdParameter = userId.HasValue ?
@@ -568,7 +859,14 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsInternalExpense", userIdParameter, amountParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins payment.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <param name="amount">The amount.</param>
+        /// <param name="paymentStatus">The payment status.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsPayment(Nullable<int> userId, Nullable<decimal> amount, Nullable<int> paymentStatus)
         {
             var userIdParameter = userId.HasValue ?
@@ -585,7 +883,14 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsPayment", userIdParameter, amountParameter, paymentStatusParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins ticket.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <param name="eventualityId">The eventuality identifier.</param>
+        /// <param name="statusId">The status identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsTicket(Nullable<int> userId, Nullable<int> eventualityId, Nullable<int> statusId)
         {
             var userIdParameter = userId.HasValue ?
@@ -602,7 +907,21 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsTicket", userIdParameter, eventualityIdParameter, statusIdParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins user.
+        /// </summary>
+        /// <param name="companyId">The company identifier.</param>
+        /// <param name="typeId">The type identifier.</param>
+        /// <param name="userName">Name of the user.</param>
+        /// <param name="userMiddleName">Name of the user middle.</param>
+        /// <param name="userLastName">Last name of the user.</param>
+        /// <param name="userMotherName">Name of the user mother.</param>
+        /// <param name="email">The email.</param>
+        /// <param name="passWord">The pass word.</param>
+        /// <param name="passWordSalt">The pass word salt.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsUser(Nullable<int> companyId, Nullable<int> typeId, string userName, string userMiddleName, string userLastName, string userMotherName, string email, string passWord, string passWordSalt, Nullable<bool> active)
         {
             var companyIdParameter = companyId.HasValue ?
@@ -647,7 +966,15 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsUser", companyIdParameter, typeIdParameter, userNameParameter, userMiddleNameParameter, userLastNameParameter, userMotherNameParameter, emailParameter, passWordParameter, passWordSaltParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins vehicle.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <param name="plates">The plates.</param>
+        /// <param name="model">The model.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsVehicle(Nullable<int> userId, string plates, string model, Nullable<bool> active)
         {
             var userIdParameter = userId.HasValue ?
@@ -668,7 +995,16 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsVehicle", userIdParameter, platesParameter, modelParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the ins visit.
+        /// </summary>
+        /// <param name="visitId">The visit identifier.</param>
+        /// <param name="userId">The user identifier.</param>
+        /// <param name="visitName">Name of the visit.</param>
+        /// <param name="carnet">The carnet.</param>
+        /// <param name="plates">The plates.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSInsVisit(Nullable<int> visitId, Nullable<int> userId, string visitName, string carnet, string plates)
         {
             var visitIdParameter = visitId.HasValue ?
@@ -693,7 +1029,15 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSInsVisit", visitIdParameter, userIdParameter, visitNameParameter, carnetParameter, platesParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd address.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="streetName">Name of the street.</param>
+        /// <param name="number">The number.</param>
+        /// <param name="postalCode">The postal code.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdAddress(Nullable<int> id, string streetName, string number, string postalCode)
         {
             var idParameter = id.HasValue ?
@@ -714,7 +1058,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdAddress", idParameter, streetNameParameter, numberParameter, postalCodeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd assist control.
+        /// </summary>
+        /// <param name="userId">The user identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdAssistControl(Nullable<int> userId)
         {
             var userIdParameter = userId.HasValue ?
@@ -723,7 +1072,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdAssistControl", userIdParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd cat event status.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="statusName">Name of the status.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCatEventStatus(Nullable<int> id, string statusName)
         {
             var idParameter = id.HasValue ?
@@ -736,7 +1091,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatEventStatus", idParameter, statusNameParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd cat eventuality.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="eventualityName">Name of the eventuality.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCatEventuality(Nullable<int> id, string eventualityName)
         {
             var idParameter = id.HasValue ?
@@ -749,7 +1110,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatEventuality", idParameter, eventualityNameParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd cat payment status.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="statusName">Name of the status.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCatPaymentStatus(Nullable<int> id, string statusName)
         {
             var idParameter = id.HasValue ?
@@ -762,7 +1129,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatPaymentStatus", idParameter, statusNameParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd cat recreational area.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="areaName">Name of the area.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCatRecreationalArea(Nullable<int> id, string areaName)
         {
             var idParameter = id.HasValue ?
@@ -775,7 +1148,14 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatRecreationalArea", idParameter, areaNameParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd cat supplier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="supplierName">Name of the supplier.</param>
+        /// <param name="contactNumer">The contact numer.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCatSupplier(Nullable<int> id, string supplierName, string contactNumer)
         {
             var idParameter = id.HasValue ?
@@ -792,7 +1172,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatSupplier", idParameter, supplierNameParameter, contactNumerParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd cat ticket status.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="statusName">Name of the status.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCatTicketStatus(Nullable<int> id, string statusName)
         {
             var idParameter = id.HasValue ?
@@ -805,7 +1191,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatTicketStatus", idParameter, statusNameParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd cat type committee.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="typeCommittee">The type committee.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCatTypeCommittee(Nullable<int> id, string typeCommittee)
         {
             var idParameter = id.HasValue ?
@@ -818,7 +1210,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatTypeCommittee", idParameter, typeCommitteeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd cat type user.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="typeUser">The type user.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCatTypeUser(Nullable<int> id, string typeUser)
         {
             var idParameter = id.HasValue ?
@@ -831,7 +1229,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatTypeUser", idParameter, typeUserParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd cat type visit.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="typeVisit">The type visit.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCatTypeVisit(Nullable<int> id, string typeVisit)
         {
             var idParameter = id.HasValue ?
@@ -844,7 +1248,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCatTypeVisit", idParameter, typeVisitParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd committee member.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="committeeTypeId">The committee type identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCommitteeMember(Nullable<int> id, Nullable<int> committeeTypeId)
         {
             var idParameter = id.HasValue ?
@@ -857,7 +1267,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCommitteeMember", idParameter, committeeTypeIdParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd company.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="companyName">Name of the company.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdCompany(Nullable<int> id, string companyName)
         {
             var idParameter = id.HasValue ?
@@ -870,7 +1286,16 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdCompany", idParameter, companyNameParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd event.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="eventStatus">The event status.</param>
+        /// <param name="recreationalAreaId">The recreational area identifier.</param>
+        /// <param name="startDate">The start date.</param>
+        /// <param name="endDate">The end date.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdEvent(Nullable<int> id, Nullable<int> eventStatus, Nullable<int> recreationalAreaId, Nullable<System.DateTime> startDate, Nullable<System.DateTime> endDate)
         {
             var idParameter = id.HasValue ?
@@ -895,7 +1320,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdEvent", idParameter, eventStatusParameter, recreationalAreaIdParameter, startDateParameter, endDateParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd payment.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="paymentStatus">The payment status.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdPayment(Nullable<int> id, Nullable<int> paymentStatus)
         {
             var idParameter = id.HasValue ?
@@ -908,7 +1339,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdPayment", idParameter, paymentStatusParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd ticket.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="statusId">The status identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdTicket(Nullable<int> id, Nullable<int> statusId)
         {
             var idParameter = id.HasValue ?
@@ -921,7 +1358,18 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdTicket", idParameter, statusIdParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd user.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="typeId">The type identifier.</param>
+        /// <param name="userName">Name of the user.</param>
+        /// <param name="userMiddleName">Name of the user middle.</param>
+        /// <param name="userLastName">Last name of the user.</param>
+        /// <param name="userMotherName">Name of the user mother.</param>
+        /// <param name="email">The email.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdUser(Nullable<int> id, Nullable<int> typeId, string userName, string userMiddleName, string userLastName, string userMotherName, string email)
         {
             var idParameter = id.HasValue ?
@@ -954,7 +1402,14 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdUser", idParameter, typeIdParameter, userNameParameter, userMiddleNameParameter, userLastNameParameter, userMotherNameParameter, emailParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd user pass word.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="passWord">The pass word.</param>
+        /// <param name="passWordSalt">The pass word salt.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdUserPassWord(Nullable<int> id, string passWord, string passWordSalt)
         {
             var idParameter = id.HasValue ?
@@ -971,7 +1426,13 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdUserPassWord", idParameter, passWordParameter, passWordSaltParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd vehicle.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="plates">The plates.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdVehicle(Nullable<int> id, string plates)
         {
             var idParameter = id.HasValue ?
@@ -984,7 +1445,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdVehicle", idParameter, platesParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the upd visit.
+        /// </summary>
+        /// <param name="carnet">The carnet.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSUpdVisit(string carnet)
         {
             var carnetParameter = carnet != null ?
@@ -993,7 +1459,14 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSUpdVisit", carnetParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete cat recreational area.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="areaName">Name of the area.</param>
+        /// <param name="active">The active.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCatRecreationalArea(Nullable<int> id, string areaName, Nullable<bool> active)
         {
             var idParameter = id.HasValue ?
@@ -1010,7 +1483,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatRecreationalArea", idParameter, areaNameParameter, activeParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete cat supplier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelCatSupplier(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
@@ -1019,7 +1497,12 @@ namespace RM.Core.Data.Entities
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SYSDelCatSupplier", idParameter);
         }
-    
+
+        /// <summary>
+        /// Systems the delete vehicle.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns>System.Int32.</returns>
         public virtual int SYSDelVehicle(Nullable<int> id)
         {
             var idParameter = id.HasValue ?
