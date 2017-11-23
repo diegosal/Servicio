@@ -7,8 +7,18 @@ using RM.Core.Data.Adapter;
 
 namespace RM.Core.Data.Implementation
 {
+    /// <summary>
+    /// Class BaseFunction.
+    /// </summary>
+    /// <seealso cref="RM.Core.Data.Biz.BizLogic" />
+    /// <seealso cref="RM.Core.Data.Interface.IBaseFunction" />
     public class BaseFunction : BizLogic, IBaseFunction
     {
+        /// <summary>
+        /// Datas the function login.
+        /// </summary>
+        /// <param name="Email">The email.</param>
+        /// <returns>BizUser.</returns>
         public BizUser DataFuncLogin(string Email)
         {
             BizUser bizUser = new BizUser();
@@ -25,6 +35,11 @@ namespace RM.Core.Data.Implementation
                 return null;
         }
 
+        /// <summary>
+        /// Updates the user password.
+        /// </summary>
+        /// <param name="bizUser">The biz user.</param>
+        /// <returns>System.String.</returns>
         public string UpdateUserPassWord(BizUser bizUser)
         {
             string Result = "";

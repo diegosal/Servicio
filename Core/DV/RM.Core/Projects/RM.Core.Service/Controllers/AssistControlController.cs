@@ -6,11 +6,23 @@ using System.Web.Http;
 
 namespace RM.Core.Service.Controllers
 {
+    /// <summary>
+    /// Class AssistControlController.
+    /// </summary>
+    /// <seealso cref="System.Web.Http.ApiController" />
     public class AssistControlController : ApiController
     {
 
+        /// <summary>
+        /// The crud fuction
+        /// </summary>
         private BizCrudFuntion crudFuction = new BizCrudFuntion();
 
+        /// <summary>
+        /// Posts the specified web assist control.
+        /// </summary>
+        /// <param name="webAssistControl">The web assist control.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpPost]
         public IHttpActionResult Post(WebAssistControl webAssistControl)
         {
@@ -22,6 +34,12 @@ namespace RM.Core.Service.Controllers
                 return Ok(response);
         }
 
+        /// <summary>
+        /// Gets the specified identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="active">if set to <c>true</c> [active].</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpGet]
         public IHttpActionResult Get(int? id = null, bool? active = null)
         {
@@ -33,6 +51,11 @@ namespace RM.Core.Service.Controllers
                 return Ok(webAssistControlList);
         }
 
+        /// <summary>
+        /// Puts the specified web assist control.
+        /// </summary>
+        /// <param name="webAssistControl">The web assist control.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpPut]
         public IHttpActionResult Put(WebAssistControl webAssistControl)
         {
@@ -44,6 +67,10 @@ namespace RM.Core.Service.Controllers
                 return Ok(response);
         }
 
+        /// <summary>
+        /// Deletes this instance.
+        /// </summary>
+        /// <returns>IHttpActionResult.</returns>
         [HttpDelete]
         public IHttpActionResult Delete()
         {

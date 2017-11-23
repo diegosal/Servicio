@@ -8,11 +8,21 @@ using System.Threading.Tasks;
 
 namespace RM.Core.Client
 {
+    /// <summary>
+    /// Class WebClient.
+    /// </summary>
     public class WebClient
     {
 
-        //private HttpClient client = new HttpClient();
-
+        /// <summary>
+        /// post as an asynchronous operation.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="M"></typeparam>
+        /// <param name="Model">Model.</param>
+        /// <param name="Path">Api path.</param>
+        /// <returns>Task&lt;T&gt;.</returns>
+        /// <exception cref="CustomException"></exception>
         public async Task<T> PostAsync<T, M>(M Model, string Path)
             where T : class
             where M : class

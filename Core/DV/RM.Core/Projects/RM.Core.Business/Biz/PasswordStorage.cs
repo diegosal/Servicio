@@ -4,39 +4,111 @@ using System.Security.Cryptography;
 
 namespace PasswordSecurity
 {
+    /// <summary>
+    /// Class InvalidHashException.
+    /// </summary>
+    /// <seealso cref="System.Exception" />
     class InvalidHashException : Exception
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="InvalidHashException"/> class.
+        /// </summary>
         public InvalidHashException() { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="InvalidHashException"/> class.
+        /// </summary>
+        /// <param name="message">The message that describes the error.</param>
         public InvalidHashException(string message)
             : base(message) { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="InvalidHashException"/> class.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        /// <param name="inner">The inner.</param>
         public InvalidHashException(string message, Exception inner)
             : base(message, inner) { }
     }
 
+    /// <summary>
+    /// Class CannotPerformOperationException.
+    /// </summary>
+    /// <seealso cref="System.Exception" />
     class CannotPerformOperationException : Exception
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CannotPerformOperationException"/> class.
+        /// </summary>
         public CannotPerformOperationException() { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CannotPerformOperationException"/> class.
+        /// </summary>
+        /// <param name="message">The message that describes the error.</param>
         public CannotPerformOperationException(string message)
             : base(message) { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CannotPerformOperationException"/> class.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        /// <param name="inner">The inner.</param>
         public CannotPerformOperationException(string message, Exception inner)
             : base(message, inner) { }
     }
 
+    /// <summary>
+    /// Class PasswordStorage.
+    /// </summary>
     class PasswordStorage
     {
         // These constants may be changed without breaking existing hashes.
+        /// <summary>
+        /// The salt bytes
+        /// </summary>
         public const int SALT_BYTES = 24;
+        /// <summary>
+        /// The hash bytes
+        /// </summary>
         public const int HASH_BYTES = 18;
+        /// <summary>
+        /// The PBKD f2 iterations
+        /// </summary>
         public const int PBKDF2_ITERATIONS = 64000;
 
         // These constants define the encoding and may not be changed.
+        /// <summary>
+        /// The hash sections
+        /// </summary>
         public const int HASH_SECTIONS = 5;
+        /// <summary>
+        /// The hash algorithm index
+        /// </summary>
         public const int HASH_ALGORITHM_INDEX = 0;
+        /// <summary>
+        /// The iteration index
+        /// </summary>
         public const int ITERATION_INDEX = 1;
+        /// <summary>
+        /// The hash size index
+        /// </summary>
         public const int HASH_SIZE_INDEX = 2;
+        /// <summary>
+        /// The salt index
+        /// </summary>
         public const int SALT_INDEX = 3;
+        /// <summary>
+        /// The PBKD f2 index
+        /// </summary>
         public const int PBKDF2_INDEX = 4;
 
+        /// <summary>
+        /// Creates the hash.
+        /// </summary>
+        /// <param name="password">The password.</param>
+        /// <returns>System.String.</returns>
+        /// <exception cref="PasswordSecurity.CannotPerformOperationException">
+        /// Random number generator not available.
+        /// or
+        /// Invalid argument given to random number generator.
+        /// </exception>
         public static string CreateHash(string password)
         {
             // Generate a random salt
@@ -77,6 +149,42 @@ namespace PasswordSecurity
             return parts;
         }
 
+        /// <summary>
+        /// Verifies the password.
+        /// </summary>
+        /// <param name="password">The password.</param>
+        /// <param name="goodHash">The good hash.</param>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        /// <exception cref="PasswordSecurity.InvalidHashException">
+        /// Fields are missing from the password hash.
+        /// or
+        /// Could not parse the iteration count as an integer.
+        /// or
+        /// The iteration count is too large to be represented.
+        /// or
+        /// Invalid number of iterations. Must be >= 1.
+        /// or
+        /// Base64 decoding of salt failed.
+        /// or
+        /// Base64 decoding of pbkdf2 output failed.
+        /// or
+        /// Could not parse the hash size as an integer.
+        /// or
+        /// The hash size is too large to be represented.
+        /// or
+        /// Hash length doesn't match stored hash length.
+        /// </exception>
+        /// <exception cref="PasswordSecurity.CannotPerformOperationException">
+        /// Unsupported hash type.
+        /// or
+        /// Invalid argument given to Int32.Parse
+        /// or
+        /// Invalid argument given to Convert.FromBase64String
+        /// or
+        /// Invalid argument given to Convert.FromBase64String
+        /// or
+        /// Invalid argument given to Int32.Parse
+        /// </exception>
         public static bool VerifyPassword(string password, string goodHash)
         {
             char[] delimiter = { ':' };
@@ -209,6 +317,12 @@ namespace PasswordSecurity
             return SlowEquals(hash, testHash);
         }
 
+        /// <summary>
+        /// Slows the equals.
+        /// </summary>
+        /// <param name="a">a.</param>
+        /// <param name="b">The b.</param>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         private static bool SlowEquals(byte[] a, byte[] b)
         {
             uint diff = (uint)a.Length ^ (uint)b.Length;
@@ -219,6 +333,14 @@ namespace PasswordSecurity
             return diff == 0;
         }
 
+        /// <summary>
+        /// PBKDs the f2.
+        /// </summary>
+        /// <param name="password">The password.</param>
+        /// <param name="salt">The salt.</param>
+        /// <param name="iterations">The iterations.</param>
+        /// <param name="outputBytes">The output bytes.</param>
+        /// <returns>System.Byte[].</returns>
         private static byte[] PBKDF2(string password, byte[] salt, int iterations, int outputBytes)
         {
             using (Rfc2898DeriveBytes pbkdf2 = new Rfc2898DeriveBytes(password, salt))

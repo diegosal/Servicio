@@ -6,11 +6,23 @@ using System.Web.Http;
 
 namespace RM.Core.Service.Controllers
 {
+    /// <summary>
+    /// Class SupplierController.
+    /// </summary>
+    /// <seealso cref="System.Web.Http.ApiController" />
     public class SupplierController : ApiController
     {
 
+        /// <summary>
+        /// The crud fuction
+        /// </summary>
         private BizCrudFuntion crudFuction = new BizCrudFuntion();
 
+        /// <summary>
+        /// Posts the specified web supplier.
+        /// </summary>
+        /// <param name="webSupplier">The web supplier.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpPost]
         public IHttpActionResult Post(WebSupplier webSupplier)
         {
@@ -22,6 +34,12 @@ namespace RM.Core.Service.Controllers
                 return Ok(response);
         }
 
+        /// <summary>
+        /// Gets the specified identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="active">if set to <c>true</c> [active].</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpGet]
         public IHttpActionResult Get(int? id = null, bool? active = null)
         {
@@ -33,6 +51,11 @@ namespace RM.Core.Service.Controllers
                 return Ok(webSupplierList);
         }
 
+        /// <summary>
+        /// Puts the specified web supplier.
+        /// </summary>
+        /// <param name="webSupplier">The web supplier.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpPut]
         public IHttpActionResult Put(WebSupplier webSupplier)
         {
@@ -44,6 +67,11 @@ namespace RM.Core.Service.Controllers
                 return Ok(response);
         }
 
+        /// <summary>
+        /// Deletes the specified web supplier.
+        /// </summary>
+        /// <param name="webSupplier">The web supplier.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpDelete]
         public IHttpActionResult Delete(WebSupplier webSupplier)
         {

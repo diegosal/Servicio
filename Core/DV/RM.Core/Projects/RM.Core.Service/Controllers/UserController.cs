@@ -6,10 +6,22 @@ using System.Collections.Generic;
 
 namespace RM.Core.Service.Controllers
 {
+    /// <summary>
+    /// Class UserController.
+    /// </summary>
+    /// <seealso cref="System.Web.Http.ApiController" />
     public class UserController : ApiController
     {
+        /// <summary>
+        /// The crud fuction
+        /// </summary>
         private BizCrudFuntion crudFuction = new BizCrudFuntion();
 
+        /// <summary>
+        /// Posts the specified user.
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpPost]
         public IHttpActionResult Post(WebUser user)
         {
@@ -21,6 +33,12 @@ namespace RM.Core.Service.Controllers
                 return Ok(response);
         }
 
+        /// <summary>
+        /// Gets the specified identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <param name="active">if set to <c>true</c> [active].</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpGet]
         public IHttpActionResult Get(int? id = null, bool? active = null)
         {
@@ -32,6 +50,11 @@ namespace RM.Core.Service.Controllers
                 return Ok(webUserList);
         }
 
+        /// <summary>
+        /// Puts the specified user.
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpPut]
         public IHttpActionResult Put(WebUser user)
         {
@@ -43,6 +66,11 @@ namespace RM.Core.Service.Controllers
                 return Ok(response);
         }
 
+        /// <summary>
+        /// Deletes the specified user.
+        /// </summary>
+        /// <param name="user">The user.</param>
+        /// <returns>IHttpActionResult.</returns>
         [HttpDelete]
         public IHttpActionResult Delete(WebUser user)
         {

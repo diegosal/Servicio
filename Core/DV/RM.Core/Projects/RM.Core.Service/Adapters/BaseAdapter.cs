@@ -4,10 +4,18 @@ using System.Collections.Generic;
 
 namespace RM.Core.Service.Adapters
 {
+    /// <summary>
+    /// Class BaseAdapter.
+    /// </summary>
     public static class BaseAdapter
     {
         #region OBJECT-LIST
 
+        /// <summary>
+        /// Lists the biz user to list web user.
+        /// </summary>
+        /// <param name="DataUserList">The data user list.</param>
+        /// <returns>List&lt;WebUser&gt;.</returns>
         public static List<WebUser> ListBizUserToListWebUser(this List<BizUser> DataUserList)
         {
             List<WebUser> WebUserList = new List<WebUser>();
@@ -20,6 +28,11 @@ namespace RM.Core.Service.Adapters
             return WebUserList;
         }
 
+        /// <summary>
+        /// Lists the biz address to list web address.
+        /// </summary>
+        /// <param name="DataAddressList">The data address list.</param>
+        /// <returns>List&lt;WebAddress&gt;.</returns>
         public static List<WebAddress> ListBizAddressToListWebAddress(this List<BizAddress> DataAddressList)
         {
             List<WebAddress> WebAddressList = new List<WebAddress>();
@@ -32,6 +45,11 @@ namespace RM.Core.Service.Adapters
             return WebAddressList;
         }
 
+        /// <summary>
+        /// Lists the biz assist control to list web assist control.
+        /// </summary>
+        /// <param name="DataAssistControlList">The data assist control list.</param>
+        /// <returns>List&lt;WebAssistControl&gt;.</returns>
         public static List<WebAssistControl> ListBizAssistControlToListWebAssistControl(this List<BizAssistControl> DataAssistControlList)
         {
             List<WebAssistControl> WebAssistControlList = new List<WebAssistControl>();
@@ -44,6 +62,11 @@ namespace RM.Core.Service.Adapters
             return WebAssistControlList;
         }
 
+        /// <summary>
+        /// Lists the biz committee member to list web committee member.
+        /// </summary>
+        /// <param name="DataCommitteeMemberList">The data committee member list.</param>
+        /// <returns>List&lt;WebCommitteeMember&gt;.</returns>
         public static List<WebCommitteeMember> ListBizCommitteeMemberToListWebCommitteeMember(this List<BizCommitteeMember> DataCommitteeMemberList)
         {
             List<WebCommitteeMember> WebCommitteeMemberList = new List<WebCommitteeMember>();
@@ -56,6 +79,11 @@ namespace RM.Core.Service.Adapters
             return WebCommitteeMemberList;
         }
 
+        /// <summary>
+        /// Lists the biz company to list web company.
+        /// </summary>
+        /// <param name="DataCompanyList">The data company list.</param>
+        /// <returns>List&lt;WebCompany&gt;.</returns>
         public static List<WebCompany> ListBizCompanyToListWebCompany(this List<BizCompany> DataCompanyList)
         {
             List<WebCompany> WebCompanyList = new List<WebCompany>();
@@ -68,6 +96,11 @@ namespace RM.Core.Service.Adapters
             return WebCompanyList;
         }
 
+        /// <summary>
+        /// Lists the biz event to list web event.
+        /// </summary>
+        /// <param name="DataEventList">The data event list.</param>
+        /// <returns>List&lt;WebEvent&gt;.</returns>
         public static List<WebEvent> ListBizEventToListWebEvent(this List<BizEvent> DataEventList)
         {
             List<WebEvent> WebEventList = new List<WebEvent>();
@@ -80,6 +113,11 @@ namespace RM.Core.Service.Adapters
             return WebEventList;
         }
 
+        /// <summary>
+        /// Lists the biz event status to list web event status.
+        /// </summary>
+        /// <param name="DataEventStatusList">The data event status list.</param>
+        /// <returns>List&lt;WebEventStatus&gt;.</returns>
         public static List<WebEventStatus> ListBizEventStatusToListWebEventStatus(this List<BizEventStatus> DataEventStatusList)
         {
             List<WebEventStatus> WebEventStatusList = new List<WebEventStatus>();
@@ -92,6 +130,11 @@ namespace RM.Core.Service.Adapters
             return WebEventStatusList;
         }
 
+        /// <summary>
+        /// Lists the biz a eventuality to list web eventuality.
+        /// </summary>
+        /// <param name="DataEventualityList">The data eventuality list.</param>
+        /// <returns>List&lt;WebEventuality&gt;.</returns>
         public static List<WebEventuality> ListBizAEventualityToListWebEventuality(this List<BizEventuality> DataEventualityList)
         {
             List<WebEventuality> WebEventualityList = new List<WebEventuality>();
@@ -104,6 +147,11 @@ namespace RM.Core.Service.Adapters
             return WebEventualityList;
         }
 
+        /// <summary>
+        /// Lists the biz internal box to list web internal box.
+        /// </summary>
+        /// <param name="DataInternalBoxList">The data internal box list.</param>
+        /// <returns>List&lt;WebInternalBox&gt;.</returns>
         public static List<WebInternalBox> ListBizInternalBoxToListWebInternalBox(this List<BizInternalBox> DataInternalBoxList)
         {
             List<WebInternalBox> WebInternalBoxList = new List<WebInternalBox>();
@@ -116,6 +164,11 @@ namespace RM.Core.Service.Adapters
             return WebInternalBoxList;
         }
 
+        /// <summary>
+        /// Lists the biz internal expense to list web internal expense.
+        /// </summary>
+        /// <param name="DataInternalExpenseList">The data internal expense list.</param>
+        /// <returns>List&lt;WebInternalExpense&gt;.</returns>
         public static List<WebInternalExpense> ListBizInternalExpenseToListWebInternalExpense(this List<BizInternalExpense> DataInternalExpenseList)
         {
             List<WebInternalExpense> WebInternalExpenseList = new List<WebInternalExpense>();
@@ -128,6 +181,11 @@ namespace RM.Core.Service.Adapters
             return WebInternalExpenseList;
         }
 
+        /// <summary>
+        /// Lists the biz payment to list web payment.
+        /// </summary>
+        /// <param name="DataPaymentList">The data payment list.</param>
+        /// <returns>List&lt;WebPayment&gt;.</returns>
         public static List<WebPayment> ListBizPaymentToListWebPayment(this List<BizPayment> DataPaymentList)
         {
             List<WebPayment> WebPaymentList = new List<WebPayment>();
@@ -140,6 +198,11 @@ namespace RM.Core.Service.Adapters
             return WebPaymentList;
         }
 
+        /// <summary>
+        /// Lists the biz payment status to list web payment status.
+        /// </summary>
+        /// <param name="DataPaymentStatusList">The data payment status list.</param>
+        /// <returns>List&lt;WebPaymentStatus&gt;.</returns>
         public static List<WebPaymentStatus> ListBizPaymentStatusToListWebPaymentStatus(this List<BizPaymentStatus> DataPaymentStatusList)
         {
             List<WebPaymentStatus> WebPaymentStatusList = new List<WebPaymentStatus>();
@@ -152,6 +215,11 @@ namespace RM.Core.Service.Adapters
             return WebPaymentStatusList;
         }
 
+        /// <summary>
+        /// Lists the biz recreational area to list web recreational area.
+        /// </summary>
+        /// <param name="DataRecreationalAreaList">The data recreational area list.</param>
+        /// <returns>List&lt;WebRecreationalArea&gt;.</returns>
         public static List<WebRecreationalArea> ListBizRecreationalAreaToListWebRecreationalArea(this List<BizRecreationalArea> DataRecreationalAreaList)
         {
             List<WebRecreationalArea> WebRecreationalAreaList = new List<WebRecreationalArea>();
@@ -164,6 +232,11 @@ namespace RM.Core.Service.Adapters
             return WebRecreationalAreaList;
         }
 
+        /// <summary>
+        /// Lists the biz supplier to list web supplier.
+        /// </summary>
+        /// <param name="DataSupplierList">The data supplier list.</param>
+        /// <returns>List&lt;WebSupplier&gt;.</returns>
         public static List<WebSupplier> ListBizSupplierToListWebSupplier(this List<BizSupplier> DataSupplierList)
         {
             List<WebSupplier> WebSupplierList = new List<WebSupplier>();
@@ -176,6 +249,11 @@ namespace RM.Core.Service.Adapters
             return WebSupplierList;
         }
 
+        /// <summary>
+        /// Lists the biz ticket to list web ticket.
+        /// </summary>
+        /// <param name="DataTicketList">The data ticket list.</param>
+        /// <returns>List&lt;WebTicket&gt;.</returns>
         public static List<WebTicket> ListBizTicketToListWebTicket(this List<BizTicket> DataTicketList)
         {
             List<WebTicket> WebTicketList = new List<WebTicket>();
@@ -188,6 +266,11 @@ namespace RM.Core.Service.Adapters
             return WebTicketList;
         }
 
+        /// <summary>
+        /// Lists the biz ticket status to list web ticket status.
+        /// </summary>
+        /// <param name="DataTicketStatusList">The data ticket status list.</param>
+        /// <returns>List&lt;WebTicketStatus&gt;.</returns>
         public static List<WebTicketStatus> ListBizTicketStatusToListWebTicketStatus(this List<BizTicketStatus> DataTicketStatusList)
         {
             List<WebTicketStatus> WebTicketStatusList = new List<WebTicketStatus>();
@@ -200,6 +283,11 @@ namespace RM.Core.Service.Adapters
             return WebTicketStatusList;
         }
 
+        /// <summary>
+        /// Lists the biz type committee to list web type committee.
+        /// </summary>
+        /// <param name="DataTypeCommitteeList">The data type committee list.</param>
+        /// <returns>List&lt;WebTypeCommittee&gt;.</returns>
         public static List<WebTypeCommittee> ListBizTypeCommitteeToListWebTypeCommittee(this List<BizTypeCommittee> DataTypeCommitteeList)
         {
             List<WebTypeCommittee> WebTypeCommitteeList = new List<WebTypeCommittee>();
@@ -212,6 +300,11 @@ namespace RM.Core.Service.Adapters
             return WebTypeCommitteeList;
         }
 
+        /// <summary>
+        /// Lists the biz type user to list web type user.
+        /// </summary>
+        /// <param name="DataTypeUserList">The data type user list.</param>
+        /// <returns>List&lt;WebTypeUser&gt;.</returns>
         public static List<WebTypeUser> ListBizTypeUserToListWebTypeUser(this List<BizTypeUser> DataTypeUserList)
         {
             List<WebTypeUser> WebTypeUserList = new List<WebTypeUser>();
@@ -224,6 +317,11 @@ namespace RM.Core.Service.Adapters
             return WebTypeUserList;
         }
 
+        /// <summary>
+        /// Lists the biz type visit to list web type visit.
+        /// </summary>
+        /// <param name="DataTypeVisitList">The data type visit list.</param>
+        /// <returns>List&lt;WebTypeVisit&gt;.</returns>
         public static List<WebTypeVisit> ListBizTypeVisitToListWebTypeVisit(this List<BizTypeVisit> DataTypeVisitList)
         {
             List<WebTypeVisit> WebTypeVisitList = new List<WebTypeVisit>();
@@ -236,6 +334,11 @@ namespace RM.Core.Service.Adapters
             return WebTypeVisitList;
         }
 
+        /// <summary>
+        /// Lists the biz vehicle to list web vehicle.
+        /// </summary>
+        /// <param name="DataVehicleList">The data vehicle list.</param>
+        /// <returns>List&lt;WebVehicle&gt;.</returns>
         public static List<WebVehicle> ListBizVehicleToListWebVehicle(this List<BizVehicle> DataVehicleList)
         {
             List<WebVehicle> WebVehicleList = new List<WebVehicle>();
@@ -248,6 +351,11 @@ namespace RM.Core.Service.Adapters
             return WebVehicleList;
         }
 
+        /// <summary>
+        /// Lists the biz visit to list web visit.
+        /// </summary>
+        /// <param name="DataVisitList">The data visit list.</param>
+        /// <returns>List&lt;WebVisit&gt;.</returns>
         public static List<WebVisit> ListBizVisitToListWebVisit(this List<BizVisit> DataVisitList)
         {
             List<WebVisit> WebVisitList = new List<WebVisit>();
@@ -264,6 +372,11 @@ namespace RM.Core.Service.Adapters
 
         #region OBJECT
 
+        /// <summary>
+        /// Webs the user to biz user.
+        /// </summary>
+        /// <param name="DataUser">The data user.</param>
+        /// <returns>BizUser.</returns>
         public static BizUser WebUserToBizUser(this WebUser DataUser)
         {
             BizUser bizUser = new BizUser
@@ -285,6 +398,11 @@ namespace RM.Core.Service.Adapters
             return bizUser;
         }
 
+        /// <summary>
+        /// Bizs the user to web user.
+        /// </summary>
+        /// <param name="DataUser">The data user.</param>
+        /// <returns>WebUser.</returns>
         public static WebUser BizUserToWebUser(this BizUser DataUser)
         {
             WebUser webUser = new WebUser
@@ -306,6 +424,11 @@ namespace RM.Core.Service.Adapters
             return webUser;
         }
 
+        /// <summary>
+        /// Webs the address to biz address.
+        /// </summary>
+        /// <param name="DataAddress">The data address.</param>
+        /// <returns>BizAddress.</returns>
         public static BizAddress WebAddressToBizAddress(this WebAddress DataAddress)
         {
             BizAddress bizAdress = new BizAddress
@@ -320,6 +443,11 @@ namespace RM.Core.Service.Adapters
             return bizAdress;
         }
 
+        /// <summary>
+        /// Bizs the address to web address.
+        /// </summary>
+        /// <param name="DataAddress">The data address.</param>
+        /// <returns>WebAddress.</returns>
         public static WebAddress BizAddressToWebAddress(this BizAddress DataAddress)
         {
             WebAddress webAdress = new WebAddress
@@ -334,6 +462,11 @@ namespace RM.Core.Service.Adapters
             return webAdress;
         }
 
+        /// <summary>
+        /// Webs the assist control to biz assist control.
+        /// </summary>
+        /// <param name="DataAssistControl">The data assist control.</param>
+        /// <returns>BizAssistControl.</returns>
         public static BizAssistControl WebAssistControlToBizAssistControl(this WebAssistControl DataAssistControl)
         {
             BizAssistControl bizAssistControl = new BizAssistControl
@@ -346,6 +479,11 @@ namespace RM.Core.Service.Adapters
             return bizAssistControl;
         }
 
+        /// <summary>
+        /// Bizs the assist control to web assist control.
+        /// </summary>
+        /// <param name="DataAssistControl">The data assist control.</param>
+        /// <returns>WebAssistControl.</returns>
         public static WebAssistControl BizAssistControlToWebAssistControl(this BizAssistControl DataAssistControl)
         {
             WebAssistControl webAssistControl = new WebAssistControl
@@ -358,6 +496,11 @@ namespace RM.Core.Service.Adapters
             return webAssistControl;
         }
 
+        /// <summary>
+        /// Webs the committee member to biz committee member.
+        /// </summary>
+        /// <param name="DataCommitteeMember">The data committee member.</param>
+        /// <returns>BizCommitteeMember.</returns>
         public static BizCommitteeMember WebCommitteeMemberToBizCommitteeMember(this WebCommitteeMember DataCommitteeMember)
         {
             BizCommitteeMember bizCommitteeMember = new BizCommitteeMember
@@ -372,6 +515,11 @@ namespace RM.Core.Service.Adapters
             return bizCommitteeMember;
         }
 
+        /// <summary>
+        /// Bizs the committee member to web committee member.
+        /// </summary>
+        /// <param name="DataCommitteeMember">The data committee member.</param>
+        /// <returns>WebCommitteeMember.</returns>
         public static WebCommitteeMember BizCommitteeMemberToWebCommitteeMember(this BizCommitteeMember DataCommitteeMember)
         {
             WebCommitteeMember webCommitteeMember = new WebCommitteeMember
@@ -386,6 +534,11 @@ namespace RM.Core.Service.Adapters
             return webCommitteeMember;
         }
 
+        /// <summary>
+        /// Webs the company to biz company.
+        /// </summary>
+        /// <param name="DataCompany">The data company.</param>
+        /// <returns>BizCompany.</returns>
         public static BizCompany WebCompanyToBizCompany(this WebCompany DataCompany)
         {
             BizCompany bizCompany = new BizCompany
@@ -397,6 +550,11 @@ namespace RM.Core.Service.Adapters
             return bizCompany;
         }
 
+        /// <summary>
+        /// Bizs the company to web company.
+        /// </summary>
+        /// <param name="DataCompany">The data company.</param>
+        /// <returns>WebCompany.</returns>
         public static WebCompany BizCompanyToWebCompany(this BizCompany DataCompany)
         {
             WebCompany webCompany = new WebCompany
@@ -408,6 +566,11 @@ namespace RM.Core.Service.Adapters
             return webCompany;
         }
 
+        /// <summary>
+        /// Bizs the event to web event.
+        /// </summary>
+        /// <param name="DataEvent">The data event.</param>
+        /// <returns>BizEvent.</returns>
         public static BizEvent BizEventToWebEvent(this WebEvent DataEvent)
         {
             BizEvent bizEvent = new BizEvent
@@ -425,6 +588,11 @@ namespace RM.Core.Service.Adapters
             return bizEvent;
         }
 
+        /// <summary>
+        /// Bizs the event to web event.
+        /// </summary>
+        /// <param name="DataEvent">The data event.</param>
+        /// <returns>WebEvent.</returns>
         public static WebEvent BizEventToWebEvent(this BizEvent DataEvent)
         {
             WebEvent webEvent = new WebEvent
@@ -442,6 +610,11 @@ namespace RM.Core.Service.Adapters
             return webEvent;
         }
 
+        /// <summary>
+        /// Webs the event status to biz event status.
+        /// </summary>
+        /// <param name="DataEventStatus">The data event status.</param>
+        /// <returns>BizEventStatus.</returns>
         public static BizEventStatus WebEventStatusToBizEventStatus(this WebEventStatus DataEventStatus)
         {
             BizEventStatus bizEventStatus = new BizEventStatus
@@ -453,6 +626,11 @@ namespace RM.Core.Service.Adapters
             return bizEventStatus;
         }
 
+        /// <summary>
+        /// Bizs the event status to web event status.
+        /// </summary>
+        /// <param name="DataEventStatus">The data event status.</param>
+        /// <returns>WebEventStatus.</returns>
         public static WebEventStatus BizEventStatusToWebEventStatus(this BizEventStatus DataEventStatus)
         {
             WebEventStatus webEventStatus = new WebEventStatus
@@ -464,6 +642,11 @@ namespace RM.Core.Service.Adapters
             return webEventStatus;
         }
 
+        /// <summary>
+        /// Webs the eventuality to biz eventuality.
+        /// </summary>
+        /// <param name="DataEventuality">The data eventuality.</param>
+        /// <returns>BizEventuality.</returns>
         public static BizEventuality WebEventualityToBizEventuality(this WebEventuality DataEventuality)
         {
             BizEventuality bizEventuality = new BizEventuality
@@ -475,6 +658,11 @@ namespace RM.Core.Service.Adapters
             return bizEventuality;
         }
 
+        /// <summary>
+        /// Bizs the eventuality to web eventuality.
+        /// </summary>
+        /// <param name="DataEventuality">The data eventuality.</param>
+        /// <returns>WebEventuality.</returns>
         public static WebEventuality BizEventualityToWebEventuality(this BizEventuality DataEventuality)
         {
             WebEventuality webEventuality = new WebEventuality
@@ -486,6 +674,11 @@ namespace RM.Core.Service.Adapters
             return webEventuality;
         }
 
+        /// <summary>
+        /// Webs the internal box to biz internal box.
+        /// </summary>
+        /// <param name="DataInternalBox">The data internal box.</param>
+        /// <returns>BizInternalBox.</returns>
         public static BizInternalBox WebInternalBoxToBizInternalBox(this WebInternalBox DataInternalBox)
         {
             BizInternalBox bizInternalBox = new BizInternalBox
@@ -496,6 +689,11 @@ namespace RM.Core.Service.Adapters
             return bizInternalBox;
         }
 
+        /// <summary>
+        /// Bizs the internal box to web internal box.
+        /// </summary>
+        /// <param name="DataInternalBox">The data internal box.</param>
+        /// <returns>WebInternalBox.</returns>
         public static WebInternalBox BizInternalBoxToWebInternalBox(this BizInternalBox DataInternalBox)
         {
             WebInternalBox webInternalBox = new WebInternalBox
@@ -506,6 +704,11 @@ namespace RM.Core.Service.Adapters
             return webInternalBox;
         }
 
+        /// <summary>
+        /// Webs the internal expense to biz internal expense.
+        /// </summary>
+        /// <param name="DataInternalExpense">The data internal expense.</param>
+        /// <returns>BizInternalExpense.</returns>
         public static BizInternalExpense WebInternalExpenseToBizInternalExpense(this WebInternalExpense DataInternalExpense)
         {
             BizInternalExpense bizInternalExpense = new BizInternalExpense
@@ -518,6 +721,11 @@ namespace RM.Core.Service.Adapters
             return bizInternalExpense;
         }
 
+        /// <summary>
+        /// Bizs the internal expense to web internal expense.
+        /// </summary>
+        /// <param name="DataInternalExpense">The data internal expense.</param>
+        /// <returns>WebInternalExpense.</returns>
         public static WebInternalExpense BizInternalExpenseToWebInternalExpense(this BizInternalExpense DataInternalExpense)
         {
             WebInternalExpense webInternalExpense = new WebInternalExpense
@@ -530,6 +738,11 @@ namespace RM.Core.Service.Adapters
             return webInternalExpense;
         }
 
+        /// <summary>
+        /// Webs the payment to biz payment.
+        /// </summary>
+        /// <param name="DataPayment">The data payment.</param>
+        /// <returns>BizPayment.</returns>
         public static BizPayment WebPaymentToBizPayment(this WebPayment DataPayment)
         {
             BizPayment bizPayment = new BizPayment
@@ -545,6 +758,11 @@ namespace RM.Core.Service.Adapters
             return bizPayment;
         }
 
+        /// <summary>
+        /// Bizs the payment to web payment.
+        /// </summary>
+        /// <param name="DataPayment">The data payment.</param>
+        /// <returns>WebPayment.</returns>
         public static WebPayment BizPaymentToWebPayment(this BizPayment DataPayment)
         {
             WebPayment webPayment = new WebPayment
@@ -560,6 +778,11 @@ namespace RM.Core.Service.Adapters
             return webPayment;
         }
 
+        /// <summary>
+        /// Webs the payment status to biz payment status.
+        /// </summary>
+        /// <param name="DataPaymentStatus">The data payment status.</param>
+        /// <returns>BizPaymentStatus.</returns>
         public static BizPaymentStatus WebPaymentStatusToBizPaymentStatus(this WebPaymentStatus DataPaymentStatus)
         {
             BizPaymentStatus bizPaymentStatus = new BizPaymentStatus
@@ -571,6 +794,11 @@ namespace RM.Core.Service.Adapters
             return bizPaymentStatus;
         }
 
+        /// <summary>
+        /// Bizs the payment status to web payment status.
+        /// </summary>
+        /// <param name="DataPaymentStatus">The data payment status.</param>
+        /// <returns>WebPaymentStatus.</returns>
         public static WebPaymentStatus BizPaymentStatusToWebPaymentStatus(this BizPaymentStatus DataPaymentStatus)
         {
             WebPaymentStatus webPaymentStatus = new WebPaymentStatus
@@ -582,6 +810,11 @@ namespace RM.Core.Service.Adapters
             return webPaymentStatus;
         }
 
+        /// <summary>
+        /// Webs the recreational area to biz recreational area.
+        /// </summary>
+        /// <param name="DataRecreationalArea">The data recreational area.</param>
+        /// <returns>BizRecreationalArea.</returns>
         public static BizRecreationalArea WebRecreationalAreaToBizRecreationalArea(this WebRecreationalArea DataRecreationalArea)
         {
             BizRecreationalArea bizRecreationalArea = new BizRecreationalArea
@@ -593,6 +826,11 @@ namespace RM.Core.Service.Adapters
             return bizRecreationalArea;
         }
 
+        /// <summary>
+        /// Bizs the recreational area to web recreational area.
+        /// </summary>
+        /// <param name="DataRecreationalArea">The data recreational area.</param>
+        /// <returns>WebRecreationalArea.</returns>
         public static WebRecreationalArea BizRecreationalAreaToWebRecreationalArea(this BizRecreationalArea DataRecreationalArea)
         {
             WebRecreationalArea webRecreationalArea = new WebRecreationalArea
@@ -604,6 +842,11 @@ namespace RM.Core.Service.Adapters
             return webRecreationalArea;
         }
 
+        /// <summary>
+        /// Webs the supplier to biz supplier.
+        /// </summary>
+        /// <param name="DataSupplier">The data supplier.</param>
+        /// <returns>BizSupplier.</returns>
         public static BizSupplier WebSupplierToBizSupplier(this WebSupplier DataSupplier)
         {
             BizSupplier bizSupplier = new BizSupplier
@@ -616,6 +859,11 @@ namespace RM.Core.Service.Adapters
             return bizSupplier;
         }
 
+        /// <summary>
+        /// Bizs the supplier to web supplier.
+        /// </summary>
+        /// <param name="DataSupplier">The data supplier.</param>
+        /// <returns>WebSupplier.</returns>
         public static WebSupplier BizSupplierToWebSupplier(this BizSupplier DataSupplier)
         {
             WebSupplier webSupplier = new WebSupplier
@@ -628,6 +876,11 @@ namespace RM.Core.Service.Adapters
             return webSupplier;
         }
 
+        /// <summary>
+        /// Webs the ticket to biz ticket.
+        /// </summary>
+        /// <param name="DataTicket">The data ticket.</param>
+        /// <returns>BizTicket.</returns>
         public static BizTicket WebTicketToBizTicket(this WebTicket DataTicket)
         {
             BizTicket bizTicket = new BizTicket
@@ -645,6 +898,11 @@ namespace RM.Core.Service.Adapters
             return bizTicket;
         }
 
+        /// <summary>
+        /// Bizs the ticket to web ticket.
+        /// </summary>
+        /// <param name="DataTicket">The data ticket.</param>
+        /// <returns>WebTicket.</returns>
         public static WebTicket BizTicketToWebTicket(this BizTicket DataTicket)
         {
             WebTicket webTicket = new WebTicket
@@ -662,6 +920,11 @@ namespace RM.Core.Service.Adapters
             return webTicket;
         }
 
+        /// <summary>
+        /// Webs the ticket status to biz ticket status.
+        /// </summary>
+        /// <param name="DataTicketStatus">The data ticket status.</param>
+        /// <returns>BizTicketStatus.</returns>
         public static BizTicketStatus WebTicketStatusToBizTicketStatus(this WebTicketStatus DataTicketStatus)
         {
             BizTicketStatus bizTicketStatus = new BizTicketStatus
@@ -673,6 +936,11 @@ namespace RM.Core.Service.Adapters
             return bizTicketStatus;
         }
 
+        /// <summary>
+        /// Bizs the ticket status to web ticket status.
+        /// </summary>
+        /// <param name="DataTicketStatus">The data ticket status.</param>
+        /// <returns>WebTicketStatus.</returns>
         public static WebTicketStatus BizTicketStatusToWebTicketStatus(this BizTicketStatus DataTicketStatus)
         {
             WebTicketStatus webTicketStatus = new WebTicketStatus
@@ -684,6 +952,11 @@ namespace RM.Core.Service.Adapters
             return webTicketStatus;
         }
 
+        /// <summary>
+        /// Webs the type committee to biz type committee.
+        /// </summary>
+        /// <param name="DataTypeCommittee">The data type committee.</param>
+        /// <returns>BizTypeCommittee.</returns>
         public static BizTypeCommittee WebTypeCommitteeToBizTypeCommittee(this WebTypeCommittee DataTypeCommittee)
         {
             BizTypeCommittee bizTypeCommittee = new BizTypeCommittee
@@ -695,6 +968,11 @@ namespace RM.Core.Service.Adapters
             return bizTypeCommittee;
         }
 
+        /// <summary>
+        /// Bizs the type committee to web type committee.
+        /// </summary>
+        /// <param name="DataTypeCommittee">The data type committee.</param>
+        /// <returns>WebTypeCommittee.</returns>
         public static WebTypeCommittee BizTypeCommitteeToWebTypeCommittee(this BizTypeCommittee DataTypeCommittee)
         {
             WebTypeCommittee webTypeCommittee = new WebTypeCommittee
@@ -706,6 +984,11 @@ namespace RM.Core.Service.Adapters
             return webTypeCommittee;
         }
 
+        /// <summary>
+        /// Webs the type user to biz type user.
+        /// </summary>
+        /// <param name="DataTypeUser">The data type user.</param>
+        /// <returns>BizTypeUser.</returns>
         public static BizTypeUser WebTypeUserToBizTypeUser(this WebTypeUser DataTypeUser)
         {
             BizTypeUser bizTypeUser = new BizTypeUser
@@ -717,6 +1000,11 @@ namespace RM.Core.Service.Adapters
             return bizTypeUser;
         }
 
+        /// <summary>
+        /// Bizs the type user to web type user.
+        /// </summary>
+        /// <param name="DataTypeUser">The data type user.</param>
+        /// <returns>WebTypeUser.</returns>
         public static WebTypeUser BizTypeUserToWebTypeUser(this BizTypeUser DataTypeUser)
         {
             WebTypeUser webTypeUser = new WebTypeUser
@@ -728,6 +1016,11 @@ namespace RM.Core.Service.Adapters
             return webTypeUser;
         }
 
+        /// <summary>
+        /// Webs the type visit to biz type visit.
+        /// </summary>
+        /// <param name="DatTypeVisit">The dat type visit.</param>
+        /// <returns>BizTypeVisit.</returns>
         public static BizTypeVisit WebTypeVisitToBizTypeVisit(this WebTypeVisit DatTypeVisit)
         {
             BizTypeVisit bizTypeVisit = new BizTypeVisit
@@ -739,6 +1032,11 @@ namespace RM.Core.Service.Adapters
             return bizTypeVisit;
         }
 
+        /// <summary>
+        /// Bizs the type visit to web type visit.
+        /// </summary>
+        /// <param name="DatTypeVisit">The dat type visit.</param>
+        /// <returns>WebTypeVisit.</returns>
         public static WebTypeVisit BizTypeVisitToWebTypeVisit(this BizTypeVisit DatTypeVisit)
         {
             WebTypeVisit webTypeVisit = new WebTypeVisit
@@ -750,6 +1048,11 @@ namespace RM.Core.Service.Adapters
             return webTypeVisit;
         }
 
+        /// <summary>
+        /// Webs the vehicle to biz vehicle.
+        /// </summary>
+        /// <param name="DatVehicle">The dat vehicle.</param>
+        /// <returns>BizVehicle.</returns>
         public static BizVehicle WebVehicleToBizVehicle(this WebVehicle DatVehicle)
         {
             BizVehicle bizVehicle = new BizVehicle
@@ -764,6 +1067,11 @@ namespace RM.Core.Service.Adapters
             return bizVehicle;
         }
 
+        /// <summary>
+        /// Bizs the vehicle to web vehicle.
+        /// </summary>
+        /// <param name="DatVehicle">The dat vehicle.</param>
+        /// <returns>WebVehicle.</returns>
         public static WebVehicle BizVehicleToWebVehicle(this BizVehicle DatVehicle)
         {
             WebVehicle webVehicle = new WebVehicle
@@ -778,6 +1086,11 @@ namespace RM.Core.Service.Adapters
             return webVehicle;
         }
 
+        /// <summary>
+        /// Webs the visit to biz visit.
+        /// </summary>
+        /// <param name="DatVisit">The dat visit.</param>
+        /// <returns>BizVisit.</returns>
         public static BizVisit WebVisitToBizVisit(this WebVisit DatVisit)
         {
             BizVisit bizVisit = new BizVisit
@@ -796,6 +1109,11 @@ namespace RM.Core.Service.Adapters
             return bizVisit;
         }
 
+        /// <summary>
+        /// Bizs the visit to web visit.
+        /// </summary>
+        /// <param name="DatVisit">The dat visit.</param>
+        /// <returns>WebVisit.</returns>
         public static WebVisit BizVisitToWebVisit(this BizVisit DatVisit)
         {
             WebVisit webVisit = new WebVisit

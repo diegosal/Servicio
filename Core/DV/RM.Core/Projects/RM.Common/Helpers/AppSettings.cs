@@ -1,4 +1,7 @@
-﻿namespace RM.Common.Helpers
+﻿/// <summary>
+/// The Helpers namespace.
+/// </summary>
+namespace RM.Common.Helpers
 {
     public class AppSettings
     {

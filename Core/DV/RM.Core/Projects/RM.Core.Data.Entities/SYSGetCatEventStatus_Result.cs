@@ -10,13 +10,36 @@
 namespace RM.Core.Data.Entities
 {
     using System;
-    
+
+    /// <summary>
+    /// Class SYSGetCatEventStatus_Result.
+    /// </summary>
     public partial class SYSGetCatEventStatus_Result
     {
+        /// <summary>
+        /// Gets or sets the identifier.
+        /// </summary>
+        /// <value>The identifier.</value>
         public int Id { get; set; }
+        /// <summary>
+        /// Gets or sets the name of the status.
+        /// </summary>
+        /// <value>The name of the status.</value>
         public string StatusName { get; set; }
+        /// <summary>
+        /// Gets or sets the creation date.
+        /// </summary>
+        /// <value>The creation date.</value>
         public System.DateTime CreationDate { get; set; }
+        /// <summary>
+        /// Gets or sets the modification date.
+        /// </summary>
+        /// <value>The modification date.</value>
         public System.DateTime ModificationDate { get; set; }
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="SYSGetCatEventStatus_Result"/> is active.
+        /// </summary>
+        /// <value><c>true</c> if active; otherwise, <c>false</c>.</value>
         public bool Active { get; set; }
     }
 }
