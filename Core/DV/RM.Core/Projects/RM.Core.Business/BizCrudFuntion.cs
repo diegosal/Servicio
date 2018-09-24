@@ -29,9 +29,9 @@ namespace RM.Core.Business
         {
             return BizCall(
                new Action(() =>
-               {
-                   crudFuntion.InsertTypeUser(bizTypeUser);
-               }
+                {
+                    crudFuntion.InsertTypeUser(bizTypeUser);
+                }
                )
            );
         }
